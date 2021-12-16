@@ -1,0 +1,81 @@
+{
+    "dsn": {
+        "dbname": "movies_database",
+        "user": "postgres",
+        "host": "postgres",
+        "port": 5432
+    },
+    "es": {
+        "host": "elasticsearch",
+        "limit": 100
+    },
+    "producers": [
+        {
+            "name": "person_producer",
+            "state_file_path": "states/person_state.json",
+            "state_field": "updated_at",
+            "limit": 100,
+            "sql": "SELECT id, updated_at\nFROM content.person\nWHERE updated_at > %s\nORDER BY updated_at\nLIMIT %s;"
+        },
+        {
+            "name": "genre_producer",
+            "state_file_path": "states/genre_state.json",
+            "state_field": "updated_at",
+            "limit": 100,
+            "sql": "SELECT id, updated_at\nFROM content.genre\nWHERE updated_at > %s\nORDER BY updated_at\nLIMIT %s;"
+        },
+        {
+            "name": "film_work_producer",
+            "state_file_path": "states/film_work_state.json",
+            "limit": 100,
+            "state_field": "updated_at",
+            "sql": "SELECT id, updated_at\n\tFROM content.film_work\nWHERE updated_at > %s\nORDER BY updated_at\nLIMIT %s;"
+        }
+    ],
+    "enrichers": [
+        {
+            "name": "film_work_person_enricher",
+            "use": "person_producer",
+            "sql": "SELECT fw.id\nFROM content.film_work fw\nLEFT JOIN content.person_film_work pfw ON pfw.film_work_id = fw.id\nWHERE pfw.person_id IN %s;"
+        },
+        {
+            "name": "film_work_genre_enricher",
+            "use": "genre_producer",
+            "sql": "SELECT fw.id\nFROM content.film_work fw\nLEFT JOIN content.genre_film_work gfw ON gfw.film_work_id = fw.id\nWHERE gfw.genre_id IN %s;"
+        }
+    ],
+    "mergers": [
+        {
+            "name": "film_work_merger",
+            "use": ["film_work_producer", "film_work_person_enricher", "film_work_genre_enricher"],
+            "sql": "SELECT\n    fw.id as fw_uuid,\n    fw.title,\n    fw.description,\n    fw.rating,\n    fw.type,\n    fw.created_at,\n    fw.updated_at,\n    pfw.role,\n    p.id as person_uuid,\n    p.full_name,\n    g.id as genre_uuid,\n    g.name\nFROM content.film_work fw\nLEFT JOIN content.person_film_work pfw ON pfw.film_work_id = fw.id\nLEFT JOIN content.person p ON p.id = pfw.person_id\nLEFT JOIN content.genre_film_work gfw ON gfw.film_work_id = fw.id\nLEFT JOIN content.genre g ON g.id = gfw.genre_id\nWHERE fw.id IN %s;"
+        },
+        {
+            "name": "person_merger",
+            "use": ["person_producer"],
+            "sql": "SELECT id as uuid, full_name\nFROM content.person\nWHERE id IN %s;"
+        },
+        {
+            "name": "genre_merger",
+            "use": ["genre_producer"],
+            "sql": "SELECT id as uuid, name\nFROM content.genre\nWHERE id IN %s;"
+        }
+    ],
+    "loaders": [
+        {
+            "name": "film_work_loader",
+            "use": "film_work_merger",
+            "index": "movies"
+        },
+        {
+            "name": "person_loader",
+            "use": "person_merger",
+            "index": "persons"
+        },
+        {
+            "name": "genre_loader",
+            "use": "genre_merger",
+            "index": "genres"
+        }
+    ]
+}
