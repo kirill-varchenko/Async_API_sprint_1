@@ -19,12 +19,12 @@ class FilmItem:
     uuid: str
     title: str
     imdb_rating: float = None
-    genres_names: str = None
-    genre: list[GenreItem] = field(default_factory=list)
     description: str = None
-    directors_names: str = None
-    actors_names: str = None
-    writers_names: str = None
+    genres_names: list[str] = field(default_factory=list)
+    genre: list[GenreItem] = field(default_factory=list)
+    directors_names: list[str] = field(default_factory=list)
+    actors_names: list[str] = field(default_factory=list)
+    writers_names: list[str] = field(default_factory=list)
     actors: list[PersonItem] = field(default_factory=list)
     writers: list[PersonItem] = field(default_factory=list)
     directors: list[PersonItem] = field(default_factory=list)

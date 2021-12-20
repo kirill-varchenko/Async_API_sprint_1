@@ -2,7 +2,6 @@ from itertools import groupby
 
 from es_item import FilmItem, GenreItem, PersonItem
 
-
 def transform_film_work(data: list[dict]) -> list[FilmItem]:
     key_func = lambda x: x["fw_uuid"]
     res = []
@@ -18,36 +17,25 @@ def transform_film_work(data: list[dict]) -> list[FilmItem]:
         )
 
         genres = {}
-        actors = {}
-        writers = {}
-        directors = {}
+        persons = {'director': {},
+                   'actor': {},
+                   'writer': {}}
 
         for elem in fw_group:
-            genres[elem["genre_uuid"]] = elem["name"]
-            if elem["role"] == "director":
-                directors[elem["person_uuid"]] = elem["full_name"]
-            if elem["role"] == "actor":
-                actors[elem["person_uuid"]] = elem["full_name"]
-            if elem["role"] == "writer":
-                writers[elem["person_uuid"]] = elem["full_name"]
+            if elem["genre_uuid"]:
+                genres[elem["genre_uuid"]] = elem["name"]
+            if elem['role'] and elem['person_uuid']:
+                persons[elem['role']][elem['person_uuid']] = elem['full_name']
 
         if genres:
             item.genres_names = list(genres.values())
-            item.genres = [
-                GenreItem(uuid=uuid, name=name) for uuid, name in genres.items()
-            ]
-        for d, names, collection in [
-            (actors, "actors_names", "actors"),
-            (writers, "writers_names", "writers"),
-            (directors, "directors_names", "directors"),
-        ]:
-            if d:
-                setattr(item, names, list(d.values()))
-                coll_value = [
-                    PersonItem(uuid=uuid, full_name=full_name)
-                    for uuid, full_name in d.items()
-                ]
-                setattr(item, collection, coll_value)
+            item.genre = [GenreItem(uuid=uuid, name=name) for uuid, name in genres.items()]
+        for role, names, collection in [('actor', 'actors_names', 'actors'),
+                                        ('writer', 'writers_names', 'writers'),
+                                        ('director', 'directors_names', 'directors')]:
+            setattr(item, names, list(persons[role].values()))
+            setattr(item, collection, [PersonItem(uuid=uuid, full_name=full_name)
+                                       for uuid, full_name in persons[role].items()])
 
         res.append(item)
 

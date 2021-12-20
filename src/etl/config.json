@@ -48,17 +48,17 @@
         {
             "name": "film_work_merger",
             "use": ["film_work_producer", "film_work_person_enricher", "film_work_genre_enricher"],
-            "sql": "SELECT\n    fw.id as fw_uuid,\n    fw.title,\n    fw.description,\n    fw.rating,\n    fw.type,\n    fw.created_at,\n    fw.updated_at,\n    pfw.role,\n    p.id as person_uuid,\n    p.full_name,\n    g.id as genre_uuid,\n    g.name\nFROM content.film_work fw\nLEFT JOIN content.person_film_work pfw ON pfw.film_work_id = fw.id\nLEFT JOIN content.person p ON p.id = pfw.person_id\nLEFT JOIN content.genre_film_work gfw ON gfw.film_work_id = fw.id\nLEFT JOIN content.genre g ON g.id = gfw.genre_id\nWHERE fw.id IN %s;"
+            "sql": "SELECT\n    fw.id as fw_uuid,\n    fw.title,\n    fw.description,\n    fw.rating,\n    fw.type,\n    fw.created_at,\n    fw.updated_at,\n    pfw.role,\n    p.id as person_uuid,\n    p.full_name,\n    g.id as genre_uuid,\n    g.name\nFROM content.film_work fw\nLEFT JOIN content.person_film_work pfw ON pfw.film_work_id = fw.id\nLEFT JOIN content.person p ON p.id = pfw.person_id\nLEFT JOIN content.genre_film_work gfw ON gfw.film_work_id = fw.id\nLEFT JOIN content.genre g ON g.id = gfw.genre_id\nWHERE fw.id IN %s\nORDER BY fw.id;"
         },
         {
             "name": "person_merger",
             "use": ["person_producer"],
-            "sql": "SELECT id as uuid, full_name\nFROM content.person\nWHERE id IN %s;"
+            "sql": "SELECT id as uuid, full_name\nFROM content.person\nWHERE id IN %s\nORDER BY id;"
         },
         {
             "name": "genre_merger",
             "use": ["genre_producer"],
-            "sql": "SELECT id as uuid, name\nFROM content.genre\nWHERE id IN %s;"
+            "sql": "SELECT id as uuid, name\nFROM content.genre\nWHERE id IN %s\nORDER BY id;"
         }
     ],
     "loaders": [

@@ -94,13 +94,10 @@ class ETLProcess:
             if loader_settings.use not in raw_data:
                 continue
 
-            for raw_chunk in grouper_it(
-                raw_data[loader_settings.use], self.config.es.limit
-            ):
-                transformed_data = self.transformers[loader_settings.name](
-                    list(raw_chunk)
-                )
-                self.loader.load(transformed_data, index=loader_settings.index)
+            transformed_data = self.transformers[loader_settings.name](raw_data[loader_settings.use])
+
+            for raw_chunk in grouper_it(transformed_data, self.config.es.limit):
+                self.loader.load(list(raw_chunk), index=loader_settings.index)
 
         for producer in self.producers.values():
             producer.save_state()
