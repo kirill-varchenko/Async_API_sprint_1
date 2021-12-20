@@ -18,8 +18,8 @@ class PersonList(BaseModel):
 class PersonDetail(BaseModel):
     uuid: UUID
     full_name: str
-    role: str
-    film_ids: list[UUID]
+    role: str = None
+    film_ids: list[UUID] = None
 
 class FilmDetail(BaseModel):
     uuid: UUID

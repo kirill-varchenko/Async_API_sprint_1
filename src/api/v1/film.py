@@ -19,13 +19,7 @@ async def film_details(film_id: UUID, film_service: FilmService = Depends(get_fi
                 # Такой код будет более поддерживаемым
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='film not found')
 
-    # Перекладываем данные из models.Film в Film
-    # Обратите внимание, что у модели бизнес-логики есть поле description
-        # Которое отсутствует в модели ответа API.
-        # Если бы использовалась общая модель для бизнес-логики и формирования ответов API
-        # вы бы предоставляли клиентам данные, которые им не нужны
-        # и, возможно, данные, которые опасно возвращать
-    return Film(id=film.id, title=film.title)
+    return FilmDetail(**film.dict())
 
 @router.get('/', response_model=list[FilmList])
 async def film_list(filter_genre: UUID = Query(None, alias='filter[genre]'),

@@ -4,6 +4,7 @@ from uuid import UUID
 
 from aioredis import Redis
 from elasticsearch import AsyncElasticsearch
+from elasticsearch.exceptions import NotFoundError
 from fastapi import Depends
 
 from db.elastic import get_elastic
@@ -34,13 +35,16 @@ class FilmService:
         return film
 
     async def _get_film_from_elastic(self, film_id: UUID) -> Optional[Film]:
-        doc = await self.elastic.get('movies', film_id)
-        return Film(**doc['_source'])
+        try:
+            doc = await self.elastic.get('movies', film_id)
+            return Film(**doc['_source'])
+        except NotFoundError:
+            return None
 
     async def _film_from_cache(self, film_id: UUID) -> Optional[Film]:
         # Пытаемся получить данные о фильме из кеша, используя команду get
         # https://redis.io/commands/get
-        data = await self.redis.get(film_id)
+        data = await self.redis.get(str(film_id))
         if not data:
             return None
 
@@ -53,7 +57,7 @@ class FilmService:
         # Выставляем время жизни кеша — 5 минут
         # https://redis.io/commands/set
         # pydantic позволяет сериализовать модель в json
-        await self.redis.set(film.id, film.json(), expire=FILM_CACHE_EXPIRE_IN_SECONDS)
+        await self.redis.set(str(film.uuid), film.json(), expire=FILM_CACHE_EXPIRE_IN_SECONDS)
 
 
 @lru_cache()
