@@ -27,6 +27,8 @@ class Producer:
             if not data:
                 break
 
+            # Сохраняется последнее полученное значение столбца соотв.
+            # состоянию продьюсера
             self.state = data[-1][self.settings.state_field]
 
             ids = [item["id"] for item in data]

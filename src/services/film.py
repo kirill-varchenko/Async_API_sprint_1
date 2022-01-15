@@ -139,6 +139,11 @@ class FilmService:
         films = [Film(**hit["_source"]) for hit in doc["hits"]["hits"]]
         return films
 
+    # Три метода ниже генерируют строковый ключ для кэширования в редис:
+    # - для кэширования одной сущности используется её UUID;
+    # - для результатов поиска - префикс "film-search" (чтобы отделять от
+    #   поисков в других случаях) и параметры запроса;
+    # - для результатов листинга - префикс "film-list" и параметры листинга.
     async def _redis_key_from_id(self, film_id: UUID) -> str:
         return str(film_id)
 

@@ -1,11 +1,13 @@
-from pydantic import BaseModel
+from typing import Optional
 from uuid import UUID
+
+from pydantic import BaseModel
 
 
 class FilmList(BaseModel):
     uuid: UUID
     title: str
-    imdb_rating: float
+    imdb_rating: Optional[float] = None
 
 class Genre(BaseModel):
     uuid: UUID
@@ -18,13 +20,13 @@ class PersonList(BaseModel):
 class PersonDetail(BaseModel):
     uuid: UUID
     full_name: str
-    role: str = None
-    film_ids: list[UUID] = None
+    role: Optional[str] = None
+    film_ids: Optional[list[UUID]] = None
 
 class FilmDetail(BaseModel):
     uuid: UUID
     title: str
-    imdb_rating: float
+    imdb_rating: Optional[float] = None
     description: str
     genre: list[Genre]
     actors: list[PersonList]

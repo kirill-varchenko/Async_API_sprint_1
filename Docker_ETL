@@ -1,8 +1,7 @@
 FROM python:3.9-slim-buster
 ENV PYTHONUNBUFFERED=1
 WORKDIR /code
-RUN apt-get -y update
-RUN apt-get -y install build-essential
+RUN apt-get -y update && apt-get -y install build-essential
 COPY src/etl/requirements.txt /code/
 RUN pip install -r requirements.txt
 COPY src/etl/* /code/

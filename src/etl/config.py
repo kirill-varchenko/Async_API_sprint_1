@@ -1,3 +1,5 @@
+from typing import Optional
+
 from pydantic import BaseModel
 
 
@@ -6,7 +8,7 @@ class DSNSettings(BaseModel):
     user: str
     host: str
     port: int
-    password: str = None
+    password: Optional[str] = None
 
 
 class ESSettings(BaseModel):

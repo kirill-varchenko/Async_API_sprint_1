@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Union
+from typing import Optional, Union
 
 
 @dataclass
@@ -18,8 +18,8 @@ class GenreItem:
 class FilmItem:
     uuid: str
     title: str
-    imdb_rating: float = None
-    description: str = None
+    imdb_rating: Optional[float] = None
+    description: Optional[str] = None
     genres_names: list[str] = field(default_factory=list)
     genre: list[GenreItem] = field(default_factory=list)
     directors_names: list[str] = field(default_factory=list)

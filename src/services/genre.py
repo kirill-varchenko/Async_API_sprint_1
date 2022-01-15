@@ -57,6 +57,9 @@ class GenreService:
         res = [Genre(**hit["_source"]) for hit in doc["hits"]["hits"]]
         return res
 
+    # Два метода ниже генерируют строковый ключ для кэширования в редис:
+    # - для кэширования одной сущности используется её UUID;
+    # - для результатов листинга всех жанров - "genres_list".
     async def _redis_key_from_id(self, genre_id: UUID) -> str:
         return str(genre_id)
 

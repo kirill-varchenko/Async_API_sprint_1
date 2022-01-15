@@ -2,11 +2,14 @@ from itertools import groupby
 
 from es_item import FilmItem, GenreItem, PersonItem
 
+
 def transform_film_work(data: list[dict]) -> list[FilmItem]:
     key_func = lambda x: x["fw_uuid"]
     res = []
     data.sort(key=key_func)
     for fw_uuid, fw_group_iter in groupby(data, key=key_func):
+        # Группируем данные по uuid фильма, в каждой группе затем формируются
+        # списки уникальных персон и жанров.
         fw_group = list(fw_group_iter)
 
         item = FilmItem(

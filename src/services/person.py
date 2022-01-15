@@ -158,6 +158,11 @@ class PersonService:
         persons = [Person(**hit["_source"]) for hit in doc["hits"]["hits"]]
         return persons
 
+    # Три метода ниже генерируют строковый ключ для кэширования в редис:
+    # - для кэширования одной сущности используется её UUID;
+    # - для результатов поиска - префикс "person-search" (чтобы отделять от
+    #   поисков в других случаях) и параметры запроса;
+    # - для списка фильмов по персоне - префикс "person-films" и UUID персоны.
     async def _redis_key_from_id(self, person_id: UUID) -> str:
         return str(person_id)
 

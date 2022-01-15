@@ -9,6 +9,7 @@ from es_item import ITEM_TYPES
 
 
 class Loader:
+    """Загружает чанками данные в ES"""
     def __init__(self, host: str):
         self.host = host
         self.es = self.es_init()

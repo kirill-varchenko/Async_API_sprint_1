@@ -3,6 +3,7 @@ import logging
 import os
 from collections import defaultdict
 from time import sleep
+from typing import Any, Generator, Iterable
 
 from dotenv import load_dotenv
 
@@ -15,7 +16,8 @@ from producer import Producer
 from transform import transform_film_work, transform_genre, transform_person
 
 
-def grouper_it(iterable, n):
+def grouper_it(iterable: Iterable, n: int) -> Generator[Any, None, None]:
+    """Генератор, разбивающий итерируемый iterable на чанки по n элементов."""
     it = iter(iterable)
     while True:
         chunk_it = itertools.islice(it, n)
@@ -36,6 +38,7 @@ class ETLProcess:
         self.db = PostgresConnection(self.config.dsn)
         self.loader = Loader(host=self.config.es.host)
 
+        # Словари продьюсеров, энричеров и мёрджеров, описанных в конфиге
         self.producers = {
             sttngs.name: Producer(settings=sttngs, db=self.db)
             for sttngs in self.config.producers
@@ -49,6 +52,15 @@ class ETLProcess:
             for sttngs in self.config.mergers
         }
 
+        # Энричеры используют айди, сгенерированные продьюсерами, для
+        # получения айди фильмов, которые нуждаются в обновлении.
+        # Словрь producer2enricher мапит продьюсеров на испольщующих их
+        # энричеров, чтобы потом знать, куда отправлять результаты продьюсеров.
+        # Например, список айди персон, требующих обновления, поступает
+        # одновременно на мёрджер, получающий нужную информацию для обновления
+        # персон, а также на энричер, который выдаёт список айди связанных с
+        # персонами фильмов, которые затем добавляются к списку фильмов на
+        # обновление.
         enricher_uses = [(en.use, en.name) for en in self.config.enrichers]
         func_key = lambda x: x[0]
         enricher_uses.sort(key=func_key)
@@ -58,8 +70,13 @@ class ETLProcess:
         }
 
     def run(self):
+        """Основной цикл ETL"""
         produced = {}
         enriched = defaultdict(set)
+
+        # Метод produce каждого продьюсера возвращает чанки айди,
+        # которые сохраняются для каждого продьюсера и направляются в
+        # описанные энричеры.
         for name, producer in self.producers.items():
             ids = []
             for chunk in producer.produce():
@@ -72,6 +89,9 @@ class ETLProcess:
                 total = len(ids)
                 logging.debug(f"{name} produced {total} ids")
 
+        # Для каждого мёрджера объединяются айди, поступающие из продьюсеров и
+        # энричеров, (без дублирования) и метод merge возвращает сырые данные
+        # из БД.
         raw_data = {}
         for name, merger in self.mergers.items():
             uses = merger.settings.use
@@ -90,6 +110,9 @@ class ETLProcess:
             raw_data[name] = res
             logging.debug(f"{name} merged {total} items")
 
+        # Лоудеры загружают полученные данные в ES. Если на предыдущем шаге для
+        # лоудера получены сырые данные, они поступают в трансформер для данного
+        # лоудера, а затем чанками - в метод load, загружающий данные в ES.
         for loader_settings in self.config.loaders:
             if loader_settings.use not in raw_data:
                 continue
