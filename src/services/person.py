@@ -4,6 +4,7 @@ from typing import Optional, Union
 from uuid import UUID
 
 from aioredis import Redis
+from core.config import settings
 from db.elastic import get_elastic
 from db.redis import get_redis
 from elasticsearch import AsyncElasticsearch
@@ -12,8 +13,6 @@ from fastapi import Depends
 from models.film import Film
 from models.person import Person
 from pydantic.json import pydantic_encoder
-
-PERSON_CACHE_EXPIRE_IN_SECONDS = 60 * 5  # 5 минут
 
 
 class PersonService:
@@ -179,7 +178,7 @@ class PersonService:
             jsoned = json.dumps(data, default=pydantic_encoder)
         else:
             jsoned = data.json()
-        await self.redis.set(key, jsoned, expire=PERSON_CACHE_EXPIRE_IN_SECONDS)
+        await self.redis.set(key, jsoned, expire=settings.PERSON_CACHE_EXPIRE_IN_SECONDS)
 
     async def _get_person_from_cache(
         self, key: str, as_list: bool = False
@@ -198,7 +197,7 @@ class PersonService:
 
     async def _put_person_films_to_cache(self, key: str, data: list[Film]):
         jsoned = json.dumps(data, default=pydantic_encoder)
-        await self.redis.set(key, jsoned, expire=PERSON_CACHE_EXPIRE_IN_SECONDS)
+        await self.redis.set(key, jsoned, expire=settings.PERSON_CACHE_EXPIRE_IN_SECONDS)
 
     async def _get_person_films_from_cache(self, key: str) -> list[Film]:
         data = await self.redis.get(key)

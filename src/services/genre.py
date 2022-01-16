@@ -4,6 +4,7 @@ from typing import Optional, Union
 from uuid import UUID
 
 from aioredis import Redis
+from core.config import settings
 from db.elastic import get_elastic
 from db.redis import get_redis
 from elasticsearch import AsyncElasticsearch
@@ -11,8 +12,6 @@ from elasticsearch.exceptions import NotFoundError
 from fastapi import Depends
 from models.genre import Genre
 from pydantic.json import pydantic_encoder
-
-GENRE_CACHE_EXPIRE_IN_SECONDS = 60 * 5  # 5 минут
 
 
 class GenreService:
@@ -73,7 +72,7 @@ class GenreService:
             jsoned = json.dumps(data, default=pydantic_encoder)
         else:
             jsoned = data.json()
-        await self.redis.set(key, jsoned, expire=GENRE_CACHE_EXPIRE_IN_SECONDS)
+        await self.redis.set(key, jsoned, expire=settings.GENRE_CACHE_EXPIRE_IN_SECONDS)
 
     async def _get_genre_from_cache(
         self, key: str, as_list: bool = False
