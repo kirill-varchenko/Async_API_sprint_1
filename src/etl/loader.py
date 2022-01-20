@@ -1,12 +1,11 @@
-import json
 from dataclasses import asdict
 
 from elasticsearch import Elasticsearch
-from elasticsearch.helpers import bulk
 
 from backoff import backoff
 from es_item import ITEM_TYPES
-
+from config import INDEX_NAME_MOVIE, INDEX_NAME_GENRE, create_index_movies, create_index_genres, INDEX_NAME_PERSON, \
+    create_index_persons
 
 class Loader:
     """Загружает чанками данные в ES"""
@@ -16,6 +15,13 @@ class Loader:
 
     @backoff()
     def es_init(self):
+        es = Elasticsearch([self.host])
+        if not es.indices.exists(index=INDEX_NAME_MOVIE):
+            create_index_movies(es)
+        if not es.indices.exists(index=INDEX_NAME_GENRE):
+            create_index_genres(es)
+        if not es.indices.exists(index=INDEX_NAME_PERSON):
+            create_index_persons(es)
         return Elasticsearch([self.host])
 
     def make_body(self, data: list[ITEM_TYPES], index: str) -> list[dict]:
