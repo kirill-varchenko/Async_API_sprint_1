@@ -49,3 +49,6 @@ class Config(BaseModel):
     enrichers: list[EnricherSettings]
     mergers: list[MergerSettings]
     loaders: list[LoaderSettings]
+
+
+config = Config.parse_file('config.json')
