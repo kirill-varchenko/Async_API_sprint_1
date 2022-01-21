@@ -134,3 +134,6 @@ sources/oml-info-frontend/package-lock.json
 
 # VSCode
 .vscode/
+
+# PyCharm
+.idea/

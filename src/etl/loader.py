@@ -1,22 +1,23 @@
-import json
 from dataclasses import asdict
 
 from elasticsearch import Elasticsearch
-from elasticsearch.helpers import bulk
 
 from backoff import backoff
+from create_es_schema.create_index import IndexCreator
 from es_item import ITEM_TYPES
 
 
 class Loader:
     """Загружает чанками данные в ES"""
     def __init__(self, host: str):
-        self.host = host
+        self.connection = Elasticsearch([host])
+        self.create_index = IndexCreator(self.connection)
         self.es = self.es_init()
 
     @backoff()
     def es_init(self):
-        return Elasticsearch([self.host])
+        self.create_index.check_create_index()
+        return self.connection
 
     def make_body(self, data: list[ITEM_TYPES], index: str) -> list[dict]:
         res = []
