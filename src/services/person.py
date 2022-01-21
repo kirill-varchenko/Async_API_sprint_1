@@ -43,7 +43,7 @@ class PersonService:
         return films
 
     async def search(self, query: str, list_parameters: dict) -> list[Person]:
-        key = self._redis_key_from_search(query, list_parameters)
+        key = await self._redis_key_from_search(query, list_parameters)
         persons_search = await self._get_person_from_cache(key, as_list=True)
         if not persons_search:
             persons = await self._get_person_search_from_elastic(query, list_parameters)
