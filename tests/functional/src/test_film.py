@@ -10,9 +10,7 @@ async def test_data_validation_search_empty(make_get_request):
 
     assert response.status == 422
     assert len(response.body) == 1
-    assert response.body == {'detail': [{'loc': ['query', 'query'],
-                                         'msg': 'field required',
-                                         'type': 'value_error.missing'}]}
+    assert response.body['detail'][0]['msg'] == 'field required'
 
 @pytest.mark.asyncio
 async def test_data_validation_search_some(make_get_request):
@@ -42,9 +40,9 @@ async def test_data_validation_search_page_size_zero(make_get_request):
     response = await make_get_request(f'{FILMS_PATH}/search', {'query': 'Star Wars',
                                                                'page[size]': 0})
 
-    assert response.status == 404
+    assert response.status == 422
     assert len(response.body) == 1
-    assert response.body == {'detail': 'films not found'}
+    assert response.body['detail'][0]['msg'] == 'ensure this value is greater than or equal to 1'
 
 @pytest.mark.asyncio
 async def test_data_validation_search_page_size_negative(make_get_request):
@@ -53,7 +51,7 @@ async def test_data_validation_search_page_size_negative(make_get_request):
 
     assert response.status == 422
     assert len(response.body) == 1
-
+    assert response.body['detail'][0]['msg'] == 'ensure this value is greater than or equal to 1'
 
 @pytest.mark.asyncio
 async def test_data_validation_search_page_size_not_numeric(make_get_request):
@@ -62,9 +60,7 @@ async def test_data_validation_search_page_size_not_numeric(make_get_request):
 
     assert response.status == 422
     assert len(response.body) == 1
-    assert response.body == {'detail': [{'loc': ['query', 'page[size]'],
-                                         'msg': 'value is not a valid integer',
-                                         'type': 'type_error.integer'}]}
+    assert response.body['detail'][0]['msg'] == 'value is not a valid integer'
 
 @pytest.mark.asyncio
 async def test_data_validation_search_page_number_ok(make_get_request):
@@ -79,9 +75,9 @@ async def test_data_validation_search_page_number_zero(make_get_request):
     response = await make_get_request(f'{FILMS_PATH}/search', {'query': 'Star Wars',
                                                                'page[number]': 0})
 
-    assert response.status == 404
+    assert response.status == 422
     assert len(response.body) == 1
-    assert response.body == {'detail': 'films not found'}
+    assert response.body['detail'][0]['msg'] == 'ensure this value is greater than or equal to 1'
 
 @pytest.mark.asyncio
 async def test_data_validation_search_page_number_negative(make_get_request):
@@ -90,6 +86,7 @@ async def test_data_validation_search_page_number_negative(make_get_request):
 
     assert response.status == 422
     assert len(response.body) == 1
+    assert response.body['detail'][0]['msg'] == 'ensure this value is greater than or equal to 1'
 
 
 @pytest.mark.asyncio
@@ -99,9 +96,7 @@ async def test_data_validation_search_page_number_not_numeric(make_get_request):
 
     assert response.status == 422
     assert len(response.body) == 1
-    assert response.body == {'detail': [{'loc': ['query', 'page[number]'],
-                                         'msg': 'value is not a valid integer',
-                                         'type': 'type_error.integer'}]}
+    assert response.body['detail'][0]['msg'] == 'value is not a valid integer'
 
 ### Проверка валидации параметров поиска фильма по айди ###
 @pytest.mark.asyncio
@@ -110,9 +105,7 @@ async def test_search_for_film_invalid_id(make_get_request):
 
     assert response.status == 422
     assert len(response.body) == 1
-    assert response.body == {'detail': [{'loc': ['path', 'film_id'],
-                                         'msg': 'value is not a valid uuid',
-                                         'type': 'type_error.uuid'}]}
+    assert response.body['detail'][0]['msg'] == 'value is not a valid uuid'
 
 ### Проверка поиска конкретного фильма ###
 @pytest.mark.asyncio
