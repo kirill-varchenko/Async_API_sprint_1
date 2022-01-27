@@ -25,10 +25,10 @@ async def es_client():
 
 @pytest.fixture(scope='session')
 async def redis_client():
-    client = await aioredis.create_redis_pool(test_settings.redis_host,
-                                              minsize=10, maxsize=20)
+    client = await aioredis.create_redis_pool(test_settings.redis_host)
     yield client
-    await client.close()
+    client.close()
+    await client.wait_closed()
 
 @pytest.fixture(scope='session')
 def event_loop():
