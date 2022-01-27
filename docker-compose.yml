@@ -1,13 +1,4 @@
 services:
-  etl:
-    build:
-      context: .
-      dockerfile: Docker_ETL
-    depends_on:
-      - elasticsearch
-      - postgres
-    environment:
-      - refresh=5
   fastapi:
     build: .
     depends_on:
@@ -29,20 +20,11 @@ services:
     image: 'redis:6.2'
   elasticsearch:
     image: 'elasticsearch:7.16.1'
-    volumes:
-      - 'movies_es:/usr/share/elasticsearch/data'
     environment:
       - discovery.type=single-node
-  postgres:
-    image: 'postgres:13'
+  pytest:
+    build:
+      context: .
+      dockerfile: Docker_pytest
     volumes:
-      - 'movies_db:/var/lib/postgresql/data'
-    environment:
-      - POSTGRES_DB=${POSTGRES_DB}
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-volumes:
-  movies_db:
-    external: true
-  movies_es:
-    external: true
+      - ./tests:/logs
