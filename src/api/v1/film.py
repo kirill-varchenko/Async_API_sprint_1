@@ -10,15 +10,15 @@ from services.film import FilmService, get_film_service
 router = APIRouter()
 
 
-# @router.get('/search', response_model=list[FilmList])
-# async def film_search(query: str,
-#                       list_parameters: dict = Depends(list_parameters),
-#                       film_service: FilmService = Depends(get_film_service)) -> list[FilmList]:
-#     films = await film_service.search(query, list_parameters)
-#     if not films:
-#         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='films not found')
-#
-#     return [FilmList(**film.dict()) for film in films]
+@router.get('/search', response_model=list[FilmList])
+async def film_search(query: str,
+                      list_parameters: dict = Depends(list_parameters),
+                      film_service: FilmService = Depends(get_film_service)) -> list[FilmList]:
+    films = await film_service.search(query, list_parameters)
+    if not films:
+        raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='films not found')
+
+    return [FilmList(**film.dict()) for film in films]
 
 
 # Внедряем FilmService с помощью Depends(get_film_service)

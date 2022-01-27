@@ -35,7 +35,7 @@ class RedisCreator(AbstractKeyCreator):
     async def get_key_from_id(self, pk: UUID) -> str:
         return str(pk)
 
-    async def redis_key_from_search(self, query, list_parameters) -> str:
+    async def get_key_from_search(self, query: str, list_parameters: dict) -> str:
         return f"film-search-{query}-{list_parameters['sort']}-{list_parameters['page_size']}-{list_parameters['page_number']}"
     #
     # async def redis_key_from_list(self, filter_genre, list_parameters) -> str:
@@ -86,61 +86,3 @@ class RedisStorage(AbstractCache):
         else:
             jsoned = data.json()
         await self.redis.set(key, jsoned, expire=expire)
-
-    # class RedisRequest(AbstractStorageRequest):
-#     def __init__(self, key: str, model, as_list: bool = False):
-#         self.redis = Connection(RedisConnection()).connection
-#         self.key = key
-#         self.model = model
-#         self.as_list = as_list
-#
-#     async def request(self):
-#         data = await self.redis.get(self.key)
-#         if not data:
-#             return None
-#
-#         if self.as_list:
-#             parsed = json.loads(data)
-#             res = [self.model(**d) for d in parsed]
-#         else:
-#             res = self.model.parse_raw(data)
-#
-#         return res
-
-
-
-
-
-
-
-
-
-
-
-# class StoragePut:
-#     def __init__(self, storage: AbstractStoragePut):
-#         storage.put_data()
-#
-#
-# class RedisPutParams(AbstractStoragePut):
-#     def __init__(self, storage_request: AbstractStorageRequest):
-#         self.storage_request = storage_request
-#
-#     async def put_data(self):
-#         await self.storage_request.request()
-#
-#
-# class RedisPutRequest(AbstractStorageRequest):
-#     def __init__(self, key: str, data, as_list: bool = False, expire: int = 300):
-#         self.redis = Connection(RedisConnection()).connection
-#         self.key = key
-#         self.data = data
-#         self.as_list = as_list
-#         self.expire = expire
-#
-#     async def request(self):
-#         if self.as_list:
-#             jsoned = json.dumps(self.data, default=pydantic_encoder)
-#         else:
-#             jsoned = self.data.json()
-#         await self.redis.set(self.key, jsoned, expire=self.expire)

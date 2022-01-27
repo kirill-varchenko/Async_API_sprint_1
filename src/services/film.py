@@ -7,7 +7,7 @@ from fastapi import Depends
 
 from core.config import settings
 from db.dependens import get_storage, get_cache, get_cache_creator
-from db.elastic import ElasticStorage, AbstractStorage, ElasticRequesterFilmList
+from db.elastic import ElasticStorage, AbstractStorage
 from db.redis import RedisCreator, RedisStorage
 from elasticsearch.exceptions import NotFoundError
 
@@ -18,9 +18,22 @@ from pydantic.json import pydantic_encoder
 
 class FilmService:
     def __init__(self, db: AbstractStorage, cache: AbstractCache, cache_creator):
-        self.cache_creator = cache_creator
         self.db = db
         self.cache = cache
+        self.cache_creator = cache_creator
+
+    async def search(self, query: str, list_parameters: dict) -> Optional[list[Film]]:
+        key = await self.cache_creator.get_key_from_search(query, list_parameters)
+        films_search = await self.cache.get_data(key, Film, as_list=True)
+        if films_search:
+            return films_search
+
+        films_search = await self.db.get_data_by_query("movies", query, Film, list_parameters)
+        if not films_search:
+            return None
+        await self.cache.put_data(key=key, data=films_search, as_list=True, expire=settings.FILM_CACHE_EXPIRE_IN_SECONDS)
+
+        return films_search
 
     # get_by_id возвращает объект фильма. Он опционален, так как фильм может отсутствовать в базе
     async def get_by_id(self, film_id: UUID) -> Optional[Film]:
@@ -43,22 +56,10 @@ class FilmService:
         # StoragePut(RedisPutParams(RedisPutRequest(key=key, data=film, expire=settings.FILM_CACHE_EXPIRE_IN_SECONDS)))
 
         return film_from_db
-    #
-    # async def search(self, query: str, list_parameters: dict) -> list[Film]:
-    #     key = await self._redis_key_from_search(query, list_parameters)
-    #     films_search = await self._get_film_from_cache(key, as_list=True)
-    #     if not films_search:
-    #         films_search = await self._get_film_search_from_elastic(
-    #             query, list_parameters
-    #         )
-    #         if not films_search:
-    #             return None
-    #         await self._put_film_to_cache(key, films_search, as_list=True)
-    #
-    #     return films_search
+
 
     async def list_films(self, filter_genre: UUID, list_parameters: dict) -> Optional[list[Film]]:
-        key = await self.cache_creator.redis_key_from_search(filter_genre, list_parameters)
+        key = await self.cache_creator.get_key_from_search(filter_genre, list_parameters)
         films_list = await self.cache.get_data(key, Film, as_list=True)
         if films_list:
             return films_list
@@ -186,7 +187,8 @@ class FilmService:
     #     return res
 
 
-async def get_film_service(
+@lru_cache()
+def get_film_service(
         db: AbstractStorage = Depends(get_storage),
         cache: AbstractCache = Depends(get_cache),
         cache_creator: AbstractKeyCreator = Depends(get_cache_creator)

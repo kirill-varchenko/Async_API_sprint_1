@@ -26,7 +26,7 @@ class AbstractStorage(ABC):
         pass
 
     @abstractmethod
-    def get_data_by_query(self, query: str, parameters: dict = None):
+    def get_data_by_query(self, index: str, query: str, model, parameters: dict = None):
         pass
 
 
@@ -43,4 +43,8 @@ class AbstractCache(ABC):
 class AbstractKeyCreator(ABC):
     @abstractmethod
     def get_key_from_id(self, id: UUID):
+        pass
+
+    @abstractmethod
+    def get_key_from_search(self, query: str, list_parameters: dict) -> str:
         pass
