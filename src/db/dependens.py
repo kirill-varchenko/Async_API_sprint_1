@@ -1,5 +1,3 @@
-from functools import lru_cache
-
 from db.elastic import ElasticStorage
 from db.redis import RedisStorage, RedisCreator
 from db.storage import AbstractStorage, AbstractCache, AbstractKeyCreator

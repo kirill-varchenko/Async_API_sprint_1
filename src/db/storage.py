@@ -5,18 +5,6 @@ from uuid import UUID
 from api.v1 import models
 
 
-class AbstractConnection(ABC):
-    @abstractmethod
-    def get_connection(self):
-        pass
-
-
-class AbstractStorageRequest(ABC):
-    @abstractmethod
-    def request(self, *args, **kwargs):
-        pass
-
-
 class AbstractStorage(ABC):
     @abstractmethod
     def get_data_by_id(self, index: str, id: UUID, model):
@@ -41,6 +29,7 @@ class AbstractStorage(ABC):
     @abstractmethod
     async def get_all_from_elastic(self, index: str, model):
         pass
+
 
 class AbstractCache(ABC):
     @abstractmethod

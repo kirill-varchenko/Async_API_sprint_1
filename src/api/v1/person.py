@@ -1,10 +1,10 @@
 from http import HTTPStatus
 from uuid import UUID
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException
 
 from api.v1 import list_parameters
-from api.v1.models import PersonList, PersonDetail, FilmList
+from api.v1.models import PersonDetail, FilmList
 from services.person import PersonService, get_person_service
 
 router = APIRouter()
@@ -28,6 +28,7 @@ async def person_details(person_id: UUID,
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='person not found')
 
     return PersonDetail(**person.dict())
+
 
 @router.get('/{person_id}/film', response_model=list[FilmList], deprecated=True)
 async def person_films(person_id: UUID,

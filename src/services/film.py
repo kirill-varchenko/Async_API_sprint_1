@@ -53,7 +53,6 @@ class FilmService:
 
         return film_from_db
 
-
     async def list_films(self, filter_genre: UUID, list_parameters: dict) -> Optional[list[Film]]:
         key = await self.cache_creator.get_key_from_search('film', filter_genre, list_parameters)
         films_list = await self.cache.get_data(key, Film, as_list=True)
@@ -66,121 +65,6 @@ class FilmService:
         await self.cache.put_data(key=key, data=films_list_from_db, as_list=True, expire=settings.FILM_CACHE_EXPIRE_IN_SECONDS)
 
         return films_list_from_db
-
-    # async def _get_film_from_elastic(self, film_id: UUID) -> Optional[Film]:
-    #     try:
-    #         doc = await self.elastic.get("movies", film_id)
-    #         return Film(**doc["_source"])
-    #     except NotFoundError:
-    #         return None
-    #
-    # async def _get_film_search_from_elastic(
-    #         self, query: str, list_parameters: dict
-    # ) -> list[Film]:
-    #     if query:
-    #         body = {
-    #             "query": {
-    #                 "bool": {
-    #                     "should": [
-    #                         {"match": {"title": query}},
-    #                         {"match": {"description": query}},
-    #                     ]
-    #                 }
-    #             }
-    #         }
-    #     else:
-    #         body = {"query": {"match_all": {}}}
-    #     additional_params = {
-    #         "from": (list_parameters["page_number"] - 1) * list_parameters["page_size"],
-    #         "size": list_parameters["page_size"],
-    #     }
-    #     if list_parameters["sort"] == "imdb_rating":
-    #         additional_params.update({"sort": [{"imdb_rating": {"order": "asc"}}]})
-    #     elif list_parameters["sort"] == "-imdb_rating":
-    #         additional_params.update({"sort": [{"imdb_rating": {"order": "desc"}}]})
-    #     body.update(additional_params)
-    #
-    #     doc = await self.elastic.search(index="movies", body=body)
-    #     films = [Film(**hit["_source"]) for hit in doc["hits"]["hits"]]
-    #     return films
-    #
-    # async def _get_film_list_from_elastic(
-    #         self, filter_genre: UUID, list_parameters: dict
-    # ) -> list[Film]:
-    #     if filter_genre:
-    #         body = {
-    #             "query": {
-    #                 "bool": {
-    #                     "must": [
-    #                         {
-    #                             "nested": {
-    #                                 "path": "genre",
-    #                                 "query": {
-    #                                     "bool": {
-    #                                         "should": [
-    #                                             {"term": {"genre.uuid": filter_genre}}
-    #                                         ]
-    #                                     }
-    #                                 },
-    #                             }
-    #                         }
-    #                     ]
-    #                 }
-    #             }
-    #         }
-    #     else:
-    #         body = {"query": {"match_all": {}}}
-    #     additional_params = {
-    #         "from": (list_parameters["page_number"] - 1) * list_parameters["page_size"],
-    #         "size": list_parameters["page_size"],
-    #     }
-    #     if list_parameters["sort"] == "imdb_rating":
-    #         additional_params.update({"sort": [{"imdb_rating": {"order": "asc"}}]})
-    #     elif list_parameters["sort"] == "-imdb_rating":
-    #         additional_params.update({"sort": [{"imdb_rating": {"order": "desc"}}]})
-    #     body.update(additional_params)
-    #
-    #     doc = await self.elastic.search(index="movies", body=body)
-    #     films = [Film(**hit["_source"]) for hit in doc["hits"]["hits"]]
-    #     return films
-    #
-    # # Три метода ниже генерируют строковый ключ для кэширования в редис:
-    # # - для кэширования одной сущности используется её UUID;
-    # # - для результатов поиска - префикс "film-search" (чтобы отделять от
-    # #   поисков в других случаях) и параметры запроса;
-    # # - для результатов листинга - префикс "film-list" и параметры листинга.
-    # async def _redis_key_from_id(self, film_id: UUID) -> str:
-    #     return str(film_id)
-    #
-    # async def _redis_key_from_search(self, query, list_parameters) -> str:
-    #     return f"film-search-{query}-{list_parameters['sort']}-{list_parameters['page_size']}-{list_parameters['page_number']}"
-    #
-    # async def _redis_key_from_list(self, filter_genre, list_parameters) -> str:
-    #     return f"film-list-{filter_genre}-{list_parameters['sort']}-{list_parameters['page_size']}-{list_parameters['page_number']}"
-    #
-    # async def _put_film_to_cache(
-    #         self, key: str, data: Union[Film, list[Film]], as_list: bool = False
-    # ):
-    #     if as_list:
-    #         jsoned = json.dumps(data, default=pydantic_encoder)
-    #     else:
-    #         jsoned = data.json()
-    #     await self.redis.set(key, jsoned, expire=settings.FILM_CACHE_EXPIRE_IN_SECONDS)
-    #
-    # async def _get_film_from_cache(
-    #         self, key: str, as_list: bool = False
-    # ) -> Union[Film, list[Film]]:
-    #     data = await self.redis.get(key)
-    #     if not data:
-    #         return None
-    #
-    #     if as_list:
-    #         parsed = json.loads(data)
-    #         res = [Film(**d) for d in parsed]
-    #     else:
-    #         res = Film.parse_raw(data)
-    #
-    #     return res
 
 
 @lru_cache()

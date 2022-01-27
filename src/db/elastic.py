@@ -4,22 +4,9 @@ from uuid import UUID
 from elasticsearch import AsyncElasticsearch, NotFoundError
 
 from api.v1 import models
-from db.storage import AbstractConnection, AbstractStorage, AbstractStorageRequest
+from db.storage import AbstractStorage
 
 es: Optional[AsyncElasticsearch] = None
-
-
-async def get_elastic() -> AsyncElasticsearch:
-    return es
-
-#
-# class ElasticConnection(AbstractConnection):
-#     def __init__(self, es: Optional[AsyncElasticsearch] = None):
-#         self.es = es
-#
-#     async def get_connection(self) -> AsyncElasticsearch:
-#         return self.es
-#
 
 
 class ElasticStorage(AbstractStorage):

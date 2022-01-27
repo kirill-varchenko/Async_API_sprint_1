@@ -1,9 +1,8 @@
 from http import HTTPStatus
 from uuid import UUID
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException
 
-from api.v1 import list_parameters
 from api.v1.models import Genre
 from services.genre import GenreService, get_genre_service
 
