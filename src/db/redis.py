@@ -12,18 +12,10 @@ from api.v1 import models
 
 redis: Optional[Redis] = None
 
+
 # Функция понадобится при внедрении зависимостей
 async def get_redis() -> Redis:
     return redis
-
-
-class RedisConnection(AbstractConnection):
-    # def __init__(self, redis: Optional[Redis] = None):
-    #     self.redis = redis
-
-    async def get_connection(self) -> Redis:
-        redis_connection = await aioredis.create_redis_pool((settings.REDIS_HOST, settings.REDIS_PORT), minsize=10, maxsize=20)
-        return redis_connection
 
 
 class RedisCreator(AbstractKeyCreator):
@@ -35,22 +27,21 @@ class RedisCreator(AbstractKeyCreator):
     async def get_key_from_id(self, pk: UUID) -> str:
         return str(pk)
 
-    async def get_key_from_search(self, query: str, list_parameters: dict) -> str:
-        return f"film-search-{query}-{list_parameters['sort']}-{list_parameters['page_size']}-{list_parameters['page_number']}"
+    async def get_key_from_search(self, name_model: str, query: str, list_parameters: dict) -> str:
+        return f"{name_model}-search-{query}-{list_parameters['sort']}-{list_parameters['page_size']}-{list_parameters['page_number']}"
+
+    async def get_key_from_films_list(self, name_model: str, pk: UUID) -> str:
+        return f"{name_model}-films-{pk}"
     #
     # async def redis_key_from_list(self, filter_genre, list_parameters) -> str:
     #     return f"film-list-{filter_genre}-{list_parameters['sort']}-{list_parameters['page_size']}-{list_parameters['page_number']}"
     #
     #
     #
-    # async def redis_key_from_id(self, person_id: UUID) -> str:
-    #     return str(person_id)
-    #
     # async def redis_key_from_search(self, query, list_parameters) -> str:
     #     return f"person-search-{query}-{list_parameters['sort']}-{list_parameters['page_size']}-{list_parameters['page_number']}"
     #
-    # async def redis_key_from_films_list(self, person_id: UUID) -> str:
-    #     return f"person-films-{person_id}"
+
     #
     #
     #

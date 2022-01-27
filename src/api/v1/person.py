@@ -9,14 +9,16 @@ from services.person import PersonService, get_person_service
 
 router = APIRouter()
 
+
 @router.get('/search', response_model=list[PersonDetail])
 async def person_search(query: str,
                         list_parameters: dict = Depends(list_parameters),
                         person_service: PersonService = Depends(get_person_service)) -> list[PersonDetail]:
-    res = await person_service.search(query, list_parameters)
+    res = await person_service.get_by_search(query, list_parameters)
     if not res:
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='person not found')
     return [PersonDetail(**person.dict()) for person in res]
+
 
 @router.get('/{person_id}', response_model=PersonDetail)
 async def person_details(person_id: UUID,

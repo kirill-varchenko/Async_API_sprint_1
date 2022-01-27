@@ -18,6 +18,7 @@ async def genre_details(genre_id: UUID, genre_service: GenreService = Depends(ge
 
     return Genre(**genre.dict())
 
+
 @router.get('/', response_model=list[Genre])
 async def genre_list(genre_service: GenreService = Depends(get_genre_service)) -> list[Genre]:
     res = await genre_service.get_all()

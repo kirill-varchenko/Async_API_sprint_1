@@ -1,19 +1,15 @@
-import json
 from functools import lru_cache
-from typing import Optional, Union
+from typing import Optional
 from uuid import UUID
 
 from fastapi import Depends
 
 from core.config import settings
 from db.dependens import get_storage, get_cache, get_cache_creator
-from db.elastic import ElasticStorage, AbstractStorage
-from db.redis import RedisCreator, RedisStorage
-from elasticsearch.exceptions import NotFoundError
+from db.elastic import AbstractStorage
 
 from db.storage import AbstractCache, AbstractKeyCreator
 from models.film import Film
-from pydantic.json import pydantic_encoder
 
 
 class FilmService:
@@ -23,7 +19,7 @@ class FilmService:
         self.cache_creator = cache_creator
 
     async def search(self, query: str, list_parameters: dict) -> Optional[list[Film]]:
-        key = await self.cache_creator.get_key_from_search(query, list_parameters)
+        key = await self.cache_creator.get_key_from_search('film', query, list_parameters)
         films_search = await self.cache.get_data(key, Film, as_list=True)
         if films_search:
             return films_search
@@ -59,7 +55,7 @@ class FilmService:
 
 
     async def list_films(self, filter_genre: UUID, list_parameters: dict) -> Optional[list[Film]]:
-        key = await self.cache_creator.get_key_from_search(filter_genre, list_parameters)
+        key = await self.cache_creator.get_key_from_search('film', filter_genre, list_parameters)
         films_list = await self.cache.get_data(key, Film, as_list=True)
         if films_list:
             return films_list

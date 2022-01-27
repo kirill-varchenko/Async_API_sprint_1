@@ -19,9 +19,10 @@ class AbstractStorageRequest(ABC):
 
 class AbstractStorage(ABC):
     @abstractmethod
-    def get_data_by_id(self, index: str, id: UUID, model, parameters: dict = None):
+    def get_data_by_id(self, index: str, id: UUID, model):
         pass
 
+    @abstractmethod
     def get_data_list_by_id(self, index: str, id: UUID, model, parameters: dict = None):
         pass
 
@@ -29,6 +30,17 @@ class AbstractStorage(ABC):
     def get_data_by_query(self, index: str, query: str, model, parameters: dict = None):
         pass
 
+    @abstractmethod
+    async def get_person_films_from_elastic(self, index: str, person_id: UUID, model):
+        pass
+
+    @abstractmethod
+    async def get_person_search_from_elastic(self, index: str, query: str, model, parameters: dict = None):
+        pass
+
+    @abstractmethod
+    async def get_all_from_elastic(self, index: str, model):
+        pass
 
 class AbstractCache(ABC):
     @abstractmethod
@@ -42,9 +54,13 @@ class AbstractCache(ABC):
 
 class AbstractKeyCreator(ABC):
     @abstractmethod
-    def get_key_from_id(self, id: UUID):
+    def get_key_from_id(self, pk: UUID):
         pass
 
     @abstractmethod
-    def get_key_from_search(self, query: str, list_parameters: dict) -> str:
+    def get_key_from_search(self, name_model: str, query: str, list_parameters: dict) -> str:
+        pass
+
+    @abstractmethod
+    async def get_key_from_films_list(self, name_model: str, pk: UUID) -> str:
         pass
