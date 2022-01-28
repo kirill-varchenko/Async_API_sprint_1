@@ -1,4 +1,16 @@
 services:
+  etl:
+    build:
+      context: .
+      dockerfile: Docker_ETL
+    depends_on:
+      - elasticsearch
+      - postgres
+    environment:
+      - refresh=5
+      - POSTGRES_DB=${POSTGRES_DB}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
   fastapi:
     build: .
     depends_on:
@@ -18,12 +30,22 @@ services:
     restart: always
   redis:
     image: 'redis:6.2'
+    ports:
+      - ${REDIS_PORT}:${REDIS_PORT}
   elasticsearch:
     image: 'elasticsearch:7.16.1'
     environment:
       - discovery.type=single-node
     ports:
       - ${ES_PORT}:${ES_PORT}
+  postgres:
+    image: 'postgres_with_data'
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./postgres/dump.sql:/backups/dump.sql
   pytest:
     build:
       context: .
