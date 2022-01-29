@@ -1,14 +1,11 @@
-import json
 from functools import lru_cache
-from typing import Optional, Union
+from typing import Optional
 from uuid import UUID
 
 from core.config import settings
-from db.dependens import get_storage, get_cache, get_cache_creator
-from elasticsearch.exceptions import NotFoundError
+from db.dependens import get_cache, get_cache_creator, get_storage
+from db.storage import AbstractCache, AbstractKeyCreator, AbstractStorage
 from fastapi import Depends
-
-from db.storage import AbstractStorage, AbstractCache, AbstractKeyCreator
 from models.film import Film
 from models.person import Person
 from pydantic.json import pydantic_encoder

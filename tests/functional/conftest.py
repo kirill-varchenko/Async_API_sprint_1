@@ -9,6 +9,10 @@ from multidict import CIMultiDictProxy
 
 from .settings import test_settings
 
+pytest_plugins = ("fixtures.film",
+                  "fixtures.search",
+                  "fixtures.genre",
+                  "fixtures.person")
 
 @dataclass
 class HTTPResponse:

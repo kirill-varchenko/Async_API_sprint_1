@@ -40,8 +40,8 @@ async def test_search_good_params(make_get_request, request_data, body_len_predi
     assert body_len_predicate(len(response.body))
 
 @pytest.mark.asyncio
-async def test_search_not_found(make_get_request):
-    response = await make_get_request(SEARCH_PATH, {'query': 'randomwrongquery'})
+async def test_search_not_found(wrong_search_query, make_get_request):
+    response = await make_get_request(SEARCH_PATH, {'query': wrong_search_query})
 
     assert response.status == HTTPStatus.NOT_FOUND
     assert len(response.body) == 1
@@ -49,21 +49,20 @@ async def test_search_not_found(make_get_request):
 
 
 @pytest.mark.asyncio
-async def test_search_cached(make_get_request, redis_client):
+async def test_search_cached(fake_search_query, make_get_request, redis_client):
     await redis_client.flushall()
 
     # check query not return anything
-    response = await make_get_request(SEARCH_PATH, {'query': 'newquery'})
+    query, new_cache_key, new_cache_data = fake_search_query
+    response = await make_get_request(SEARCH_PATH, {'query': query})
     assert response.status == HTTPStatus.NOT_FOUND
 
     # add data to cache
-    new_cache_key = f"film-search-newquery-None-50-1"
-    new_cache_data= [{"uuid":"a5bd690c-121b-4e5e-a4fc-21c2dc868d4f","title":"newquery","imdb_rating":1.1}]
     new_cache_json = json.dumps(new_cache_data)
     await redis_client.set(new_cache_key, new_cache_json)
 
     # try again
-    response = await make_get_request(SEARCH_PATH, {'query': 'newquery'})
+    response = await make_get_request(SEARCH_PATH, {'query': query})
     assert response.status == HTTPStatus.OK
     assert len(response.body) == 1
     assert response.body == new_cache_data

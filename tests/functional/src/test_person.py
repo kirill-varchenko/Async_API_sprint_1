@@ -1,53 +1,90 @@
+import json
 from http import HTTPStatus
 
 import pytest
 
-tasks= [('search?', {'query': '', 'page[number]': 834, 'page[size]':5},[{"uuid":"ffe0d805-3595-4cc2-a892-f2bedbec4ac6","full_name":"Alun Davies","role":"actor","film_ids":["7ee0af24-1b85-4406-b442-04574d41dd3b"]}], HTTPStatus.OK, 1, 'Query for full list of persons(end of list)'),
-    ('search?', {'query': 'johndear'},{"detail":"person not found"}, HTTPStatus.NOT_FOUND,  1,'Query for empty list (404)'),
-('UUID', {'UUID':'009884ca-5a33-44ba-8fba-495a0055c70d'}, {"uuid":"009884ca-5a33-44ba-8fba-495a0055c70d","full_name":"Mazzy Star","role":"actor","film_ids":["6d22c585-0fca-4653-936e-302094c2adc7"]}, HTTPStatus.OK,4, 'Query for UUID'),
-('UUID/film', {'UUID':'0031feab-8f53-412a-8f53-47098a60ac73'},[{"uuid":"bfe61bd9-5dfd-41ca-80ae-8eca998bc29d","title":"Lone Star","imdb_rating":7.4}], HTTPStatus.OK, 1, 'Query for UUID + film'),
-('search?', {'query': 'dion'}, [{"uuid":"d194e243-0a8c-41d1-a970-492792026f4b","full_name":"Dion Johnstone","role":"actor","film_ids":["6d647d21-0443-47f2-ab0c-c1aab661c9a1"]}], HTTPStatus.OK, 1, 'Query for name'),
-('UUID', {'UUID':'31feab-8f53-412a-8f53-47098a60ac73'},{"detail":[{"loc":["path","person_id"],"msg":"value is not a valid uuid","type":"type_error.uuid"}]}, HTTPStatus.UNPROCESSABLE_ENTITY,1, 'Wrong UUID'),
-('UUID', {'UUID':''},{"detail":"Not Found"}, HTTPStatus.NOT_FOUND,1, 'Empty UUID'),
-('search?', {'query': 'sayles', 'page[number]': 'adasdas', 'page[size]': 10}, {"detail": [
-            {"loc": ["query", "page[number]"], "msg": "value is not a valid integer", "type": "type_error.integer"}]},
-         HTTPStatus.UNPROCESSABLE_ENTITY, 1, 'Wrong page number'),
-('search?', {'query': 'sayles', 'page[number]': 0, 'page[size]': 10}, {"detail":[{"loc":["query","page[number]"],"msg":"ensure this value is greater than or equal to 1","type":"value_error.number.not_ge","ctx":{"limit_value":1}}]},
-         HTTPStatus.UNPROCESSABLE_ENTITY, 1, 'Zero page number')
-
-        ]
-
 PERSON_PATH = '/person/'
 
-tasks_ids=[a[5] for a in tasks]
+VALIDATION_PARAMS = [
+    ({'page[size]': 0}, 'ensure this value is greater than or equal to 1'),
+    ({'page[size]': -1}, 'ensure this value is greater than or equal to 1'),
+    ({'page[size]': 'a'}, 'value is not a valid integer'),
+    ({'page[number]': 0}, 'ensure this value is greater than or equal to 1'),
+    ({'page[number]': -1}, 'ensure this value is greater than or equal to 1'),
+    ({'page[number]': 'a'}, 'value is not a valid integer')
+]
 
-@pytest.fixture(params=tasks, ids=tasks_ids)
-def param_test_idfn(request):
-    return request.param
+### Проверка валидации параметров в film ###
+@pytest.mark.asyncio
+@pytest.mark.parametrize('request_data,body_msg', VALIDATION_PARAMS)
+async def test_person_params_validation(real_person_data, make_get_request, request_data, body_msg):
+    real_person_name = real_person_data[0]['full_name']
+    response = await make_get_request(PERSON_PATH + 'search?', request_data | {'query': real_person_name})
+
+    assert response.status == HTTPStatus.UNPROCESSABLE_ENTITY
+    assert len(response.body) == 1
+    assert response.body['detail'][0]['msg'] == body_msg
 
 @pytest.mark.asyncio
-async def test_search_detailed(param_test_idfn, make_get_request):
-    (method, params, body,status, ln, info)=param_test_idfn
-    # Запрос
-    if method == 'search?':
-        response = await make_get_request(PERSON_PATH + method, params)
-    elif method == 'UUID':
-        response = await make_get_request(PERSON_PATH + params['UUID'], {})
-    elif method == 'UUID/film':
-        response = await make_get_request(PERSON_PATH + params['UUID'] + '/film', {})
-    else:
-        raise ValueError(method)
+async def test_list_persons(make_get_request):
+    response = await make_get_request(PERSON_PATH + 'search', {'page[size]': 50,
+                                                                'page[number]': 1,
+                                                                'query': ''})
 
-    # Проверка результата
-    assert response.status == status
-    assert len(response.body) == ln
-    assert response.body == body
+    assert response.status == HTTPStatus.OK
+    assert len(response.body) == 50
 
 @pytest.mark.asyncio
-async def test_redis(redis_client, make_get_request):
-    incorrect_data= "{\"uuid\":\"0031feab-8f53-412a-8f53-47098a60ac73\",\"full_name\":\"Alex Malikov\",\"role\":\"director, writer\",\"film_ids\":[\"bfe61bd9-5dfd-41ca-80ae-8eca998bc29d\"]}"
+async def test_person_search(real_person_data, make_get_request):
+    person = real_person_data[0]
+    response = await make_get_request(PERSON_PATH + 'search', {'query': person.get('full_name')})
+    assert response.status == HTTPStatus.OK
+    assert len(response.body) > 0
+    assert person.get('full_name') in [p['full_name'] for p in response.body]
+
+@pytest.mark.asyncio
+async def test_person_search_absent(fake_person_data, make_get_request):
+    person_name = fake_person_data.get('full_name')
+    response = await make_get_request(PERSON_PATH + 'search', {'query': person_name})
+    assert response.status == HTTPStatus.NOT_FOUND
+    assert len(response.body) == 1
+    assert response.body == {'detail': 'person not found'}
+
+@pytest.mark.asyncio
+async def test_person_by_uuid(real_person_data, make_get_request):
+    person = real_person_data[0]
+    response = await make_get_request(PERSON_PATH + person.get('uuid'), {})
+    assert response.status == HTTPStatus.OK
+    assert len(response.body) == 4
+    assert response.body == person
+
+@pytest.mark.asyncio
+async def test_person_by_uuid_film(real_person_data, make_get_request):
+    person = real_person_data[0]
+    response = await make_get_request(PERSON_PATH + person.get('uuid') + '/film', {})
+    assert response.status == HTTPStatus.OK
+    assert len(response.body) == len(person.get('film_ids'))
+    assert {f['uuid'] for f in response.body} == set(person.get('film_ids'))
+
+@pytest.mark.asyncio
+async def test_person_by_uuid_absent(fake_person_data, make_get_request):
+    response = await make_get_request(PERSON_PATH + fake_person_data.get('uuid'), {})
+    assert response.status == HTTPStatus.NOT_FOUND
+    assert len(response.body) == 1
+    assert response.body == {'detail': 'person not found'}
+
+@pytest.mark.asyncio
+async def test_person_by_uuid_incorrect(make_get_request):
+    response = await make_get_request(PERSON_PATH + '111', {})
+    assert response.status == HTTPStatus.UNPROCESSABLE_ENTITY
+    assert len(response.body) == 1
+    assert response.body == {"detail": [{"loc": ["path", "person_id"], "msg": "value is not a valid uuid", "type": "type_error.uuid"}]}
+
+
+@pytest.mark.asyncio
+async def test_redis(fake_person_data, redis_client, make_get_request):
     await redis_client.flushall()
-    await redis_client.set('0031feab-8f53-412a-8f53-47098a60ac73', incorrect_data)
-    response = await make_get_request(PERSON_PATH + '0031feab-8f53-412a-8f53-47098a60ac73')
-    assert response.body == {"uuid":"0031feab-8f53-412a-8f53-47098a60ac73","full_name":"Alex Malikov","role":"director, writer","film_ids":["bfe61bd9-5dfd-41ca-80ae-8eca998bc29d"]}
-    await redis_client.delete('0031feab-8f53-412a-8f53-47098a60ac73')
+    await redis_client.set(fake_person_data.get('uuid'), json.dumps(fake_person_data))
+    response = await make_get_request(PERSON_PATH + fake_person_data.get('uuid'))
+    assert response.body == fake_person_data
+    await redis_client.delete(fake_person_data.get('uuid'))
