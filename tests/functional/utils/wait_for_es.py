@@ -1,15 +1,14 @@
-import requests
-import sys
-import time
+import asyncio
 
-def try_connect(host,port):
-    while True:
-        try:
-            resp1 = requests.head('http://'+host+':'+port, headers={'content-type': 'application/json', 'charset': 'UTF-8'})
-            break
-        except :
-            time.sleep(1)
+from elasticsearch import AsyncElasticsearch
+from settings import test_settings
 
 
-if __name__ == "__main__":
-    try_connect(sys.argv[1],sys.argv[2])
+async def wait_for_es(es: AsyncElasticsearch, sleep_sec: float = 5) -> None:
+    while not await es.ping():
+        await asyncio.sleep(sleep_sec)
+    await client.close()
+
+if __name__ == '__main__':
+    client = AsyncElasticsearch(hosts=test_settings.es_host)
+    asyncio.run(wait_for_es(client))

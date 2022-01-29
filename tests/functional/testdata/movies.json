@@ -1,0 +1,6449 @@
+[
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e7e6d147-cc10-406c-a7a2-5e0be2231327"
+    }
+  },
+  {
+    "uuid": "e7e6d147-cc10-406c-a7a2-5e0be2231327",
+    "title": "Shooting Star",
+    "imdb_rating": null,
+    "description": "How far would a mother go to protect her children?",
+    "genres_names": [
+      "Short",
+      "Drama"
+    ],
+    "genre": [
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      }
+    ],
+    "directors_names": [
+      "Lyubo Yonchev"
+    ],
+    "actors_names": [
+      "Sevar Ivanov",
+      "Kalia Kamenova",
+      "Lyudmil Hristov",
+      "Eleni Dekidis"
+    ],
+    "writers_names": [
+      "Lyubo Yonchev",
+      "Yassen Genadiev"
+    ],
+    "actors": [
+      {
+        "uuid": "290fe246-618d-445f-bce1-660d720b1ffa",
+        "full_name": "Sevar Ivanov"
+      },
+      {
+        "uuid": "224454bf-e018-4f06-8b1f-e32a6411558a",
+        "full_name": "Kalia Kamenova"
+      },
+      {
+        "uuid": "f3d972f2-03d1-49cb-ab70-ca32c1c09a28",
+        "full_name": "Lyudmil Hristov"
+      },
+      {
+        "uuid": "bac1767f-12d0-4bae-a731-e555074cbe40",
+        "full_name": "Eleni Dekidis"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "1b8773c9-7e15-4809-a6d7-949c9b9def3b",
+        "full_name": "Lyubo Yonchev"
+      },
+      {
+        "uuid": "178c9768-6d04-4419-8afc-83d8228421ef",
+        "full_name": "Yassen Genadiev"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "1b8773c9-7e15-4809-a6d7-949c9b9def3b",
+        "full_name": "Lyubo Yonchev"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e7f32409-cc55-4af7-ad30-74558a904467"
+    }
+  },
+  {
+    "uuid": "e7f32409-cc55-4af7-ad30-74558a904467",
+    "title": "Stalked by a Reality Star",
+    "imdb_rating": 5.1,
+    "description": "A teenage girl lies about her age to get into a Hollywood party and meets a handsome reality TV star - but when she finds out he is a creep and rejects him, he becomes obsessed and starts ...",
+    "genres_names": [
+      "Thriller"
+    ],
+    "genre": [
+      {
+        "uuid": "526769d7-df18-4661-9aa6-49ed24e9dfd8",
+        "name": "Thriller"
+      }
+    ],
+    "directors_names": [
+      "Robert Malenfant"
+    ],
+    "actors_names": [
+      "Emily Bader",
+      "Jordan Doww",
+      "Robert Scott Wilson",
+      "Cynthia Preston"
+    ],
+    "writers_names": [
+      "Ken Sanders",
+      "Aidan Scott"
+    ],
+    "actors": [
+      {
+        "uuid": "5d14cb83-01cc-4581-82f5-4c99ec78cc05",
+        "full_name": "Emily Bader"
+      },
+      {
+        "uuid": "74e6c1ec-416f-4e7e-b13f-a1e9ec000a4c",
+        "full_name": "Jordan Doww"
+      },
+      {
+        "uuid": "c5d2697b-dfa1-49c8-86d5-0452d6bb81a9",
+        "full_name": "Robert Scott Wilson"
+      },
+      {
+        "uuid": "6d77d1b0-49e0-4194-845a-25c3d0ffdcfc",
+        "full_name": "Cynthia Preston"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "20f7f6d1-4e1c-4e73-b406-f01e222a4976",
+        "full_name": "Ken Sanders"
+      },
+      {
+        "uuid": "b758b4d3-730f-491a-aa71-3900e4bf1f6e",
+        "full_name": "Aidan Scott"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "3add7385-15c5-4c96-ad1b-1e255a06bb5e",
+        "full_name": "Robert Malenfant"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e83a8d14-2ebf-4aa6-87b4-4cf2eae2840d"
+    }
+  },
+  {
+    "uuid": "e83a8d14-2ebf-4aa6-87b4-4cf2eae2840d",
+    "title": "Star Wreck 2: The Old Shit",
+    "imdb_rating": 5.4,
+    "description": null,
+    "genres_names": [
+      "Comedy",
+      "Animation",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "Samuli Torssonen"
+    ],
+    "actors_names": [
+      "Janne Torssonen",
+      "Samuli Torssonen",
+      "Rudi Airisto"
+    ],
+    "writers_names": [
+      "Rudi Airisto",
+      "Samuli Torssonen"
+    ],
+    "actors": [
+      {
+        "uuid": "bb619697-ec0e-45ff-97f3-864a450583a4",
+        "full_name": "Janne Torssonen"
+      },
+      {
+        "uuid": "2ede5838-9b45-4ba0-a369-dc7acce459bc",
+        "full_name": "Samuli Torssonen"
+      },
+      {
+        "uuid": "ca2c7a3d-7583-4d57-80c2-ffc1a27282e5",
+        "full_name": "Rudi Airisto"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "ca2c7a3d-7583-4d57-80c2-ffc1a27282e5",
+        "full_name": "Rudi Airisto"
+      },
+      {
+        "uuid": "2ede5838-9b45-4ba0-a369-dc7acce459bc",
+        "full_name": "Samuli Torssonen"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "2ede5838-9b45-4ba0-a369-dc7acce459bc",
+        "full_name": "Samuli Torssonen"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e891bebc-786c-4fe8-948e-c6d4007146f9"
+    }
+  },
+  {
+    "uuid": "e891bebc-786c-4fe8-948e-c6d4007146f9",
+    "title": "Odyssey: A Star Wars Story",
+    "imdb_rating": 6.5,
+    "description": null,
+    "genres_names": [
+      "Sci-Fi",
+      "Short",
+      "Action"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      }
+    ],
+    "directors_names": [
+      "Mark Alex Vogt"
+    ],
+    "actors_names": [
+      "Katharina Daue",
+      "Mitchell Smalenski",
+      "Michael Christopher Rodney",
+      "Jason Louder"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "ab93f5dd-b508-4457-8e2e-5e8ea70c6355",
+        "full_name": "Katharina Daue"
+      },
+      {
+        "uuid": "abefb3ba-2db1-436e-865e-536b2e5243ab",
+        "full_name": "Mitchell Smalenski"
+      },
+      {
+        "uuid": "331b4ae2-96da-44a1-94b4-ebf02e052ac6",
+        "full_name": "Michael Christopher Rodney"
+      },
+      {
+        "uuid": "5bb9a3c5-c6ba-4627-ba6f-b5911f544f86",
+        "full_name": "Jason Louder"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "721c5495-6a93-4b88-bd91-6ef9c434f9fc",
+        "full_name": "Mark Alex Vogt"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e8c6825b-69f5-4aac-9960-23fa2b803339"
+    }
+  },
+  {
+    "uuid": "e8c6825b-69f5-4aac-9960-23fa2b803339",
+    "title": "Star Ocean: The Last Hope",
+    "imdb_rating": 7.8,
+    "description": null,
+    "genres_names": [
+      "Drama",
+      "Fantasy"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      }
+    ],
+    "directors_names": [
+      "Toshiyuki Terada",
+      "Kimiko Kai",
+      "Jonathan Klein",
+      "Kay Miura",
+      "Mitsuo Iwao",
+      "Koji Hayashi",
+      "Ayuki Katayama"
+    ],
+    "actors_names": [
+      "Megumi Toyoguchi",
+      "Mitsuki Saiga",
+      "Daisuke Kishio",
+      "Miyuki Sawashiro"
+    ],
+    "writers_names": [
+      "Gi Jin Jang",
+      "Kazumasa Niitsuma",
+      "Yutaka Saito"
+    ],
+    "actors": [
+      {
+        "uuid": "1f5f7f56-3883-4d2e-abb8-98eee3e1b01c",
+        "full_name": "Megumi Toyoguchi"
+      },
+      {
+        "uuid": "44c6ce45-3f19-4363-a65d-33de005fa303",
+        "full_name": "Mitsuki Saiga"
+      },
+      {
+        "uuid": "50fa7d2f-c6a8-451a-986a-bc343106b775",
+        "full_name": "Daisuke Kishio"
+      },
+      {
+        "uuid": "d92e8b22-9f05-433e-ac13-d3b07c0821ae",
+        "full_name": "Miyuki Sawashiro"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "33c3b6ba-7435-4e70-a7be-431337a2c590",
+        "full_name": "Gi Jin Jang"
+      },
+      {
+        "uuid": "529ca49d-05db-4afc-a29c-ce4279cae95c",
+        "full_name": "Kazumasa Niitsuma"
+      },
+      {
+        "uuid": "a105f73c-19ac-4979-a2f5-225b718527f4",
+        "full_name": "Yutaka Saito"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "57b33fa1-f5f6-42df-b7d0-82c404e7f54a",
+        "full_name": "Toshiyuki Terada"
+      },
+      {
+        "uuid": "e441cd25-0e27-482a-9f6b-719fb6a1120a",
+        "full_name": "Kimiko Kai"
+      },
+      {
+        "uuid": "0748861c-9722-423e-8f3e-9fafe8f5db5f",
+        "full_name": "Jonathan Klein"
+      },
+      {
+        "uuid": "ed44a09e-d25f-49e3-8b18-21c642139940",
+        "full_name": "Kay Miura"
+      },
+      {
+        "uuid": "847d6b36-f20a-4404-9025-80028d8f9531",
+        "full_name": "Mitsuo Iwao"
+      },
+      {
+        "uuid": "30124a37-9712-42b6-aa53-1ad0cb926726",
+        "full_name": "Koji Hayashi"
+      },
+      {
+        "uuid": "c2e995b3-b9cf-4a89-a685-cceb123a2ed4",
+        "full_name": "Ayuki Katayama"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e95044a7-1f66-4164-9650-3bf2132d7119"
+    }
+  },
+  {
+    "uuid": "e95044a7-1f66-4164-9650-3bf2132d7119",
+    "title": "The Young Comedians All-Star Reunion",
+    "imdb_rating": 5.8,
+    "description": "Howie Mandel in Toronto, Steven Wright in Boston, Harry Anderson in Los Angeles, Richard Belzer in New York, and Robin Williams in San Fransisco (featured in the original \"Young Comedian\" TV specials) go back to where they started and showcase a new comedian.",
+    "genres_names": [
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Walter C. Miller"
+    ],
+    "actors_names": [
+      "Howie Mandel",
+      "Barry Crimmins",
+      "Howard Busgang",
+      "Steven Wright"
+    ],
+    "writers_names": [
+      "Rick Mitz"
+    ],
+    "actors": [
+      {
+        "uuid": "1071dc2b-0fd6-40be-9672-ef62297f2383",
+        "full_name": "Howie Mandel"
+      },
+      {
+        "uuid": "ba06c8bb-52c6-434b-b915-a1a673771a1f",
+        "full_name": "Barry Crimmins"
+      },
+      {
+        "uuid": "18b1fc7d-fc82-4a87-9c11-b90e3607cf6c",
+        "full_name": "Howard Busgang"
+      },
+      {
+        "uuid": "07a54e6c-57ec-4f68-8561-be3abfe2b29a",
+        "full_name": "Steven Wright"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "42bc6979-f4c6-49dc-bdc2-ea6696bb6792",
+        "full_name": "Rick Mitz"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "006d10a0-b0ba-4dac-bcf0-1111411c178b",
+        "full_name": "Walter C. Miller"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e95d3ab7-d242-4b63-847c-f3ef5177c499"
+    }
+  },
+  {
+    "uuid": "e95d3ab7-d242-4b63-847c-f3ef5177c499",
+    "title": "The Dark Star",
+    "imdb_rating": 8.0,
+    "description": "A fabulous jewel known as the 'Dark Star' is stolen; a pastor's daughter gets involved, falling into the depths of a spy plot concerning war plans and fortifications...",
+    "genres_names": [
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [
+      "Allan Dwan"
+    ],
+    "actors_names": [
+      "Marion Davies",
+      "Dorothy Green",
+      "Matt Moore",
+      "Norman Kerry"
+    ],
+    "writers_names": [
+      "Frances Marion",
+      "Robert W. Chambers"
+    ],
+    "actors": [
+      {
+        "uuid": "35d71e04-5e0f-4866-8c84-beb054441960",
+        "full_name": "Marion Davies"
+      },
+      {
+        "uuid": "d2b84242-5aaa-494a-a647-e2e8d60ec3ab",
+        "full_name": "Dorothy Green"
+      },
+      {
+        "uuid": "d4c77ffa-f532-45e8-8048-69c92502687b",
+        "full_name": "Matt Moore"
+      },
+      {
+        "uuid": "07041006-ac4c-47ca-8dfe-dde5e47d36c8",
+        "full_name": "Norman Kerry"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "60079f09-c764-459f-9465-af5b71cad555",
+        "full_name": "Frances Marion"
+      },
+      {
+        "uuid": "e021ef1a-a72a-4dd2-a5ac-9914726e8e63",
+        "full_name": "Robert W. Chambers"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "a95386e7-4f63-4466-a31a-5392903cfefd",
+        "full_name": "Allan Dwan"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e99620fb-11bb-481b-8702-a14efa6bb0ef"
+    }
+  },
+  {
+    "uuid": "e99620fb-11bb-481b-8702-a14efa6bb0ef",
+    "title": "Lego Star Wars II: The Original Trilogy",
+    "imdb_rating": 8.4,
+    "description": "Play the original trilogy of star wars A New Hope,The Empire Strikes Back, and Return Of The Jedi. All in LEGO!!!!!!!!!",
+    "genres_names": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Tom Kane"
+    ],
+    "writers_names": [
+      "George Lucas",
+      "Jon M. Gibson"
+    ],
+    "actors": [
+      {
+        "uuid": "5237aac5-f652-4aa5-9061-55bb007cd7be",
+        "full_name": "Tom Kane"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "a5a8f573-3cee-4ccc-8a2b-91cb9f55250a",
+        "full_name": "George Lucas"
+      },
+      {
+        "uuid": "f09cdc06-40bc-4ff4-b6a6-4da2dce6bbf2",
+        "full_name": "Jon M. Gibson"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e996369b-d49e-4fbb-8563-c17561dca515"
+    }
+  },
+  {
+    "uuid": "e996369b-d49e-4fbb-8563-c17561dca515",
+    "title": "Star Wars Galaxies: An Empire Divided",
+    "imdb_rating": 6.9,
+    "description": "Be an alien or a human, a Rebel, an Imperial, a smuggler or a simple bartender; be what you want during the Galactic Civil War in a virtual online galaxy.",
+    "genres_names": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Mary Dilts",
+      "Andrew Chaikin",
+      "Connie Hall",
+      "David Boat"
+    ],
+    "writers_names": [
+      "Haden Blackman",
+      "Kris Andrews",
+      "Allen Varney",
+      "Aaron de Orive",
+      "Todd Bailey"
+    ],
+    "actors": [
+      {
+        "uuid": "418e6032-6286-417b-a93f-849c88e9d6aa",
+        "full_name": "Mary Dilts"
+      },
+      {
+        "uuid": "60258574-69ac-4ee6-ae31-99938474d0be",
+        "full_name": "Andrew Chaikin"
+      },
+      {
+        "uuid": "900a4e34-0e3a-47c5-9c9a-06f73d11f395",
+        "full_name": "Connie Hall"
+      },
+      {
+        "uuid": "27601239-80ae-4f84-b9b1-41a823fcb17e",
+        "full_name": "David Boat"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "e73f46a4-cf53-4b12-b5da-52503b6319f7",
+        "full_name": "Haden Blackman"
+      },
+      {
+        "uuid": "4c9e24fe-ca1f-4db6-9ec6-cc733a53f84f",
+        "full_name": "Kris Andrews"
+      },
+      {
+        "uuid": "ce9b2873-5a3a-4b78-ba33-10da17ba5f9b",
+        "full_name": "Allen Varney"
+      },
+      {
+        "uuid": "2570419f-0ec7-4aac-8af6-f322e41e02fb",
+        "full_name": "Aaron de Orive"
+      },
+      {
+        "uuid": "609ee023-baf3-40c8-b588-116c0dacd516",
+        "full_name": "Todd Bailey"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "e9bba41c-d091-4d4f-890f-ae4e22dde857"
+    }
+  },
+  {
+    "uuid": "e9bba41c-d091-4d4f-890f-ae4e22dde857",
+    "title": "Lone Star Raiders",
+    "imdb_rating": 8.2,
+    "description": "Dust storms and drought make herding horses a tough job for the boys. When the new owner of the ranch, Lydia Phelps, shows up, the ranch is in dire financial straits. The Martin Ranch has ...",
+    "genres_names": [
+      "Western"
+    ],
+    "genre": [
+      {
+        "uuid": "0b105f87-e0a5-45dc-8ce7-f8632088f390",
+        "name": "Western"
+      }
+    ],
+    "directors_names": [
+      "George Sherman"
+    ],
+    "actors_names": [
+      "June Johnson",
+      "Robert Livingston",
+      "Rufe Davis",
+      "Bob Steele"
+    ],
+    "writers_names": [
+      "Joseph Moncure March",
+      "William Colt MacDonald",
+      "Barry Shipman",
+      "Charles F. Royal"
+    ],
+    "actors": [
+      {
+        "uuid": "b72cc3fb-ae04-42cf-9009-4c3042a21f3f",
+        "full_name": "June Johnson"
+      },
+      {
+        "uuid": "bf3a8026-08f3-41bf-b0e6-49ffa14169b7",
+        "full_name": "Robert Livingston"
+      },
+      {
+        "uuid": "50ab70d7-df04-489a-aedb-04dcf1736107",
+        "full_name": "Rufe Davis"
+      },
+      {
+        "uuid": "7c1ee0c2-49c9-45a8-9643-17c7a0972c38",
+        "full_name": "Bob Steele"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "aa6478ab-ce3e-4ada-8657-0ee4b213efd2",
+        "full_name": "Joseph Moncure March"
+      },
+      {
+        "uuid": "8fd35b3c-12ff-4be6-a115-268ebe69e528",
+        "full_name": "William Colt MacDonald"
+      },
+      {
+        "uuid": "ad0af88f-eb69-416c-a9a3-ecf7a1f40aac",
+        "full_name": "Barry Shipman"
+      },
+      {
+        "uuid": "7fa9e64c-440b-4fc4-8eba-54f0c60f5d0b",
+        "full_name": "Charles F. Royal"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "79c1ed59-76ef-4634-bd06-c6987b0ed7a8",
+        "full_name": "George Sherman"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ea434935-cb62-4012-9138-be74435890cd"
+    }
+  },
+  {
+    "uuid": "ea434935-cb62-4012-9138-be74435890cd",
+    "title": "Star vs. the Forces of Evil",
+    "imdb_rating": 8.0,
+    "description": "An interdimensional princess, from the kingdom of Mewni, named Star Butterfly is sent to a new dimension, the Earth dimension, to learn how to use her newest possession, the royal family wand, and she finds help along the way meeting an Earth boy named Marco Diaz, and she lives with Marco and his parents causing all kinds of interdimensional mischief.",
+    "genres_names": [
+      "Action",
+      "Fantasy",
+      "Drama",
+      "Comedy",
+      "Thriller",
+      "Adventure",
+      "Family",
+      "Sci-Fi",
+      "Animation"
+    ],
+    "genre": [
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "526769d7-df18-4661-9aa6-49ed24e9dfd8",
+        "name": "Thriller"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Eden Sher",
+      "Daron Nefcy",
+      "Adam McArthur",
+      "Grey Griffin"
+    ],
+    "writers_names": [
+      "Daron Nefcy",
+      "David Wasson",
+      "Jordana Arkin"
+    ],
+    "actors": [
+      {
+        "uuid": "fee27fee-19ea-4100-af1f-a2fd1ed85f0b",
+        "full_name": "Eden Sher"
+      },
+      {
+        "uuid": "91315ca2-e928-4bc3-aa20-4a9024fed936",
+        "full_name": "Daron Nefcy"
+      },
+      {
+        "uuid": "6eada848-9bb2-4309-8250-90e20b82f0df",
+        "full_name": "Adam McArthur"
+      },
+      {
+        "uuid": "b4e1b2bd-7f36-4322-8a96-0baecf121424",
+        "full_name": "Grey Griffin"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "91315ca2-e928-4bc3-aa20-4a9024fed936",
+        "full_name": "Daron Nefcy"
+      },
+      {
+        "uuid": "13f1f970-08d3-442a-9b2c-dc3e54f47dde",
+        "full_name": "David Wasson"
+      },
+      {
+        "uuid": "57d6e028-3d65-4879-bb4e-d2c086c74898",
+        "full_name": "Jordana Arkin"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ea9a96db-e224-4b95-8da8-985a8f8c183c"
+    }
+  },
+  {
+    "uuid": "ea9a96db-e224-4b95-8da8-985a8f8c183c",
+    "title": "The Hypothetical Star Wars Holiday Special",
+    "imdb_rating": 6.5,
+    "description": null,
+    "genres_names": [
+      "Comedy",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "Nick Corirossi",
+      "Charles Ingram"
+    ],
+    "actors_names": [
+      "Chris Batstone",
+      "Nick Corirossi",
+      "Keith David",
+      "Jason Alexander"
+    ],
+    "writers_names": [
+      "Nick Corirossi",
+      "Charles Ingram"
+    ],
+    "actors": [
+      {
+        "uuid": "72a49448-b303-4f21-ba60-52a882fb7319",
+        "full_name": "Chris Batstone"
+      },
+      {
+        "uuid": "431ec081-43f6-41ed-8a59-20fa5506d307",
+        "full_name": "Nick Corirossi"
+      },
+      {
+        "uuid": "477b4187-9b8a-4199-86d7-b00a996db901",
+        "full_name": "Keith David"
+      },
+      {
+        "uuid": "cdb3a36b-3c84-4d09-a0ae-39afb26ebe57",
+        "full_name": "Jason Alexander"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "431ec081-43f6-41ed-8a59-20fa5506d307",
+        "full_name": "Nick Corirossi"
+      },
+      {
+        "uuid": "1f33e237-0f88-4858-a6b2-720c93a8dbba",
+        "full_name": "Charles Ingram"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "431ec081-43f6-41ed-8a59-20fa5506d307",
+        "full_name": "Nick Corirossi"
+      },
+      {
+        "uuid": "1f33e237-0f88-4858-a6b2-720c93a8dbba",
+        "full_name": "Charles Ingram"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "eb075c31-9f9a-4e14-a8ba-b777585f8afa"
+    }
+  },
+  {
+    "uuid": "eb075c31-9f9a-4e14-a8ba-b777585f8afa",
+    "title": "Star in the Night",
+    "imdb_rating": 7.8,
+    "description": "It's Christmas Eve. Three cowboys have just bought out a store of items as Christmas presents, despite not having anyone to give the presents to. While two of them admit to wanting to impress the pretty sales clerk, the third just felt good buying gifts to give to someone. Riding through the dark desert on horseback, they see a flashing star off in the distance, which they ride over to investigate. The newly purchased second hand star is a sign just erected by Nick Catapoli for his business, the Star Auto Court. Nick has no Christmas spirit, especially as he deals with the problems of customers, this despite his wife Rosa serving all their customers with a smile and warm heart. He believes most people are hypocrites in that they espouse this spirit at this one time of the year while not having it any other time. As such, he does not want to extend his lobby as shelter for a drifter who just wants to come in from the cold for a little while. Although the drifter tries to explain the true meaning of Christmas to Nick, Nick watching the interactions of all those around him may be a better way to show him, especially when a young and obviously in distress young couple named José and Maria Santos arrive, with no more rooms available at the inn.",
+    "genres_names": [
+      "Short",
+      "Family",
+      "Drama",
+      "Western"
+    ],
+    "genre": [
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "0b105f87-e0a5-45dc-8ce7-f8632088f390",
+        "name": "Western"
+      }
+    ],
+    "directors_names": [
+      "Don Siegel"
+    ],
+    "actors_names": [
+      "J. Carrol Naish",
+      "Rosina Galli",
+      "Donald Woods",
+      "Richard Erdman"
+    ],
+    "writers_names": [
+      "Saul Elkins",
+      "Robert Finch"
+    ],
+    "actors": [
+      {
+        "uuid": "dded2f2b-6173-4b23-9706-7729c9ea5379",
+        "full_name": "J. Carrol Naish"
+      },
+      {
+        "uuid": "cbcb4a6b-4ae1-4810-a4b0-50dbc76ffa70",
+        "full_name": "Rosina Galli"
+      },
+      {
+        "uuid": "e19ae739-186f-47b7-bf5e-e7a8c4b842b7",
+        "full_name": "Donald Woods"
+      },
+      {
+        "uuid": "d13af861-8a18-4c15-bb38-f5b6a9691751",
+        "full_name": "Richard Erdman"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "0ebf566c-1894-4d48-8ac0-1b9f25c3a364",
+        "full_name": "Saul Elkins"
+      },
+      {
+        "uuid": "0a11f8a0-fb51-4d54-ae48-22a1b8b2562a",
+        "full_name": "Robert Finch"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "e59ffb1a-bcf7-4adb-8b26-c7883dbe68ad",
+        "full_name": "Don Siegel"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "eb592ca7-7aa8-44ac-a59b-1ffcd0b78960"
+    }
+  },
+  {
+    "uuid": "eb592ca7-7aa8-44ac-a59b-1ffcd0b78960",
+    "title": "Star Trek: Gene Rodenberry's Vision",
+    "imdb_rating": 6.6,
+    "description": "A look at the influence of Gene Rodenberry.",
+    "genres_names": [
+      "Documentary",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "6d141ad2-d407-4252-bda4-95590aaf062a",
+        "name": "Documentary"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "John Cho",
+      "Eric Bana",
+      "J.J. Abrams",
+      "Bruce Greenwood"
+    ],
+    "writers_names": [
+      "M. David Melvin"
+    ],
+    "actors": [
+      {
+        "uuid": "f89a9bad-5bd3-446d-bbdf-e1fd0d217e5d",
+        "full_name": "John Cho"
+      },
+      {
+        "uuid": "959d148c-022b-427f-a68b-bbe58674fe65",
+        "full_name": "Eric Bana"
+      },
+      {
+        "uuid": "a1758395-9578-41af-88b8-3f9456e6d938",
+        "full_name": "J.J. Abrams"
+      },
+      {
+        "uuid": "967a13ac-a6e5-4f0d-8f66-e8fc55827d83",
+        "full_name": "Bruce Greenwood"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "6d1b08e4-62a0-43c7-9e6e-640f876649ce",
+        "full_name": "M. David Melvin"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "eb88b9fc-307f-4211-8d0a-9f6854c75821"
+    }
+  },
+  {
+    "uuid": "eb88b9fc-307f-4211-8d0a-9f6854c75821",
+    "title": "Lone Star",
+    "imdb_rating": 6.2,
+    "description": "Rip-roaring big star, big budget semi-historical story about cattle baron Devereaux Burke, who is enlisted by an aging Andrew Jackson to dissuade Sam Houston from establishing Texas as a republic. Burke must fight state senator Thomas Craden, in the process winning the heart of Craden's newspaper-editor girlfriend Martha Ronda.",
+    "genres_names": [
+      "Romance",
+      "Western",
+      "Adventure",
+      "Action",
+      "History"
+    ],
+    "genre": [
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      },
+      {
+        "uuid": "0b105f87-e0a5-45dc-8ce7-f8632088f390",
+        "name": "Western"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "eb7212a7-dd10-4552-bf7b-7a505a8c0b95",
+        "name": "History"
+      }
+    ],
+    "directors_names": [
+      "Vincent Sherman"
+    ],
+    "actors_names": [
+      "Clark Gable",
+      "Broderick Crawford",
+      "Lionel Barrymore",
+      "Ava Gardner"
+    ],
+    "writers_names": [
+      "Borden Chase",
+      "Howard Estabrook"
+    ],
+    "actors": [
+      {
+        "uuid": "e532cd97-5bca-4ad6-a530-e705f5e48ff6",
+        "full_name": "Clark Gable"
+      },
+      {
+        "uuid": "d63bb446-3b1b-43d2-b7dc-9405c8b6d474",
+        "full_name": "Broderick Crawford"
+      },
+      {
+        "uuid": "52e6bf2e-e839-4a1d-b416-db5bfb52d46d",
+        "full_name": "Lionel Barrymore"
+      },
+      {
+        "uuid": "96f42714-615e-49d5-a228-c1d45f023694",
+        "full_name": "Ava Gardner"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "377f7b72-c76c-45a3-93ed-24206190dda6",
+        "full_name": "Borden Chase"
+      },
+      {
+        "uuid": "e5b2c0e0-c88d-45f7-924e-529fb15452c2",
+        "full_name": "Howard Estabrook"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "f7d5e294-3c5c-458d-b036-3e89dbc99a3c",
+        "full_name": "Vincent Sherman"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ebc4a4a5-f13c-4fef-a3af-751596a42483"
+    }
+  },
+  {
+    "uuid": "ebc4a4a5-f13c-4fef-a3af-751596a42483",
+    "title": "Buzz Lightyear of Star Command",
+    "imdb_rating": 6.3,
+    "description": null,
+    "genres_names": [
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Larry Miller",
+      "Patrick Warburton",
+      "Nicole Sullivan",
+      "Stephen Furst"
+    ],
+    "writers_names": [
+      "Jim Staahl"
+    ],
+    "actors": [
+      {
+        "uuid": "57c0c78d-8c7f-45e9-bee0-f5c940b68f86",
+        "full_name": "Larry Miller"
+      },
+      {
+        "uuid": "b10f41af-765c-4381-b6f8-9567fbb843c1",
+        "full_name": "Patrick Warburton"
+      },
+      {
+        "uuid": "06cf22cd-e7f8-4d1f-9c72-fddc61be084a",
+        "full_name": "Nicole Sullivan"
+      },
+      {
+        "uuid": "fb6717bf-4be2-4f2f-96d0-e73d995d0ff9",
+        "full_name": "Stephen Furst"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "f8438064-f997-4115-af16-3c4bd1858c41",
+        "full_name": "Jim Staahl"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ec0399e9-abcd-46b7-94d9-f1d8a6c515e9"
+    }
+  },
+  {
+    "uuid": "ec0399e9-abcd-46b7-94d9-f1d8a6c515e9",
+    "title": "You're a Star",
+    "imdb_rating": 4.6,
+    "description": "TV show to find the Republic of Ireland's entry for the Eurovision. Winner is decided by public vote.",
+    "genres_names": [
+      "Music"
+    ],
+    "genre": [
+      {
+        "uuid": "56b541ab-4d66-4021-8708-397762bff2d4",
+        "name": "Music"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Ray D'Arcy",
+      "Michael Leonard",
+      "Mickey Harte",
+      "Simon Casey"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "400178ba-6189-4adf-8ab6-1d67e8bbfa7a",
+        "full_name": "Ray D'Arcy"
+      },
+      {
+        "uuid": "2f67d7e2-195c-4f89-b197-bf065d9a4a61",
+        "full_name": "Michael Leonard"
+      },
+      {
+        "uuid": "0234f9d6-ccb5-4c31-a4c0-97f494bb68e8",
+        "full_name": "Mickey Harte"
+      },
+      {
+        "uuid": "0acdc0f8-dda1-48e4-9602-10cd900247af",
+        "full_name": "Simon Casey"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ec07f763-f2a1-49b5-b137-2e31f64cb090"
+    }
+  },
+  {
+    "uuid": "ec07f763-f2a1-49b5-b137-2e31f64cb090",
+    "title": "Star Trek: 25th Anniversary Enhanced",
+    "imdb_rating": 8.2,
+    "description": "In the final frontier, you control Captain Kirk and the crew of the USS Enterprise in new adventures arranged as the 4th season of the original TV series. With the classic original cast voicing their characters, Kirk and the crew face Klingons, Romulans and even Harry Mudd as you explore space and face challenges that will test your wits and courage.",
+    "genres_names": [
+      "Adventure",
+      "Action",
+      "Animation"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      }
+    ],
+    "directors_names": [
+      "Michael McConnohie"
+    ],
+    "actors_names": [
+      "George Almond",
+      "Steve Bulen",
+      "Catherine Battistone",
+      "Robert V. Barron"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "608ebcf6-b934-47fc-a411-a3640904582a",
+        "full_name": "George Almond"
+      },
+      {
+        "uuid": "35e3e398-a956-43c8-9953-994d12e704c7",
+        "full_name": "Steve Bulen"
+      },
+      {
+        "uuid": "06cf5f0a-2d07-4356-b80a-b28a8eba4585",
+        "full_name": "Catherine Battistone"
+      },
+      {
+        "uuid": "88f3eb04-a4c4-4e4e-aeb9-5b9eeb041022",
+        "full_name": "Robert V. Barron"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "0dcd6e6c-d771-41f9-a5b4-431bbb9b8228",
+        "full_name": "Michael McConnohie"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ec331f11-2f9f-4dd0-89cf-227f53067225"
+    }
+  },
+  {
+    "uuid": "ec331f11-2f9f-4dd0-89cf-227f53067225",
+    "title": "Star Trek: Intrepid",
+    "imdb_rating": 6.9,
+    "description": "The crew of the USS Intrepid teams up with Jean-Luc Picard to solve an archaeological mystery in the Romulan culture's ancient history. However, the Romulan Empire doesn't like their ...",
+    "genres_names": [
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Nick Cook",
+      "Lynn Robinson",
+      "Stephen Pasqua",
+      "Gordon Dickson"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "7658b885-1373-4779-ace7-8011cfcc1af9",
+        "full_name": "Nick Cook"
+      },
+      {
+        "uuid": "3bcb9a2a-e6ab-4d22-a8c3-cc4afea2fbc8",
+        "full_name": "Lynn Robinson"
+      },
+      {
+        "uuid": "e60a03a7-1fa1-40f3-9a7b-808787d3d39c",
+        "full_name": "Stephen Pasqua"
+      },
+      {
+        "uuid": "2dce9fbe-c5ef-4cb6-b440-7322fc911907",
+        "full_name": "Gordon Dickson"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ec8bad1c-7643-49b3-93b5-cee9c8c1e602"
+    }
+  },
+  {
+    "uuid": "ec8bad1c-7643-49b3-93b5-cee9c8c1e602",
+    "title": "Star Wars: Super Bombad Racing",
+    "imdb_rating": 7.5,
+    "description": null,
+    "genres_names": [
+      "Animation",
+      "Family",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Lewis Macleod",
+      "Ahmed Best",
+      "Jake Lloyd",
+      "Grey Griffin"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "39fdb20f-15a1-4181-9f83-a6c1f5fc7092",
+        "full_name": "Lewis Macleod"
+      },
+      {
+        "uuid": "746b394f-7808-4386-a281-b06504c07b58",
+        "full_name": "Ahmed Best"
+      },
+      {
+        "uuid": "979996d5-ef97-427d-a0f5-d640cd1813a4",
+        "full_name": "Jake Lloyd"
+      },
+      {
+        "uuid": "b4e1b2bd-7f36-4322-8a96-0baecf121424",
+        "full_name": "Grey Griffin"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ec9497e1-1c72-4290-b485-9d36fe01037e"
+    }
+  },
+  {
+    "uuid": "ec9497e1-1c72-4290-b485-9d36fe01037e",
+    "title": "My Lucky Star",
+    "imdb_rating": 6.0,
+    "description": "The son (Romero) of a department store owner enrolls the store's sports clerk (Henie) at a university to use her as an advertisement for their fashion department. She falls for a teacher (Greene) and gets expelled.",
+    "genres_names": [
+      "Romance",
+      "Musical",
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      },
+      {
+        "uuid": "9c91a5b2-eb70-4889-8581-ebe427370edd",
+        "name": "Musical"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Roy Del Ruth"
+    ],
+    "actors_names": [
+      "Sonja Henie",
+      "Richard Greene",
+      "Cesar Romero",
+      "Joan Davis"
+    ],
+    "writers_names": [
+      "Harry Tugend",
+      "Jack Yellen",
+      "Karl Tunberg",
+      "Don Ettlinger"
+    ],
+    "actors": [
+      {
+        "uuid": "a873bb8f-70fd-4794-9a9b-1ffcc29615b1",
+        "full_name": "Sonja Henie"
+      },
+      {
+        "uuid": "908cdc3e-5f15-4f8b-b1ab-bc095c9dca61",
+        "full_name": "Richard Greene"
+      },
+      {
+        "uuid": "3cbf74ad-ebef-4a81-bde9-9ac4beee1151",
+        "full_name": "Cesar Romero"
+      },
+      {
+        "uuid": "00e1b6fd-cc86-4841-a983-5a3d34e4da97",
+        "full_name": "Joan Davis"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "a36584c2-617c-400d-94c9-e4740c1aa925",
+        "full_name": "Harry Tugend"
+      },
+      {
+        "uuid": "3259202f-ba33-42f9-b939-bf12ac95b4cc",
+        "full_name": "Jack Yellen"
+      },
+      {
+        "uuid": "cb3e7b03-4372-4bea-9be6-710e10f60b39",
+        "full_name": "Karl Tunberg"
+      },
+      {
+        "uuid": "1894fb38-008a-4b6e-912c-429e5ea56b5b",
+        "full_name": "Don Ettlinger"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "323368c7-663f-4b85-b404-6c167bccdba1",
+        "full_name": "Roy Del Ruth"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ec9dbe59-47ca-48aa-a47a-2d83eeb7aee6"
+    }
+  },
+  {
+    "uuid": "ec9dbe59-47ca-48aa-a47a-2d83eeb7aee6",
+    "title": "Star Wars: The Apprentice",
+    "imdb_rating": 4.5,
+    "description": "A robed figure approaches. A Jedi knight appears behind her, then attacks. The duel commences.",
+    "genres_names": [
+      "Action",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "Todd Sandler"
+    ],
+    "actors_names": [
+      "Paul J. Alessi"
+    ],
+    "writers_names": [
+      "Steven Kobayashi"
+    ],
+    "actors": [
+      {
+        "uuid": "e46ff2c7-d5c2-4b30-94f3-5d183411b671",
+        "full_name": "Paul J. Alessi"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "093723a7-a868-4c48-9066-b9aef0ff489b",
+        "full_name": "Steven Kobayashi"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "8c9f8c70-cd8b-4841-9240-c2d394cac218",
+        "full_name": "Todd Sandler"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ecf47e62-2f0e-4453-aef0-ddb59861fefc"
+    }
+  },
+  {
+    "uuid": "ecf47e62-2f0e-4453-aef0-ddb59861fefc",
+    "title": "Star Trek: Deep Space Nine - Dominion Wars",
+    "imdb_rating": 7.6,
+    "description": "Tactical combat game set in the Star Trek Next Generation era. Similar in style to the starfleet command games.",
+    "genres_names": [
+      "Adventure",
+      "Sci-Fi",
+      "Action"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Jeffrey Combs",
+      "Barry Jenner",
+      "Marc Alaimo"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "f11d5802-5eb4-4e8b-b357-655e59e09dac",
+        "full_name": "Jeffrey Combs"
+      },
+      {
+        "uuid": "ce08909b-0d4a-46a9-9085-d289a258523e",
+        "full_name": "Barry Jenner"
+      },
+      {
+        "uuid": "3d0c5ac4-76ec-4830-83c1-e115c3844e2a",
+        "full_name": "Marc Alaimo"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ed2fb2c4-faea-4d1c-b1e0-a49973e21698"
+    }
+  },
+  {
+    "uuid": "ed2fb2c4-faea-4d1c-b1e0-a49973e21698",
+    "title": "Star Wars: Starfighter",
+    "imdb_rating": 7.3,
+    "description": "A long time ago, in a galaxy far, far away... the greedy Trade Federation stands poised to invade the small planet of Naboo. The only hope for the people of Naboo is a young pilot, a beautiful mercenary, a shifty mechanic and an underhanded pirate who ally to face the invading forces.",
+    "genres_names": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [
+      "Daron Stinnett"
+    ],
+    "actors_names": [
+      "Grey Griffin",
+      "Jess Harnell",
+      "Carlos Alazraqui",
+      "Lisa Fuson"
+    ],
+    "writers_names": [
+      "Haden Blackman",
+      "Matthew Jacobs"
+    ],
+    "actors": [
+      {
+        "uuid": "b4e1b2bd-7f36-4322-8a96-0baecf121424",
+        "full_name": "Grey Griffin"
+      },
+      {
+        "uuid": "2a6edccf-354d-4417-b454-8b3ceef91309",
+        "full_name": "Jess Harnell"
+      },
+      {
+        "uuid": "225eb8b1-e295-44ea-98cd-47da86095a0f",
+        "full_name": "Carlos Alazraqui"
+      },
+      {
+        "uuid": "2d2d6241-4161-4dbe-b7ab-7037c3e7778e",
+        "full_name": "Lisa Fuson"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "e73f46a4-cf53-4b12-b5da-52503b6319f7",
+        "full_name": "Haden Blackman"
+      },
+      {
+        "uuid": "0ec52608-84c7-407d-926e-acec69150142",
+        "full_name": "Matthew Jacobs"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "37c05f38-90d7-4817-9341-5799f6b19ec0",
+        "full_name": "Daron Stinnett"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "eda3be8d-d0bd-4cf6-84ed-7bf80c371605"
+    }
+  },
+  {
+    "uuid": "eda3be8d-d0bd-4cf6-84ed-7bf80c371605",
+    "title": "Star Trek: Legacy",
+    "imdb_rating": 6.5,
+    "description": "Jonathan Archer, the captain of the first Enterprise, is asked by the Vulcans to retrieve one of their ships that went missing. He locates and saves the ship from the Romulans, but the ship's mysterious captain T'Uerell decides to use him for her own gain. First Archer, then Kirk, and finally Picard, Sisko and Janeway, will all have to face this dangerous individual in their own eras in order to save the Alpha Quadrant. While Archer, Kirk and Picard each star in one-third of the game, Sisko and Janeway show up only in two of Picard's missions.",
+    "genres_names": [
+      "Sci-Fi",
+      "Adventure",
+      "Action"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "William Shatner",
+      "Avery Brooks",
+      "Kate Mulgrew",
+      "Patrick Stewart"
+    ],
+    "writers_names": [
+      "Derek Chester",
+      "D.C. Fontana"
+    ],
+    "actors": [
+      {
+        "uuid": "9758b894-57d7-465d-b657-c5803dd5b7f7",
+        "full_name": "William Shatner"
+      },
+      {
+        "uuid": "511b9add-1f0c-4b5f-be96-14dc569ffb06",
+        "full_name": "Avery Brooks"
+      },
+      {
+        "uuid": "7f100195-5faf-4746-8a2b-df2a3e57cc8b",
+        "full_name": "Kate Mulgrew"
+      },
+      {
+        "uuid": "57a471b1-09dc-48fd-ba8a-1211015a0110",
+        "full_name": "Patrick Stewart"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "b49faa53-3ebd-4d1a-88ee-df13e232bdf3",
+        "full_name": "Derek Chester"
+      },
+      {
+        "uuid": "c8db0be4-f481-4405-bb84-3b7ac1553876",
+        "full_name": "D.C. Fontana"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "edb1a9e6-a439-422b-8a26-f980775d0f60"
+    }
+  },
+  {
+    "uuid": "edb1a9e6-a439-422b-8a26-f980775d0f60",
+    "title": "Star Blazers 2199: Odyssey of the Celestial Ark",
+    "imdb_rating": 7.1,
+    "description": "2199 AD. Yamato tries to leave behind the Large Magellanic Cloud galaxy after receiving a Cosmo Reverse System at its destination, Iscandar. However, suddenly it encounters a mysterious ...",
+    "genres_names": [
+      "Animation",
+      "Sci-Fi",
+      "Action"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      }
+    ],
+    "directors_names": [
+      "Yutaka Izubuchi"
+    ],
+    "actors_names": [
+      "Houko Kuwashima",
+      "Daisuke Ono",
+      "Ken'ichi Suzumura",
+      "Takayuki Sugô"
+    ],
+    "writers_names": [
+      "Leiji Matsumoto"
+    ],
+    "actors": [
+      {
+        "uuid": "0b50e5a2-c1a9-4ca2-81bb-b022c6000527",
+        "full_name": "Houko Kuwashima"
+      },
+      {
+        "uuid": "500fcf01-7318-445d-b690-f44bfcac3185",
+        "full_name": "Daisuke Ono"
+      },
+      {
+        "uuid": "c2f567b6-93ce-456e-8a7b-abbbd91d7430",
+        "full_name": "Ken'ichi Suzumura"
+      },
+      {
+        "uuid": "82d2b529-9745-4b77-ac4e-d467b25dfec8",
+        "full_name": "Takayuki Sugô"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "3179c830-2dd3-48b9-911b-fa3aec6bf33c",
+        "full_name": "Leiji Matsumoto"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "c017e058-12c3-420b-9aa7-5fb8f270626f",
+        "full_name": "Yutaka Izubuchi"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "edb9d4d9-0e13-476c-960c-26f97f264ecb"
+    }
+  },
+  {
+    "uuid": "edb9d4d9-0e13-476c-960c-26f97f264ecb",
+    "title": "Stardate Revisited: The Origin of Star Trek - The Next Generation",
+    "imdb_rating": 7.4,
+    "description": "Feature-length documentary offering the definitive look at the making of the iconic science fiction classic; STAR TREK: THE NEXT GENERATION! Includes never-before-seen revealing ...",
+    "genres_names": [
+      "Documentary"
+    ],
+    "genre": [
+      {
+        "uuid": "6d141ad2-d407-4252-bda4-95590aaf062a",
+        "name": "Documentary"
+      }
+    ],
+    "directors_names": [
+      "Roger Lay Jr."
+    ],
+    "actors_names": [
+      "James L. Conway",
+      "Rick Berman",
+      "LeVar Burton",
+      "Denise Crosby"
+    ],
+    "writers_names": [
+      "Robert Meyer Burnett",
+      "Roger Lay Jr."
+    ],
+    "actors": [
+      {
+        "uuid": "ddaba77b-13a7-4e1f-b8e1-8015a9d8fa3f",
+        "full_name": "James L. Conway"
+      },
+      {
+        "uuid": "88a99b4d-4d06-4754-b06c-93217cf53244",
+        "full_name": "Rick Berman"
+      },
+      {
+        "uuid": "fc9f27d2-aaee-46e6-b263-40ec8d2dd355",
+        "full_name": "LeVar Burton"
+      },
+      {
+        "uuid": "1f53497b-6afa-4908-a981-04ebede30769",
+        "full_name": "Denise Crosby"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "f3c9c6d2-2a67-464a-9322-2f30421db38b",
+        "full_name": "Robert Meyer Burnett"
+      },
+      {
+        "uuid": "3abbe0ac-9d12-4b30-ac9f-9c8fafbe472b",
+        "full_name": "Roger Lay Jr."
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "3abbe0ac-9d12-4b30-ac9f-9c8fafbe472b",
+        "full_name": "Roger Lay Jr."
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "edc66eec-eda9-4541-af98-4ec4012a740d"
+    }
+  },
+  {
+    "uuid": "edc66eec-eda9-4541-af98-4ec4012a740d",
+    "title": "The Falling Star",
+    "imdb_rating": 6.3,
+    "description": null,
+    "genres_names": [
+      "Short",
+      "Animation"
+    ],
+    "genre": [
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      }
+    ],
+    "directors_names": [
+      "Nicolas Jacquet"
+    ],
+    "actors_names": [],
+    "writers_names": [
+      "Nicolas Jacquet"
+    ],
+    "actors": [],
+    "writers": [
+      {
+        "uuid": "6830a68a-1945-4d74-b9a0-9f3bf3b3f78e",
+        "full_name": "Nicolas Jacquet"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "6830a68a-1945-4d74-b9a0-9f3bf3b3f78e",
+        "full_name": "Nicolas Jacquet"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "edeaa714-5ee5-4032-b1cf-fe8b0e8a2cfa"
+    }
+  },
+  {
+    "uuid": "edeaa714-5ee5-4032-b1cf-fe8b0e8a2cfa",
+    "title": "Sun, Moon and Star: Part 2",
+    "imdb_rating": 6.9,
+    "description": null,
+    "genres_names": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      },
+      {
+        "uuid": "c020dab2-e9bd-4758-95ca-dbe363462173",
+        "name": "War"
+      }
+    ],
+    "directors_names": [
+      "Wen Yi"
+    ],
+    "actors_names": [
+      "Po Chien Chin",
+      "Yu-Hsin Chen",
+      "Grace Chang",
+      "Yang Chang"
+    ],
+    "writers_names": [
+      "Xu Xu",
+      "Yuen Chor"
+    ],
+    "actors": [
+      {
+        "uuid": "9479d464-e7b7-44d7-812a-e733d2ecaa62",
+        "full_name": "Po Chien Chin"
+      },
+      {
+        "uuid": "4e81ebc0-a76f-4f17-91ef-89e29f73fb4d",
+        "full_name": "Yu-Hsin Chen"
+      },
+      {
+        "uuid": "8dbfedc7-096f-4b65-92c3-3cdf177b00e7",
+        "full_name": "Grace Chang"
+      },
+      {
+        "uuid": "f5d01bec-0740-45f6-a49c-887cf2b6c428",
+        "full_name": "Yang Chang"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "53f55411-e8b5-491e-a526-770ed4bf71a7",
+        "full_name": "Xu Xu"
+      },
+      {
+        "uuid": "c2c5bd13-211a-446c-bc67-3eae19c35cf0",
+        "full_name": "Yuen Chor"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "abd8fbbe-5a87-433f-a773-1716dd902def",
+        "full_name": "Wen Yi"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ee1baa06-a221-4d8c-8678-992e8e84c5c1"
+    }
+  },
+  {
+    "uuid": "ee1baa06-a221-4d8c-8678-992e8e84c5c1",
+    "title": "Dr. T, Lone Star Vet",
+    "imdb_rating": 8.9,
+    "description": "Dr. Lauren Thielen (Dr. T) is back home in Texas to open her very own exotic animal practice, located alongside one of the state's largest and busiest animal hospitals. With the support of ...",
+    "genres_names": [
+      "Reality-TV"
+    ],
+    "genre": [
+      {
+        "uuid": "e508c1c8-24c0-4136-80b4-340c4befb190",
+        "name": "Reality-TV"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Chris Payne Gilbert",
+      "Lauren Thielen"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "df53aa0c-2eb3-46dc-bfa9-797d99ec5769",
+        "full_name": "Chris Payne Gilbert"
+      },
+      {
+        "uuid": "eee51a8d-1471-44cb-bc18-1ea4ee3bf00c",
+        "full_name": "Lauren Thielen"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ee580283-32db-4181-9f11-bd9d171944c3"
+    }
+  },
+  {
+    "uuid": "ee580283-32db-4181-9f11-bd9d171944c3",
+    "title": "Lego Star Wars: The Force Awakens",
+    "imdb_rating": 8.4,
+    "description": "30 years after the destructive Battle of Endor, a new threat emerges from the bricks of the old Empire, the First Order. Their plan: to end the New Republic and the Resistance, complete their ultimate weapon, and take over the galaxy. Luckily, hope is not lost. A scavenger, a rogue stormtrooper, and the Resistance's best pilot must come together with the aid of old allies to end the First Order's plans brick by brick. The most beloved LEGO video game franchise by Traveler's Tales returns to take you back to a long time ago in a galaxy far, far away with LEGO Star Wars: The Force Awakens - The Videogame!",
+    "genres_names": [
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [
+      "Robert Hewson",
+      "Pete Gomer",
+      "Jamie Eden"
+    ],
+    "actors_names": [
+      "David Boat",
+      "JB Blanc",
+      "Chopper Bernet",
+      "David Acord"
+    ],
+    "writers_names": [
+      "Graham Goring"
+    ],
+    "actors": [
+      {
+        "uuid": "27601239-80ae-4f84-b9b1-41a823fcb17e",
+        "full_name": "David Boat"
+      },
+      {
+        "uuid": "84fbb03c-8672-41d6-a887-e1345f89db91",
+        "full_name": "JB Blanc"
+      },
+      {
+        "uuid": "73a1d3ee-064a-4ab5-9e11-abd77d833993",
+        "full_name": "Chopper Bernet"
+      },
+      {
+        "uuid": "3e25cb48-1851-4286-b9be-b7f9d262bfa4",
+        "full_name": "David Acord"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "34e349f9-12a0-4ebe-8663-6c40baa200e5",
+        "full_name": "Graham Goring"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "cee7de69-f54c-41a5-9548-6c6946604246",
+        "full_name": "Robert Hewson"
+      },
+      {
+        "uuid": "4a2a3731-da3c-4575-b839-b4abe05939b8",
+        "full_name": "Pete Gomer"
+      },
+      {
+        "uuid": "c4975b6d-98cc-4354-818e-8dea5c47da14",
+        "full_name": "Jamie Eden"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "eed327be-1d0d-4adf-8391-8c8491747f59"
+    }
+  },
+  {
+    "uuid": "eed327be-1d0d-4adf-8391-8c8491747f59",
+    "title": "Star Wars: Empire at War",
+    "imdb_rating": 7.8,
+    "description": "The game is set before the Battle of Yavin, while the Empire is still constructing the Death Star. The campaign goes through the events before this, on both the Rebel and Imperial side.",
+    "genres_names": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [
+      "Ted Morris"
+    ],
+    "actors_names": [
+      "Edmund Dehn",
+      "Timothy Watson",
+      "Nick Jameson",
+      "Wayne Grace"
+    ],
+    "writers_names": [
+      "Matthew Keast",
+      "Justin Lambros"
+    ],
+    "actors": [
+      {
+        "uuid": "b8eacd81-6780-43c1-b3bf-1a3b86eed564",
+        "full_name": "Edmund Dehn"
+      },
+      {
+        "uuid": "4bf752b2-056d-4ce0-b3ae-05dcea922d04",
+        "full_name": "Timothy Watson"
+      },
+      {
+        "uuid": "087de4c7-8d61-4337-beae-d5ce3c440b00",
+        "full_name": "Nick Jameson"
+      },
+      {
+        "uuid": "165bde3f-82fd-4863-a600-75e350b35914",
+        "full_name": "Wayne Grace"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "dcf0da5f-aec9-4643-a6b0-b2447f1c4b49",
+        "full_name": "Matthew Keast"
+      },
+      {
+        "uuid": "b4a391f9-d806-49a3-962f-39607b07e173",
+        "full_name": "Justin Lambros"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "6b11be39-b59c-4a94-8547-c2be084ff1f3",
+        "full_name": "Ted Morris"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "eef53bca-4faf-48ae-a52f-5567b5f63fde"
+    }
+  },
+  {
+    "uuid": "eef53bca-4faf-48ae-a52f-5567b5f63fde",
+    "title": "Pop Star",
+    "imdb_rating": 4.8,
+    "description": "When talented young singer, Roxie Santos, meets music producer, Eddie Marz, he promises her an amazing new lifestyle and a future record deal. All he needs her to do is first lend her voice to a celebrity with no singing talent. However, when things go too far and it looks like she might lose her \"voice\" forever, she sets off to prove the truth.",
+    "genres_names": [
+      "Drama",
+      "Romance"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      }
+    ],
+    "directors_names": [
+      "Carlos Portugal"
+    ],
+    "actors_names": [
+      "Christian Serratos",
+      "Ross Thomas",
+      "Robert Adamson",
+      "Rachele Brooke Smith"
+    ],
+    "writers_names": [
+      "Robin Bain",
+      "Charo Toledo",
+      "Carlos Portugal",
+      "Chris Franco"
+    ],
+    "actors": [
+      {
+        "uuid": "36fca9da-a898-4a79-a583-5f60f96410bb",
+        "full_name": "Christian Serratos"
+      },
+      {
+        "uuid": "726e0098-13f0-421f-8b6b-7d1cfed8e6a2",
+        "full_name": "Ross Thomas"
+      },
+      {
+        "uuid": "ef7c899c-0d1c-4858-b3ec-b3b0c41951a4",
+        "full_name": "Robert Adamson"
+      },
+      {
+        "uuid": "64c5b768-2161-46c9-b6a3-804aaf0ef87c",
+        "full_name": "Rachele Brooke Smith"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "61b6729c-18f1-4cac-aac1-fc3c421ac41c",
+        "full_name": "Robin Bain"
+      },
+      {
+        "uuid": "0771d23c-3fe3-4538-af4e-d010068d3fd5",
+        "full_name": "Charo Toledo"
+      },
+      {
+        "uuid": "72fa954e-2be9-4313-8d4b-d00e896d9e3b",
+        "full_name": "Carlos Portugal"
+      },
+      {
+        "uuid": "c869aa32-495b-4599-ae76-51f74657f8f9",
+        "full_name": "Chris Franco"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "72fa954e-2be9-4313-8d4b-d00e896d9e3b",
+        "full_name": "Carlos Portugal"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ef550a9c-3ad7-40f8-af50-b6614f6c1a6f"
+    }
+  },
+  {
+    "uuid": "ef550a9c-3ad7-40f8-af50-b6614f6c1a6f",
+    "title": "Star Wars: The Scarlet Lance",
+    "imdb_rating": 8.0,
+    "description": "2 renegade traders are on the run from what seems to be ordinary hunters, but turns out to be the return of an ancient evil, thought to be vanquished.",
+    "genres_names": [
+      "Short",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [
+      "Olan Rogers"
+    ],
+    "actors_names": [
+      "Coty Galloway",
+      "Jim E Chandler",
+      "Olan Rogers"
+    ],
+    "writers_names": [
+      "Olan Rogers"
+    ],
+    "actors": [
+      {
+        "uuid": "887b715c-dfbb-4f96-b7ad-04d2b378d3da",
+        "full_name": "Coty Galloway"
+      },
+      {
+        "uuid": "d10f5578-5b80-4f86-a1e8-ef5f455b35d9",
+        "full_name": "Jim E Chandler"
+      },
+      {
+        "uuid": "4d28c60a-9491-42c3-8c0f-54b319a5cea5",
+        "full_name": "Olan Rogers"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "4d28c60a-9491-42c3-8c0f-54b319a5cea5",
+        "full_name": "Olan Rogers"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "4d28c60a-9491-42c3-8c0f-54b319a5cea5",
+        "full_name": "Olan Rogers"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ef74f021-4276-4747-8524-b428a7df787a"
+    }
+  },
+  {
+    "uuid": "ef74f021-4276-4747-8524-b428a7df787a",
+    "title": "Star Trek: Progeny",
+    "imdb_rating": 6.3,
+    "description": "Set 50 years after the events of Star Trek: The Original Series, Star Trek: Progeny is reportedly based on the events from the episode \"Bread and Circuses\". The series takes place in the year 2316 and stars Cassie Scerbo as Livia Avitus, the granddaughter of the infamous Captain Kirk, who serves as a Special Agent for the Federation of Planets.",
+    "genres_names": [
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Cassandra Scerbo"
+    ],
+    "writers_names": [
+      "Gene Roddenberry"
+    ],
+    "actors": [
+      {
+        "uuid": "980dbe68-f0f9-46d3-866a-5badeca2d16a",
+        "full_name": "Cassandra Scerbo"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "6960e2ca-889f-41f5-b728-1e7313e54d6c",
+        "full_name": "Gene Roddenberry"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ef7e780a-c018-4e73-bac4-ff9cdc99f7d7"
+    }
+  },
+  {
+    "uuid": "ef7e780a-c018-4e73-bac4-ff9cdc99f7d7",
+    "title": "Star Wars: Rebellion",
+    "imdb_rating": 8.7,
+    "description": null,
+    "genres_names": [
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Nick Jameson",
+      "Bob Bergen",
+      "Scott Lawrence"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "087de4c7-8d61-4337-beae-d5ce3c440b00",
+        "full_name": "Nick Jameson"
+      },
+      {
+        "uuid": "a44906b1-3994-492a-9dbc-3d11d3a7a273",
+        "full_name": "Bob Bergen"
+      },
+      {
+        "uuid": "b58f3bdb-d734-4c8d-9e3c-6c5a25cc4edf",
+        "full_name": "Scott Lawrence"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "efb73bf5-9b65-453e-a627-3435e0c11904"
+    }
+  },
+  {
+    "uuid": "efb73bf5-9b65-453e-a627-3435e0c11904",
+    "title": "2004 MLB All-Star Game",
+    "imdb_rating": 7.2,
+    "description": null,
+    "genres_names": [
+      "Sport"
+    ],
+    "genre": [
+      {
+        "uuid": "2f89e116-4827-4ff4-853c-b6e058f71e31",
+        "name": "Sport"
+      }
+    ],
+    "directors_names": [
+      "Bill Webb"
+    ],
+    "actors_names": [
+      "Tim McCarver",
+      "Jeanne Zelasko",
+      "Joe Buck",
+      "Kevin Kennedy"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "c144ced4-4740-4863-83da-c091bd58ef11",
+        "full_name": "Tim McCarver"
+      },
+      {
+        "uuid": "588d0675-3159-4142-8b1b-5c0a29a909c7",
+        "full_name": "Jeanne Zelasko"
+      },
+      {
+        "uuid": "7b0c328c-53b0-4cb1-abb3-cca0e5a0b0ec",
+        "full_name": "Joe Buck"
+      },
+      {
+        "uuid": "a66c3dca-8d64-4406-b577-012019850678",
+        "full_name": "Kevin Kennedy"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "1f0fa70c-45da-4037-bc54-eaf0143f80ae",
+        "full_name": "Bill Webb"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "efd7fc0b-a496-45f8-be2e-1faaa47680e3"
+    }
+  },
+  {
+    "uuid": "efd7fc0b-a496-45f8-be2e-1faaa47680e3",
+    "title": "The Prince and the Evening Star",
+    "imdb_rating": 7.1,
+    "description": "The old King (Vladimír Mensík) is not satisfied with his four children. It is high time for the Princesses to get married and for the Prince to assume the reign. Once the King sets out to the fowling and he entrusts the kingdom to the Prince Velen (Juraj Durdiak). His sisters want him to provide them with the bridegrooms. A beautiful girl Evening Star (Libuse Safránková) appears to Velen and he falls in love with her at once. Evening Star also likes Velen and therefore, for a kiss, she helps him to get married his sisters to her brothers Moonbeam, Sunbeam and Wind. After the King returns home he does not find the daughters because the bridegrooms took them right away. The angry King assigns the Prince to bring them home.",
+    "genres_names": [
+      "Family",
+      "Adventure",
+      "Fantasy",
+      "Romance",
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      },
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Václav Vorlícek"
+    ],
+    "actors_names": [
+      "Vladimír Mensík",
+      "Radoslav Brzobohatý",
+      "Juraj Durdiak",
+      "Libuse Safránková"
+    ],
+    "writers_names": [
+      "Jirí Brdecka",
+      "Karel Jaromír Erben"
+    ],
+    "actors": [
+      {
+        "uuid": "56e02a3a-20cc-4726-837f-cc798c83edd0",
+        "full_name": "Vladimír Mensík"
+      },
+      {
+        "uuid": "77165f98-9976-4718-93b4-66606a10d5cf",
+        "full_name": "Radoslav Brzobohatý"
+      },
+      {
+        "uuid": "522f860c-58f9-4355-9a38-5fc10ab86334",
+        "full_name": "Juraj Durdiak"
+      },
+      {
+        "uuid": "a777f1d3-d739-4512-9786-6feea6b73c12",
+        "full_name": "Libuse Safránková"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "4dd4b07d-bed4-401c-af4c-98b24b4d612b",
+        "full_name": "Jirí Brdecka"
+      },
+      {
+        "uuid": "66841b9a-f48c-4e97-9fd1-1a9e85288dac",
+        "full_name": "Karel Jaromír Erben"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "6e429cff-c8a2-4d17-8b12-6532a8a1ac9b",
+        "full_name": "Václav Vorlícek"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f061235e-779f-4a59-9eaa-fc533c3c0584"
+    }
+  },
+  {
+    "uuid": "f061235e-779f-4a59-9eaa-fc533c3c0584",
+    "title": "Star Wars: Battlefront II",
+    "imdb_rating": 8.8,
+    "description": "You play as a member of the Clone 501st Legion, the most elite clone trooper attack group, also known as Vader's Fist, and led by Anakin Skywalker/Darth Vader, over the course of the start, the middle, and the end of the Clone Wars, Operation Knightfall, and the key battles of the Galactic Civil War.",
+    "genres_names": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [
+      "Eric 'Giz' Gewirtz"
+    ],
+    "actors_names": [
+      "Corey Burton",
+      "Christina Rumbley",
+      "David Boat",
+      "Bob Bergen"
+    ],
+    "writers_names": [
+      "Matthew Keast"
+    ],
+    "actors": [
+      {
+        "uuid": "dbedbfbc-67c9-4637-a215-9cc861f3dd0b",
+        "full_name": "Corey Burton"
+      },
+      {
+        "uuid": "f9fc0863-76af-43c1-b895-ee8868726760",
+        "full_name": "Christina Rumbley"
+      },
+      {
+        "uuid": "27601239-80ae-4f84-b9b1-41a823fcb17e",
+        "full_name": "David Boat"
+      },
+      {
+        "uuid": "a44906b1-3994-492a-9dbc-3d11d3a7a273",
+        "full_name": "Bob Bergen"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "dcf0da5f-aec9-4643-a6b0-b2447f1c4b49",
+        "full_name": "Matthew Keast"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "ff39031a-6ff3-42b8-b494-30ec47f3f722",
+        "full_name": "Eric 'Giz' Gewirtz"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f06315d4-eab6-4fdc-b768-7c046cedfd9b"
+    }
+  },
+  {
+    "uuid": "f06315d4-eab6-4fdc-b768-7c046cedfd9b",
+    "title": "Starmania. Österreich sucht den neuen Star",
+    "imdb_rating": 2.1,
+    "description": null,
+    "genres_names": [
+      "Music"
+    ],
+    "genre": [
+      {
+        "uuid": "56b541ab-4d66-4021-8708-397762bff2d4",
+        "name": "Music"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Arabella Kiesbauer",
+      "Gernot Pachernigg",
+      "Nadine Beiler",
+      "Thomas Neuwirth"
+    ],
+    "writers_names": [
+      "Mischa Zickler"
+    ],
+    "actors": [
+      {
+        "uuid": "50596339-355b-4abb-9955-645f3e3ecf34",
+        "full_name": "Arabella Kiesbauer"
+      },
+      {
+        "uuid": "2da3981e-6b78-4430-b693-b2a9bd791e68",
+        "full_name": "Gernot Pachernigg"
+      },
+      {
+        "uuid": "3d35f60e-9ec8-4148-b894-1d1913159b7c",
+        "full_name": "Nadine Beiler"
+      },
+      {
+        "uuid": "187e5115-808c-49e9-b172-2ece92b68ae3",
+        "full_name": "Thomas Neuwirth"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "f155d2b9-3714-4a3e-8dc3-ed8a0e0466c8",
+        "full_name": "Mischa Zickler"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f09581c8-f364-4673-836e-ef584e8ebcb7"
+    }
+  },
+  {
+    "uuid": "f09581c8-f364-4673-836e-ef584e8ebcb7",
+    "title": "Elvis All-Star Tribute",
+    "imdb_rating": 7.3,
+    "description": "A re-enactment by some of the music industry's biggest stars of Elvis Presley's 1968 NBC comeback special, in tribute to the King.",
+    "genres_names": [
+      "Music"
+    ],
+    "genre": [
+      {
+        "uuid": "56b541ab-4d66-4021-8708-397762bff2d4",
+        "name": "Music"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Post Malone",
+      "Ed Sheeran",
+      "Alessia Cara",
+      "Jennifer Lopez"
+    ],
+    "writers_names": [
+      "David Wild"
+    ],
+    "actors": [
+      {
+        "uuid": "03375539-7607-42b5-944a-0e98fe2128e5",
+        "full_name": "Post Malone"
+      },
+      {
+        "uuid": "a429c4d0-399c-4c2e-94d1-46f250717d6a",
+        "full_name": "Ed Sheeran"
+      },
+      {
+        "uuid": "28b406df-ee09-49d4-8cb9-741e96b373bd",
+        "full_name": "Alessia Cara"
+      },
+      {
+        "uuid": "00e2e97b-3a93-4d44-a31d-9346b1348cc6",
+        "full_name": "Jennifer Lopez"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "ef478f80-fe53-4bb8-942f-a9dac0cb2cd1",
+        "full_name": "David Wild"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f1e279b0-5604-4242-8f7a-b1d2d6ebf4f7"
+    }
+  },
+  {
+    "uuid": "f1e279b0-5604-4242-8f7a-b1d2d6ebf4f7",
+    "title": "Four Star Playhouse",
+    "imdb_rating": 7.8,
+    "description": "This show featured four rotating stars, Charles Boyer, David Niven, Ida Lupino, and Dick Powell in individual episodes consisting of everything from comedy to drama.",
+    "genres_names": [
+      "Drama",
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Ida Lupino",
+      "Charles Boyer",
+      "David Niven",
+      "Dick Powell"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "48644fad-1069-4af9-9469-0436a7cfe3ff",
+        "full_name": "Ida Lupino"
+      },
+      {
+        "uuid": "3b859f2d-98e2-4306-9025-96c9f483aa78",
+        "full_name": "Charles Boyer"
+      },
+      {
+        "uuid": "cf94db5c-bfd4-4aa0-8296-2b0959056af9",
+        "full_name": "David Niven"
+      },
+      {
+        "uuid": "3176da87-6d3e-4f38-8b27-aa580cdf96c0",
+        "full_name": "Dick Powell"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f20e8a75-a7b0-4204-b3e6-edbc366e31d4"
+    }
+  },
+  {
+    "uuid": "f20e8a75-a7b0-4204-b3e6-edbc366e31d4",
+    "title": "Star na si Van Damme Stallone",
+    "imdb_rating": 7.5,
+    "description": "The life story of a kid diagnosed with Down syndrome. He dreams of being an artista; his family has to make ends (and dreams) meet.",
+    "genres_names": [
+      "Drama"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      }
+    ],
+    "directors_names": [
+      "Randolph Longjas"
+    ],
+    "actors_names": [
+      "Richard Joson",
+      "Acey Aguilar",
+      "Candy Pangilinan",
+      "Sarah Pagcaliwagan"
+    ],
+    "writers_names": [
+      "Rod Marmol",
+      "Alpha Habon"
+    ],
+    "actors": [
+      {
+        "uuid": "5b7206ed-9364-4b09-a4b8-430003a6fc02",
+        "full_name": "Richard Joson"
+      },
+      {
+        "uuid": "6c1dbabf-ce35-4471-b222-67e1ac052956",
+        "full_name": "Acey Aguilar"
+      },
+      {
+        "uuid": "8dc6c94a-18a6-4493-8856-b31dca7b4650",
+        "full_name": "Candy Pangilinan"
+      },
+      {
+        "uuid": "ba43c641-a595-461f-b7c9-866ab2d45cae",
+        "full_name": "Sarah Pagcaliwagan"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "017713b9-24cf-43a6-ab62-6b5e476499b8",
+        "full_name": "Rod Marmol"
+      },
+      {
+        "uuid": "524cbecd-d64f-4577-9736-5b5cb858767d",
+        "full_name": "Alpha Habon"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "04439984-a8c5-4c53-ac74-1c39ac74b6e8",
+        "full_name": "Randolph Longjas"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f241a62c-2157-432a-bbeb-9c579c8bc18b"
+    }
+  },
+  {
+    "uuid": "f241a62c-2157-432a-bbeb-9c579c8bc18b",
+    "title": "Star Wars: Episode IV: A New Hope - Deleted Scenes",
+    "imdb_rating": 8.4,
+    "description": "Deleted scenes from Star Wars: Episode IV - A New Hope (1977).",
+    "genres_names": [
+      "Sci-Fi",
+      "Drama",
+      "Action",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "George Lucas"
+    ],
+    "actors_names": [
+      "Anthony Daniels",
+      "Ronn Brown",
+      "Harrison Ford",
+      "Carrie Fisher"
+    ],
+    "writers_names": [
+      "George Lucas"
+    ],
+    "actors": [
+      {
+        "uuid": "86f1f44b-39f5-41a6-8b3b-af5a9ed09858",
+        "full_name": "Anthony Daniels"
+      },
+      {
+        "uuid": "e7046101-c93b-4870-bbdd-f9cd47f4ff11",
+        "full_name": "Ronn Brown"
+      },
+      {
+        "uuid": "5b4bf1bc-3397-4e83-9b17-8b10c6544ed1",
+        "full_name": "Harrison Ford"
+      },
+      {
+        "uuid": "b5d2b63a-ed1f-4e46-8320-cf52a32be358",
+        "full_name": "Carrie Fisher"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "a5a8f573-3cee-4ccc-8a2b-91cb9f55250a",
+        "full_name": "George Lucas"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "a5a8f573-3cee-4ccc-8a2b-91cb9f55250a",
+        "full_name": "George Lucas"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f2427707-c155-47cb-a6b1-5250013d2482"
+    }
+  },
+  {
+    "uuid": "f2427707-c155-47cb-a6b1-5250013d2482",
+    "title": "HGTV Design Star",
+    "imdb_rating": 6.3,
+    "description": "Ten aspiring designers seek to impress home viewers and an expert judging panel with their design expertise, ingenuity, creativity and \"it\" factor during the reality competition, HGTV Design Star.",
+    "genres_names": [
+      "Reality-TV"
+    ],
+    "genre": [
+      {
+        "uuid": "e508c1c8-24c0-4136-80b4-340c4befb190",
+        "name": "Reality-TV"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Clive Pearse",
+      "Martha McCully",
+      "Cynthia Rowley",
+      "Vern Yip"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "187e02c7-6146-4aa4-96d0-6f4e8cadb136",
+        "full_name": "Clive Pearse"
+      },
+      {
+        "uuid": "09edd8ed-0c07-4022-a5af-31fb0d4936dc",
+        "full_name": "Martha McCully"
+      },
+      {
+        "uuid": "d96ebfb4-2b17-4372-a76f-73b30b86e127",
+        "full_name": "Cynthia Rowley"
+      },
+      {
+        "uuid": "c9e12556-a577-4780-814c-476add9643e0",
+        "full_name": "Vern Yip"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f24736c8-0161-485c-abe5-648b8dd7c075"
+    }
+  },
+  {
+    "uuid": "f24736c8-0161-485c-abe5-648b8dd7c075",
+    "title": "Overwatch: Shooting Star",
+    "imdb_rating": 7.3,
+    "description": null,
+    "genres_names": [
+      "Animation",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "Ben Dai"
+    ],
+    "actors_names": [
+      "Cathy Shim",
+      "Charlet Chung",
+      "Johnny Young"
+    ],
+    "writers_names": [
+      "Matt Burns"
+    ],
+    "actors": [
+      {
+        "uuid": "687a4f52-b0ad-4154-a3db-d2dc5abed03e",
+        "full_name": "Cathy Shim"
+      },
+      {
+        "uuid": "5b5dae37-6488-4ec1-a214-6357010b0a7c",
+        "full_name": "Charlet Chung"
+      },
+      {
+        "uuid": "184fb24f-8be5-4826-9a84-cf9b14ecff85",
+        "full_name": "Johnny Young"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "0d3cd20f-64b8-488a-b965-7b515586e8b6",
+        "full_name": "Matt Burns"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "3a345978-a71f-477c-9237-4f3a441b5076",
+        "full_name": "Ben Dai"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f28fcc6b-d5d2-4921-a91d-5ef5c23d2da5"
+    }
+  },
+  {
+    "uuid": "f28fcc6b-d5d2-4921-a91d-5ef5c23d2da5",
+    "title": "Fashion Star",
+    "imdb_rating": 5.2,
+    "description": null,
+    "genres_names": [
+      "Reality-TV"
+    ],
+    "genre": [
+      {
+        "uuid": "e508c1c8-24c0-4136-80b4-340c4befb190",
+        "name": "Reality-TV"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Theodore Leaf",
+      "Jessica Simpson",
+      "Stella Kae",
+      "Nicole Richie"
+    ],
+    "writers_names": [
+      "E.J. Johnston",
+      "Ben Silverman",
+      "James Deutch",
+      "Rick Ringbakk"
+    ],
+    "actors": [
+      {
+        "uuid": "dd9f00a9-12b9-417e-afa1-ebb3c91a10ea",
+        "full_name": "Theodore Leaf"
+      },
+      {
+        "uuid": "092dadae-a442-42dc-9663-4b1503373a5e",
+        "full_name": "Jessica Simpson"
+      },
+      {
+        "uuid": "fc2cde92-ebeb-4c62-ab56-ab195464c8f4",
+        "full_name": "Stella Kae"
+      },
+      {
+        "uuid": "83b3a33b-670e-4938-bef9-de05a158374b",
+        "full_name": "Nicole Richie"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "d4696f4c-590b-40a3-bdae-2b3977bae32a",
+        "full_name": "E.J. Johnston"
+      },
+      {
+        "uuid": "d7458042-e483-4025-9a57-ab12a5fea84c",
+        "full_name": "Ben Silverman"
+      },
+      {
+        "uuid": "f42bdd01-3f7c-40a3-80bb-1779676466da",
+        "full_name": "James Deutch"
+      },
+      {
+        "uuid": "b290ff51-1f62-4fac-870c-500a30ddc4ad",
+        "full_name": "Rick Ringbakk"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f2dc0ce0-1b3d-4e2d-b4f7-00711829f8b4"
+    }
+  },
+  {
+    "uuid": "f2dc0ce0-1b3d-4e2d-b4f7-00711829f8b4",
+    "title": "Star Stuff: The Story of Carl Sagan",
+    "imdb_rating": 8.6,
+    "description": "What are the stars? In search of an answer to that seemingly simple question, Carl, a curious child, sets off on a great voyage of discovery. As one question is answered, more appear. Soon enough, where once stood but a curious boy, a great scientist will rise. \"Star Stuff\" is a short and sweet film inspired by the life and work of Carl Sagan, one of the most famous scientists and science communicators of the 20th century.",
+    "genres_names": [
+      "Biography",
+      "Short",
+      "Family",
+      "Drama"
+    ],
+    "genre": [
+      {
+        "uuid": "ca124c76-9760-4406-bfa0-409b1e38d200",
+        "name": "Biography"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      }
+    ],
+    "directors_names": [
+      "Ratimir Rakuljic"
+    ],
+    "actors_names": [
+      "Isaiah Stannard",
+      "Ozren Muic",
+      "Lado Skorin",
+      "Domagoj Culina"
+    ],
+    "writers_names": [
+      "Carl Sagan",
+      "Ratimir Rakuljic"
+    ],
+    "actors": [
+      {
+        "uuid": "6fce92f0-3e4d-4f01-a604-85599429b945",
+        "full_name": "Isaiah Stannard"
+      },
+      {
+        "uuid": "707bc8a2-6ec6-46e7-b8a4-cc5c266e452a",
+        "full_name": "Ozren Muic"
+      },
+      {
+        "uuid": "5c56462c-3551-40b8-81a7-720fd0fca6fc",
+        "full_name": "Lado Skorin"
+      },
+      {
+        "uuid": "3f4a6037-d012-4d32-93c0-6687d7c85878",
+        "full_name": "Domagoj Culina"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "49b4a8f9-622f-4ee8-8fa6-b339b5f71b5e",
+        "full_name": "Carl Sagan"
+      },
+      {
+        "uuid": "e642504b-1bde-4b1d-ad1f-3f1a0c8084a7",
+        "full_name": "Ratimir Rakuljic"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "e642504b-1bde-4b1d-ad1f-3f1a0c8084a7",
+        "full_name": "Ratimir Rakuljic"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f3731b08-80b1-4687-aa31-62c483eb24ef"
+    }
+  },
+  {
+    "uuid": "f3731b08-80b1-4687-aa31-62c483eb24ef",
+    "title": "Yogi Bear's All-Star Comedy Christmas Caper",
+    "imdb_rating": 6.9,
+    "description": "Dear Jellystone Visitors, Happy holidays from the Big City! Boo Boo and I left Jellystone Park to spend the most wonderful time of the year metropolitan-style, with friends Snagglepuss, Quick Draw McGraw and the gang! Luckily, I outwitted Ranger Smith with my department store Santa disguise. Our adventure led me to Judy, a girl who wants to spend more time with her workaholic dad. Who knew my love of pic-a-nic baskets would reunite them at a big city Christmas picnic in the park? Join the merrymaking, but get here before the basket is empty! The Flintstones, Huckleberry Hound, Auggie Doggie, and more friends also join us, making this Christmas caper full of our favorites. -- Yours Truly, Yogi Bear",
+    "genres_names": [
+      "Short",
+      "Animation"
+    ],
+    "genre": [
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      }
+    ],
+    "directors_names": [
+      "Steve Lumley"
+    ],
+    "actors_names": [
+      "Georgi Irene",
+      "Henry Corden",
+      "Mel Blanc",
+      "Daws Butler"
+    ],
+    "writers_names": [
+      "Mark Evanier"
+    ],
+    "actors": [
+      {
+        "uuid": "0404befe-98bc-4531-a5a6-17c4482810da",
+        "full_name": "Georgi Irene"
+      },
+      {
+        "uuid": "0bc6bb4d-2d3f-4e4e-a8a9-3922e0346f88",
+        "full_name": "Henry Corden"
+      },
+      {
+        "uuid": "25f8aef4-344b-45dc-bc0a-f0056cb5f7a6",
+        "full_name": "Mel Blanc"
+      },
+      {
+        "uuid": "c681cf3d-8e75-40e4-90bf-e624e836fc22",
+        "full_name": "Daws Butler"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "c30b0678-3676-4a03-aaf5-a7ccdecb6ceb",
+        "full_name": "Mark Evanier"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "7b260177-a45b-4a78-9a97-48e827c31000",
+        "full_name": "Steve Lumley"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f393a3a6-3242-4cc5-936f-e0539247c050"
+    }
+  },
+  {
+    "uuid": "f393a3a6-3242-4cc5-936f-e0539247c050",
+    "title": "Pop Star on Ice",
+    "imdb_rating": 8.2,
+    "description": null,
+    "genres_names": [
+      "Documentary"
+    ],
+    "genre": [
+      {
+        "uuid": "6d141ad2-d407-4252-bda4-95590aaf062a",
+        "name": "Documentary"
+      }
+    ],
+    "directors_names": [
+      "David Barba",
+      "James Pellerito"
+    ],
+    "actors_names": [
+      "Paris Childers",
+      "Patti Weir",
+      "Priscilla Hill",
+      "Johnny Weir"
+    ],
+    "writers_names": [
+      "David Barba",
+      "James Pellerito"
+    ],
+    "actors": [
+      {
+        "uuid": "8e159d94-1b75-4d61-a774-f6ba5e734706",
+        "full_name": "Paris Childers"
+      },
+      {
+        "uuid": "bd25a046-e927-42c3-bbf6-c42d7ab527fe",
+        "full_name": "Patti Weir"
+      },
+      {
+        "uuid": "a73378c7-ed9c-436a-8e75-7603451d374e",
+        "full_name": "Priscilla Hill"
+      },
+      {
+        "uuid": "b8e82010-815a-40d9-bcd3-a3363671158f",
+        "full_name": "Johnny Weir"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "c347cbf4-322e-48f6-8ffe-f38ba3b2b29f",
+        "full_name": "David Barba"
+      },
+      {
+        "uuid": "c0ebc247-25ef-489d-900b-00361416b469",
+        "full_name": "James Pellerito"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "c347cbf4-322e-48f6-8ffe-f38ba3b2b29f",
+        "full_name": "David Barba"
+      },
+      {
+        "uuid": "c0ebc247-25ef-489d-900b-00361416b469",
+        "full_name": "James Pellerito"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f40cffc5-723d-4c84-98b1-3d8fc324727d"
+    }
+  },
+  {
+    "uuid": "f40cffc5-723d-4c84-98b1-3d8fc324727d",
+    "title": "Star Wars Battlefront: Renegade Squadron",
+    "imdb_rating": 8.2,
+    "description": "The story in this game follow the previously secret \"Renegade Squadron\" that was made up of the galaxy's toughest scoundrels. As the plot unfolds, players learn how Han Solo recruited and assembled his team and used their many talents for missions in Korriban's Valley of the Sith, the rocky remains of Alderaan, and the fiery ashes of the volcanic planet, Sullust. In addition to single-player story missions, Renegade Squadron allows up to 16 players to compete via Infrastructure mode (eight-person support for ad hoc), with a special 100-point spending system to purchase custom kits with more than a million different combinations that can be used to create unique Star Wars characters.",
+    "genres_names": [
+      "Adventure",
+      "Action",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Daniel Riordan",
+      "Andrew Chaikin",
+      "Doug Boyd",
+      "David W. Collins"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "489de0d0-db06-45d1-86f5-c7a185d95c51",
+        "full_name": "Daniel Riordan"
+      },
+      {
+        "uuid": "60258574-69ac-4ee6-ae31-99938474d0be",
+        "full_name": "Andrew Chaikin"
+      },
+      {
+        "uuid": "c2bdf474-9610-49ec-95d1-e5f5180106ce",
+        "full_name": "Doug Boyd"
+      },
+      {
+        "uuid": "2f7b8091-ed2b-4bd9-8813-bb00d686ea8d",
+        "full_name": "David W. Collins"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f4955e87-b2c5-4221-9bd1-43d289eeb9f7"
+    }
+  },
+  {
+    "uuid": "f4955e87-b2c5-4221-9bd1-43d289eeb9f7",
+    "title": "Star Wars: Star Warriors",
+    "imdb_rating": 7.4,
+    "description": "Some Star Wars fans want to collect action figures... these fans want to be action figures! A tribute to the 501st Legion, a global organization of Star Wars costume enthusiasts, this insightful documentary shows how the super-fan club promotes interest in the films through charity and volunteer work at fundraisers and high-profile special events around the world.",
+    "genres_names": [
+      "Documentary"
+    ],
+    "genre": [
+      {
+        "uuid": "6d141ad2-d407-4252-bda4-95590aaf062a",
+        "name": "Documentary"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Stacey Bender",
+      "Kevin Christley",
+      "Luis Boileve",
+      "Michael Bender"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "4f1a9e19-91cf-46b9-9f58-d7d697e7eb7d",
+        "full_name": "Stacey Bender"
+      },
+      {
+        "uuid": "515090f5-079e-4980-bb06-4f9b4f112cda",
+        "full_name": "Kevin Christley"
+      },
+      {
+        "uuid": "2a0f3384-bc36-4d81-8e1f-15c120e4f509",
+        "full_name": "Luis Boileve"
+      },
+      {
+        "uuid": "eed4a0b3-be4a-4c1f-a8be-12e97fd0b8f4",
+        "full_name": "Michael Bender"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f553752e-71c7-4ea0-b780-41408516d0f4"
+    }
+  },
+  {
+    "uuid": "f553752e-71c7-4ea0-b780-41408516d0f4",
+    "title": "Star Wars Empire at War: Forces of Corruption",
+    "imdb_rating": 8.1,
+    "description": "Tyber Zaan, a crime lord, is freed from prison and creates an empire of crime and destruction named after himself. He then begins his wuest for control of the galaxy, destroying Rebels and Imperial alike.",
+    "genres_names": [
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "David Anthony Pizzuto",
+      "David Sobolov",
+      "Frank Klepacki",
+      "David W. Collins"
+    ],
+    "writers_names": [
+      "Jim Ward",
+      "Will Beckman",
+      "Bryan Howell",
+      "Patrick Pannullo",
+      "George Lucas"
+    ],
+    "actors": [
+      {
+        "uuid": "c0f1403f-f0ba-45e1-a03e-a0f73ef22485",
+        "full_name": "David Anthony Pizzuto"
+      },
+      {
+        "uuid": "48043937-b4e4-43c4-ab2c-9678a3820667",
+        "full_name": "David Sobolov"
+      },
+      {
+        "uuid": "f96dedf5-c273-4da4-9877-5e72c7f3cd3d",
+        "full_name": "Frank Klepacki"
+      },
+      {
+        "uuid": "2f7b8091-ed2b-4bd9-8813-bb00d686ea8d",
+        "full_name": "David W. Collins"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "c3e52f75-421b-4ce6-97f0-817b67d055d8",
+        "full_name": "Jim Ward"
+      },
+      {
+        "uuid": "c902ddea-b86c-41ee-8954-616feffc49ac",
+        "full_name": "Will Beckman"
+      },
+      {
+        "uuid": "2115fbf9-2f98-48b3-ab6f-6900efa3e8c8",
+        "full_name": "Bryan Howell"
+      },
+      {
+        "uuid": "c0ddbb6d-cda0-477f-87ac-d999ac5f90ab",
+        "full_name": "Patrick Pannullo"
+      },
+      {
+        "uuid": "a5a8f573-3cee-4ccc-8a2b-91cb9f55250a",
+        "full_name": "George Lucas"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f55a39a4-55e9-434b-b80f-5fba492085d2"
+    }
+  },
+  {
+    "uuid": "f55a39a4-55e9-434b-b80f-5fba492085d2",
+    "title": "Star Ocean EX",
+    "imdb_rating": 6.9,
+    "description": "An anime television series based on Star Ocean: The Second Story.",
+    "genres_names": [
+      "Animation",
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Nicole Bouma",
+      "Gabe Khouth",
+      "Matt Hill",
+      "Venus Terzo"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "2e0ea00f-9193-4e02-abff-1b24a336d273",
+        "full_name": "Nicole Bouma"
+      },
+      {
+        "uuid": "4834ae0f-fad4-47c2-a20d-3def55e62122",
+        "full_name": "Gabe Khouth"
+      },
+      {
+        "uuid": "c24618b9-a742-45d6-b12c-49c8f62064eb",
+        "full_name": "Matt Hill"
+      },
+      {
+        "uuid": "c34ec16f-c368-4bb6-9318-639d157c8b5f",
+        "full_name": "Venus Terzo"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f58cf529-b482-4870-9990-0e08e6ef662a"
+    }
+  },
+  {
+    "uuid": "f58cf529-b482-4870-9990-0e08e6ef662a",
+    "title": "New Fist of the North Star",
+    "imdb_rating": 7.0,
+    "description": "Kenshiro is back to make more people's heads explode in this 3 episode anime OVA.",
+    "genres_names": [
+      "Action",
+      "Animation",
+      "Drama",
+      "Fantasy"
+    ],
+    "genre": [
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Takehito Koyasu",
+      "Robert Ashker Kraft"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "77ca6737-6645-40e5-9ed8-87b714bad8d2",
+        "full_name": "Takehito Koyasu"
+      },
+      {
+        "uuid": "d7c6429d-bf65-40f0-8a90-d691c036b2a9",
+        "full_name": "Robert Ashker Kraft"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f5e487d3-6404-4bc3-b0cd-8305a3a7bfbd"
+    }
+  },
+  {
+    "uuid": "f5e487d3-6404-4bc3-b0cd-8305a3a7bfbd",
+    "title": "Ford Star Jubilee",
+    "imdb_rating": 7.3,
+    "description": null,
+    "genres_names": [
+      "Music",
+      "Comedy",
+      "Drama"
+    ],
+    "genre": [
+      {
+        "uuid": "56b541ab-4d66-4021-8708-397762bff2d4",
+        "name": "Music"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Raymond Bailey",
+      "Herbert Anderson",
+      "Noël Coward",
+      "Bing Crosby"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "b06050f2-eee0-413f-8023-8d0f0e5beb19",
+        "full_name": "Raymond Bailey"
+      },
+      {
+        "uuid": "710b2d17-8261-40a5-81f1-7226156370b9",
+        "full_name": "Herbert Anderson"
+      },
+      {
+        "uuid": "d6047c33-9268-4f52-bfd2-31a243e4d00d",
+        "full_name": "Noël Coward"
+      },
+      {
+        "uuid": "d05a86a4-b5b8-45ed-86ba-96eb6134b460",
+        "full_name": "Bing Crosby"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f60241d5-119d-42f8-850a-ea56e8a15cf1"
+    }
+  },
+  {
+    "uuid": "f60241d5-119d-42f8-850a-ea56e8a15cf1",
+    "title": "The Cowboy and the Movie Star",
+    "imdb_rating": 6.3,
+    "description": "Depressed at the thought of losing his family ranch to settle his divorce, cowboy Clint Brannan decides to drive his cattle up to their high pasture. One day into the drive Clint happens across actress Sean Livingston who has run her car off the road in the middle of nowhere whilst out on a drive to clear her head. Faced with the prospect of a two or three day wait for rescue or accompanying Clint on his cattle drive, Sean decides to go on the cattle drive. Completely unprepared for the harshness and privations of living outdoors Sean initially hates the adventure. However, as the drive progresses Sean and Clint start to appreciate the differences and similarities of their respective lives and begin to realize that they have much in common. As the drive progresses fate and the forces of nature intervene to turn the cattle drive into a race against time to reach their destination to save the cattle and then return to civilization as soon as possible to save Clint's life. Will their fledgling friendship, borne of enforced intimacy, survive and grow or will they go their separate ways?",
+    "genres_names": [
+      "Drama",
+      "Romance"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      }
+    ],
+    "directors_names": [
+      "Mark Griffiths"
+    ],
+    "actors_names": [
+      "Priscilla Barnes",
+      "David Groh",
+      "Sean Young",
+      "Perry King"
+    ],
+    "writers_names": [
+      "Rob Gilmer",
+      "Michael Petryni"
+    ],
+    "actors": [
+      {
+        "uuid": "25535c8e-e548-4d06-b2f2-1eb93fba0090",
+        "full_name": "Priscilla Barnes"
+      },
+      {
+        "uuid": "3069d0c7-84ac-44c4-a6dd-575239c27ee5",
+        "full_name": "David Groh"
+      },
+      {
+        "uuid": "027e1f01-1135-40d6-84c2-7faf5fbed154",
+        "full_name": "Sean Young"
+      },
+      {
+        "uuid": "1995a96f-113b-4656-bff5-9f2fd96db8fe",
+        "full_name": "Perry King"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "b5eb4d8f-9710-439f-af5c-663184e53bdc",
+        "full_name": "Rob Gilmer"
+      },
+      {
+        "uuid": "d2e619fb-4be7-4540-8537-0837a944cfd1",
+        "full_name": "Michael Petryni"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "466c8350-fda7-44b4-a08f-afceaa16bc31",
+        "full_name": "Mark Griffiths"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f67a2e55-41a9-4186-9d56-4ac0e18082eb"
+    }
+  },
+  {
+    "uuid": "f67a2e55-41a9-4186-9d56-4ac0e18082eb",
+    "title": "Paper Mario: Sticker Star",
+    "imdb_rating": 6.7,
+    "description": "Mario returns to paper form and goes on yet another quest to save Princess Peach.",
+    "genres_names": [
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [
+      "Shigeru Miyamoto"
+    ],
+    "actors_names": [
+      "Kenny James",
+      "Samantha Kelly",
+      "Kazumi Totaka",
+      "Caety Sagoian"
+    ],
+    "writers_names": [
+      "Shigeru Miyamoto"
+    ],
+    "actors": [
+      {
+        "uuid": "d0bc39c8-caa8-4b90-8cc5-176ee7e9876b",
+        "full_name": "Kenny James"
+      },
+      {
+        "uuid": "7eee43b6-a985-49e1-8d2e-4f6ddfe3e684",
+        "full_name": "Samantha Kelly"
+      },
+      {
+        "uuid": "5b747b11-63bc-40ed-9604-a3f8f4c948ea",
+        "full_name": "Kazumi Totaka"
+      },
+      {
+        "uuid": "97f3e583-3929-4685-a044-4ed5a6b6a333",
+        "full_name": "Caety Sagoian"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "1d92c9e5-fca2-4bae-a561-2218c44382ef",
+        "full_name": "Shigeru Miyamoto"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "1d92c9e5-fca2-4bae-a561-2218c44382ef",
+        "full_name": "Shigeru Miyamoto"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f6bc0427-951a-4ab7-963b-f4f5981bed52"
+    }
+  },
+  {
+    "uuid": "f6bc0427-951a-4ab7-963b-f4f5981bed52",
+    "title": "Star Trek: Borg",
+    "imdb_rating": 7.3,
+    "description": "You play a Starfleet officer whose father was killed at Wolf 359 and are upset when Starfleet won't allow you to participate in repelling the current Borg attack. Q steps in and makes you a deal-with-the-devil offer: he will take you back to the Battle of Wolf 359 to prevent your father's death.",
+    "genres_names": [
+      "Adventure",
+      "Action",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [
+      "James L. Conway"
+    ],
+    "actors_names": [
+      "Barry Lynch",
+      "Marnie McPhail",
+      "John Cothran",
+      "John de Lancie"
+    ],
+    "writers_names": [
+      "Hilary Bader",
+      "Keith Blanchard"
+    ],
+    "actors": [
+      {
+        "uuid": "2151134a-a1c0-4215-8197-b20439dbbc35",
+        "full_name": "Barry Lynch"
+      },
+      {
+        "uuid": "bffdedc4-4713-4fb2-88b8-8c6de6aad191",
+        "full_name": "Marnie McPhail"
+      },
+      {
+        "uuid": "d4f66d41-4674-42aa-9e24-bb9f1f7e85ea",
+        "full_name": "John Cothran"
+      },
+      {
+        "uuid": "1ce3e209-51b7-40f6-adfd-d4b0305d1bd9",
+        "full_name": "John de Lancie"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "1590aef7-52d9-46a0-ade5-495fd594308e",
+        "full_name": "Hilary Bader"
+      },
+      {
+        "uuid": "a40675b6-0ef1-4757-b3c0-00801fe7a0cd",
+        "full_name": "Keith Blanchard"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "ddaba77b-13a7-4e1f-b8e1-8015a9d8fa3f",
+        "full_name": "James L. Conway"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f6ca21a9-0a5e-4fea-9c26-7a17ed91cb40"
+    }
+  },
+  {
+    "uuid": "f6ca21a9-0a5e-4fea-9c26-7a17ed91cb40",
+    "title": "Ultraman Tiga & Ultraman Dyna: Warriors of the Star of Light",
+    "imdb_rating": 6.1,
+    "description": "The members of the Super GUTS force, one of whom is secretly Ultraman Dyna, are in the middle of a losing battle against an enormous monster on the surface of the moon, when suddenly a spaceship appears and saves them by zapping the beast. The crew of the ship claim to members of the world peace force that originally created the Super GUTS force, and they invite the GUTS members to enter their brainwave patterns into the ship's battle computer so it can be a more effective fighting system. It sounds like a good idea, but could they have some other plan up their sleeves?",
+    "genres_names": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [
+      "Kazuya Konaka"
+    ],
+    "actors_names": [
+      "Toshikazu Fukawa",
+      "Ryô Kinomoto",
+      "Takeshi Tsuruno",
+      "Risa Saitô"
+    ],
+    "writers_names": [
+      "Keiichi Hasegawa"
+    ],
+    "actors": [
+      {
+        "uuid": "d4c8f7e2-af05-4710-a5b5-1c6afbd49da1",
+        "full_name": "Toshikazu Fukawa"
+      },
+      {
+        "uuid": "0d0a2d44-a00d-4b15-89ec-1ab0bd39e8c5",
+        "full_name": "Ryô Kinomoto"
+      },
+      {
+        "uuid": "028d81a8-bda8-48df-947d-43aa0276755a",
+        "full_name": "Takeshi Tsuruno"
+      },
+      {
+        "uuid": "3e054712-03de-4b73-b555-aa9a5b8b47c2",
+        "full_name": "Risa Saitô"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "ddbaec6b-195b-426d-9955-62db69f1e709",
+        "full_name": "Keiichi Hasegawa"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "1fb13a8a-89d2-4b3b-9e01-086a2f93b1ee",
+        "full_name": "Kazuya Konaka"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f6cfad60-864f-4591-b60c-360da7aff5a9"
+    }
+  },
+  {
+    "uuid": "f6cfad60-864f-4591-b60c-360da7aff5a9",
+    "title": "Rogue One: A Star Wars Toy Story",
+    "imdb_rating": 6.4,
+    "description": "Craving the attention of her busy father, a 7-year-old Star Wars fan disobeys him and starts a rebellion with his Star Wars toy collection that would have surprising consequences.",
+    "genres_names": [
+      "Animation",
+      "Short",
+      "Sci-Fi",
+      "Comedy",
+      "Family"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      }
+    ],
+    "directors_names": [
+      "Raymond Montemayor"
+    ],
+    "actors_names": [
+      "Robert F. Nixon",
+      "Maliya Montemayor",
+      "Edwin Frank Ortiz",
+      "Taylor Koster"
+    ],
+    "writers_names": [
+      "Raymond Montemayor"
+    ],
+    "actors": [
+      {
+        "uuid": "2145241c-b889-4b7c-9412-cbf11377cfff",
+        "full_name": "Robert F. Nixon"
+      },
+      {
+        "uuid": "72bf7c7a-b813-4d6d-a768-20fa79642f1f",
+        "full_name": "Maliya Montemayor"
+      },
+      {
+        "uuid": "9f4092be-fb08-47ea-bc17-954c948016f6",
+        "full_name": "Edwin Frank Ortiz"
+      },
+      {
+        "uuid": "c640429f-1435-4331-8583-7a7c2e94475d",
+        "full_name": "Taylor Koster"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "aa7529d8-85f2-4a1f-add4-911ca396e8e0",
+        "full_name": "Raymond Montemayor"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "aa7529d8-85f2-4a1f-add4-911ca396e8e0",
+        "full_name": "Raymond Montemayor"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f73b492e-751e-446a-8c95-c291545033d8"
+    }
+  },
+  {
+    "uuid": "f73b492e-751e-446a-8c95-c291545033d8",
+    "title": "Star Spangled Girl",
+    "imdb_rating": 5.5,
+    "description": "A pair of 60's hippies fall in love with the girl next door, who is exactly the kind of square that they are fighting against.",
+    "genres_names": [
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Jerry Paris"
+    ],
+    "actors_names": [
+      "Sandy Duncan",
+      "Tony Roberts",
+      "Elizabeth Allen",
+      "Todd Susman"
+    ],
+    "writers_names": [
+      "Neil Simon",
+      "Jim Parker",
+      "Arnold Margolin"
+    ],
+    "actors": [
+      {
+        "uuid": "73224da5-ed20-488c-b70f-0302f82b0a60",
+        "full_name": "Sandy Duncan"
+      },
+      {
+        "uuid": "a8d0fa24-9bb6-4025-813a-5b4b35a1c23d",
+        "full_name": "Tony Roberts"
+      },
+      {
+        "uuid": "47635873-9abc-47a5-b559-49e39c1ae10d",
+        "full_name": "Elizabeth Allen"
+      },
+      {
+        "uuid": "d9c16376-e6a1-40cb-9629-c70b31777dcb",
+        "full_name": "Todd Susman"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "21d38dcf-dd77-43da-93cf-528b09e41b59",
+        "full_name": "Neil Simon"
+      },
+      {
+        "uuid": "8a58da40-1e79-4577-9f26-2e23aeae0eb7",
+        "full_name": "Jim Parker"
+      },
+      {
+        "uuid": "3b1b6c50-645b-4ae9-8e86-7f98c24e35a8",
+        "full_name": "Arnold Margolin"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "97537947-aa79-4e3b-8aa8-891fa1ed302a",
+        "full_name": "Jerry Paris"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f745be30-4cce-4652-b858-372436a7ccfa"
+    }
+  },
+  {
+    "uuid": "f745be30-4cce-4652-b858-372436a7ccfa",
+    "title": "Shaquille O'Neal Presents: All Star Comedy Jam - Live from Las Vegas",
+    "imdb_rating": 5.5,
+    "description": "Comedian and film star Mike Epps (The Hangover) takes center stage as the host of the newest installment in Shaquille O'Neal's All Star Comedy Jam franchise. Epps called on some of stand-up comedy's freshest talent to help him bring down the house; Lil' Rel, Henry Welch, Deon Cole and DeRay Davis. This hilarious lineup delivers nonstop laughs in this high-energy night of comedy.",
+    "genres_names": [
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Mike Epps",
+      "Lil Rel Howery",
+      "Henry Welch",
+      "DeRay Davis"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "7098cdbd-424d-40fa-b7c3-0bf6c81ed283",
+        "full_name": "Mike Epps"
+      },
+      {
+        "uuid": "22765159-b7d2-44b4-9625-c85dc8fcab02",
+        "full_name": "Lil Rel Howery"
+      },
+      {
+        "uuid": "04e559fa-bf89-4b4f-9234-daeefdc74bd1",
+        "full_name": "Henry Welch"
+      },
+      {
+        "uuid": "edc4f8f2-32a0-409d-9de2-4c34cbf1ae7d",
+        "full_name": "DeRay Davis"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f75f574c-1103-4422-8018-07543151fb87"
+    }
+  },
+  {
+    "uuid": "f75f574c-1103-4422-8018-07543151fb87",
+    "title": "Star Wars: Episode XXXVIII - 10 Years Later",
+    "imdb_rating": 5.1,
+    "description": "Star Wars Episode 38 is a movie completely spoofing the original trilogy of star wars with jokes and slapstick humor in almost every scene. Follows the characters from the Original Trilogy as if they were comedians years after Episode 6. If you like parodies of Star Wars this movie is for you.",
+    "genres_names": [
+      "Short",
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Monis Rose"
+    ],
+    "actors_names": [
+      "Jennifer Nicole Ross",
+      "Nate Scholz"
+    ],
+    "writers_names": [
+      "Jennifer Nicole Ross"
+    ],
+    "actors": [
+      {
+        "uuid": "d29ccfd1-8fb1-41e2-9e1c-11f708f12a38",
+        "full_name": "Jennifer Nicole Ross"
+      },
+      {
+        "uuid": "46c7d430-c1bf-46df-8632-e49e29ee0033",
+        "full_name": "Nate Scholz"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "d29ccfd1-8fb1-41e2-9e1c-11f708f12a38",
+        "full_name": "Jennifer Nicole Ross"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "35b2361f-07c4-4f8a-b5ae-ea1fd087ccb4",
+        "full_name": "Monis Rose"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f773ab8a-2ebf-4de5-b3db-b3b73f78b61c"
+    }
+  },
+  {
+    "uuid": "f773ab8a-2ebf-4de5-b3db-b3b73f78b61c",
+    "title": "An All-Star Tribute to Brian Wilson",
+    "imdb_rating": 7.9,
+    "description": null,
+    "genres_names": [
+      "Music",
+      "Documentary"
+    ],
+    "genre": [
+      {
+        "uuid": "56b541ab-4d66-4021-8708-397762bff2d4",
+        "name": "Music"
+      },
+      {
+        "uuid": "6d141ad2-d407-4252-bda4-95590aaf062a",
+        "name": "Documentary"
+      }
+    ],
+    "directors_names": [
+      "Bruce Gowers"
+    ],
+    "actors_names": [
+      "Cameron Crowe",
+      "Charlotte Caffey",
+      "David Crosby",
+      "Belinda Carlisle"
+    ],
+    "writers_names": [
+      "David Leaf"
+    ],
+    "actors": [
+      {
+        "uuid": "a042eba6-0af3-4417-8477-3b0aa04941f9",
+        "full_name": "Cameron Crowe"
+      },
+      {
+        "uuid": "bb534774-fd53-4b86-8247-0d607ad98c52",
+        "full_name": "Charlotte Caffey"
+      },
+      {
+        "uuid": "d3be99b5-dc32-4590-8fcc-c47c13feeae3",
+        "full_name": "David Crosby"
+      },
+      {
+        "uuid": "a5e3efeb-6611-433e-b10e-3ac6c2226aff",
+        "full_name": "Belinda Carlisle"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "6a3e31f1-73fb-4a75-8b90-dd52c1550404",
+        "full_name": "David Leaf"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "d0957f99-e637-42c1-845a-88c38905dc60",
+        "full_name": "Bruce Gowers"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f7b7dc7e-d5cc-4ea2-bd66-7496b6551c61"
+    }
+  },
+  {
+    "uuid": "f7b7dc7e-d5cc-4ea2-bd66-7496b6551c61",
+    "title": "ROH: All Star Extravaganza",
+    "imdb_rating": 7.6,
+    "description": null,
+    "genres_names": [
+      "Sport",
+      "Action"
+    ],
+    "genre": [
+      {
+        "uuid": "2f89e116-4827-4ff4-853c-b6e058f71e31",
+        "name": "Sport"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Steve Corino",
+      "Shinjirô Ôtani",
+      "Masato Tanaka",
+      "Brandon Silvestry"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "c5e7fc6e-e90f-49e4-8012-6ee29a9be097",
+        "full_name": "Steve Corino"
+      },
+      {
+        "uuid": "2831abfa-cf84-4b6c-b818-0238445ccde6",
+        "full_name": "Shinjirô Ôtani"
+      },
+      {
+        "uuid": "a15708fb-78d0-42bb-b434-cd57d9b7d288",
+        "full_name": "Masato Tanaka"
+      },
+      {
+        "uuid": "4733e8cf-c1d0-42fa-9bdc-62776c194219",
+        "full_name": "Brandon Silvestry"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f85791df-6407-4c06-b7be-0a694fa5dfd3"
+    }
+  },
+  {
+    "uuid": "f85791df-6407-4c06-b7be-0a694fa5dfd3",
+    "title": "Mr Black: Green Star",
+    "imdb_rating": 4.0,
+    "description": "In this exciting Chinese action flick, Mr. Black is back! After notorious criminal rat, One-Ear escapes, Mr. Black organises a all-points bulletin to capture him. But more trouble is ...",
+    "genres_names": [
+      "Animation"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      }
+    ],
+    "directors_names": [
+      "Sheng-jun Yu"
+    ],
+    "actors_names": [
+      "Tianhao Wu",
+      "Lu Zhao",
+      "Zijie Lin"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "52d4d257-801c-41f7-9354-e3d866b9aa9c",
+        "full_name": "Tianhao Wu"
+      },
+      {
+        "uuid": "0df679c8-e1d6-4c7c-86c6-005fb8543d3b",
+        "full_name": "Lu Zhao"
+      },
+      {
+        "uuid": "b7c60c78-c8f3-48d1-9a9f-c781b56886cd",
+        "full_name": "Zijie Lin"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "2b5380eb-2a5c-450f-99a9-aa30d67c4739",
+        "full_name": "Sheng-jun Yu"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f899974f-198f-49f3-89f0-f13128bfaafb"
+    }
+  },
+  {
+    "uuid": "f899974f-198f-49f3-89f0-f13128bfaafb",
+    "title": "Star Warp'd",
+    "imdb_rating": 4.7,
+    "description": null,
+    "genres_names": [
+      "Short",
+      "Animation",
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Pete Schuermann"
+    ],
+    "actors_names": [
+      "Jeff Walters",
+      "John Schuermann",
+      "Michael Fleming",
+      "David Carty"
+    ],
+    "writers_names": [
+      "John Schuermann"
+    ],
+    "actors": [
+      {
+        "uuid": "40580305-a4d4-4e14-babf-5286c7ba847f",
+        "full_name": "Jeff Walters"
+      },
+      {
+        "uuid": "504b37fa-3163-435c-b63a-d5a35bd4b1b2",
+        "full_name": "John Schuermann"
+      },
+      {
+        "uuid": "e5c81081-c8b4-4bc5-946c-bf586f0c1150",
+        "full_name": "Michael Fleming"
+      },
+      {
+        "uuid": "ae073203-b7e9-4ac9-a537-0c285b98dced",
+        "full_name": "David Carty"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "504b37fa-3163-435c-b63a-d5a35bd4b1b2",
+        "full_name": "John Schuermann"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "9c9ddecf-a5af-4df8-9d0b-d7d2c2199a73",
+        "full_name": "Pete Schuermann"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f8dd9e27-8b53-4579-b585-94510d705bd3"
+    }
+  },
+  {
+    "uuid": "f8dd9e27-8b53-4579-b585-94510d705bd3",
+    "title": "Star Trek: Armada II",
+    "imdb_rating": 8.0,
+    "description": null,
+    "genres_names": [
+      "Adventure",
+      "Action",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Judi M. Durand",
+      "Alice Krige",
+      "J.G. Hertzler",
+      "Patrick Stewart"
+    ],
+    "writers_names": [
+      "Gene Roddenberry"
+    ],
+    "actors": [
+      {
+        "uuid": "0980817d-ec5c-46ba-accf-65bedf0114d0",
+        "full_name": "Judi M. Durand"
+      },
+      {
+        "uuid": "db460c9f-1b84-4aab-af42-ae3c77d15226",
+        "full_name": "Alice Krige"
+      },
+      {
+        "uuid": "b94664fa-37d1-47d5-9a8b-9f12c56669b5",
+        "full_name": "J.G. Hertzler"
+      },
+      {
+        "uuid": "57a471b1-09dc-48fd-ba8a-1211015a0110",
+        "full_name": "Patrick Stewart"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "6960e2ca-889f-41f5-b728-1e7313e54d6c",
+        "full_name": "Gene Roddenberry"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f927a766-742d-4f2a-9f3b-bb6e65a0c00d"
+    }
+  },
+  {
+    "uuid": "f927a766-742d-4f2a-9f3b-bb6e65a0c00d",
+    "title": "Star Search",
+    "imdb_rating": 5.4,
+    "description": "Hosted by Ed McMahon, and later Martha Quinn, this show gave many young talents their first big breaks in show business as they were given the chance to compete in front of a national audience. Performance categories included singing, dancing, modeling and stand-up comedy.",
+    "genres_names": [
+      "Game-Show",
+      "Comedy",
+      "Family"
+    ],
+    "genre": [
+      {
+        "uuid": "fb58fd7f-7afd-447f-b833-e51e45e2a778",
+        "name": "Game-Show"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Ed McMahon",
+      "Durell Coleman",
+      "Arsenio Hall",
+      "Sam Riddle"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "c6842b76-4f75-4933-931c-8d5fc2469375",
+        "full_name": "Ed McMahon"
+      },
+      {
+        "uuid": "5717859e-fe37-40fb-9e57-0f30a56ba31c",
+        "full_name": "Durell Coleman"
+      },
+      {
+        "uuid": "94ccdf0f-a205-409b-8ace-517c91348005",
+        "full_name": "Arsenio Hall"
+      },
+      {
+        "uuid": "62df7e66-1784-4db7-bbe0-3325dc9c9def",
+        "full_name": "Sam Riddle"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f93bc068-26f8-4a9c-b718-61ce80ba42c6"
+    }
+  },
+  {
+    "uuid": "f93bc068-26f8-4a9c-b718-61ce80ba42c6",
+    "title": "All-Star Family Feud Special",
+    "imdb_rating": 5.8,
+    "description": "A series of primetime specials that began airing May 8th, 1979 on ABC. Each one hour show featured five members of a cast of a television series competing in a celebrity-team tournament for charity, answering questions to match popular survey responses.",
+    "genres_names": [
+      "Game-Show"
+    ],
+    "genre": [
+      {
+        "uuid": "fb58fd7f-7afd-447f-b833-e51e45e2a778",
+        "name": "Game-Show"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Bernie Kopell",
+      "Richard Dawson",
+      "Gene Wood",
+      "Laurie Walters"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "9ded1d0c-e1af-4959-ac7d-1bb4bdf4fd90",
+        "full_name": "Bernie Kopell"
+      },
+      {
+        "uuid": "85dc89d1-5be1-4def-90ab-be13a56357df",
+        "full_name": "Richard Dawson"
+      },
+      {
+        "uuid": "bf1ec86f-1925-4110-8ed9-c40970ff70f0",
+        "full_name": "Gene Wood"
+      },
+      {
+        "uuid": "497ca4fc-fa92-4e4f-b727-6928f661e797",
+        "full_name": "Laurie Walters"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f94cfce9-fa49-4d36-ab4f-ae0ac9b6037b"
+    }
+  },
+  {
+    "uuid": "f94cfce9-fa49-4d36-ab4f-ae0ac9b6037b",
+    "title": "Diego Star",
+    "imdb_rating": 6.7,
+    "description": "A serious accident occurs on board the Diego Star, a dilapidated Russian cargo ship. Traore, a mechanic from the Ivory Coast, is unfairly blamed for it. The ship is towed to the nearest shipyard for repairs. In the interim, crew members find shelter with the inhabitants of the small local village. Far from everyone he loves and knows, Traore is engulfed by the Quebec winter.",
+    "genres_names": [
+      "Drama"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      }
+    ],
+    "directors_names": [
+      "Frédérick Pelletier"
+    ],
+    "actors_names": [
+      "Chloé Bourgeois",
+      "Yassine Fadel",
+      "Issaka Sawadogo",
+      "Nicole-Sylvie Lagarde"
+    ],
+    "writers_names": [
+      "Frédérick Pelletier"
+    ],
+    "actors": [
+      {
+        "uuid": "75b64d85-8b62-46bc-bd5f-bc7aeeef5450",
+        "full_name": "Chloé Bourgeois"
+      },
+      {
+        "uuid": "47ea0fa3-f621-41bf-a0c5-6a25d6fcc1cc",
+        "full_name": "Yassine Fadel"
+      },
+      {
+        "uuid": "23e05396-22ef-4692-b9f4-8be9c480c414",
+        "full_name": "Issaka Sawadogo"
+      },
+      {
+        "uuid": "60aede9f-f307-4bed-a893-c04956e5d35c",
+        "full_name": "Nicole-Sylvie Lagarde"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "f5ac8efa-1bd6-42ac-9c82-898146bcebdc",
+        "full_name": "Frédérick Pelletier"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "f5ac8efa-1bd6-42ac-9c82-898146bcebdc",
+        "full_name": "Frédérick Pelletier"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f9ca2c1f-dc35-471d-ad65-d9be49735210"
+    }
+  },
+  {
+    "uuid": "f9ca2c1f-dc35-471d-ad65-d9be49735210",
+    "title": "Super Star",
+    "imdb_rating": 3.9,
+    "description": null,
+    "genres_names": [
+      "Talk-Show"
+    ],
+    "genre": [
+      {
+        "uuid": "31cabbb5-6389-45c6-9b48-f7f173f6c40f",
+        "name": "Talk-Show"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Lila Droutsa",
+      "Giannis Angelakis",
+      "Hristina Lambiri",
+      "Maria Ioannidou"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "a97e8371-da16-462e-b6e8-6b4a29074387",
+        "full_name": "Lila Droutsa"
+      },
+      {
+        "uuid": "880488c8-8bbe-493d-ac02-e060fba16e36",
+        "full_name": "Giannis Angelakis"
+      },
+      {
+        "uuid": "bb18ce0d-16c7-494d-b83a-1396c9327487",
+        "full_name": "Hristina Lambiri"
+      },
+      {
+        "uuid": "2aff5f9d-0c3d-4b8b-b049-202cb969c7d3",
+        "full_name": "Maria Ioannidou"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "f9f6d1b3-c546-4f9e-8bc4-132832e5e104"
+    }
+  },
+  {
+    "uuid": "f9f6d1b3-c546-4f9e-8bc4-132832e5e104",
+    "title": "The Next Star",
+    "imdb_rating": 5.0,
+    "description": "Children up to the age of 15 all across Canada audition for the chance to be the next star. This is a singing competition where they start by picking 16 kids across Canada. Afterwards they pick 8 from the 16 then 6 from the 8. These 6 contestants write their own songs and perform them to the judges. In the end one of these 6 young singers will become the next star.",
+    "genres_names": [
+      "Reality-TV"
+    ],
+    "genre": [
+      {
+        "uuid": "e508c1c8-24c0-4136-80b4-340c4befb190",
+        "name": "Reality-TV"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Adamo Ruggiero",
+      "Tanya Karn",
+      "Justin Lopes",
+      "Annie Pattison"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "711c14e6-2c21-4414-9fb6-3e50129f7390",
+        "full_name": "Adamo Ruggiero"
+      },
+      {
+        "uuid": "7276b456-d42f-4b6c-9ac5-37600757672a",
+        "full_name": "Tanya Karn"
+      },
+      {
+        "uuid": "b6b09e83-a562-4069-9a5c-d46eb7cf597d",
+        "full_name": "Justin Lopes"
+      },
+      {
+        "uuid": "8508b1a9-63a9-4fc0-8d4c-88659dce90d4",
+        "full_name": "Annie Pattison"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fa58e8b3-9919-44b7-afc1-1f7a2fd9e061"
+    }
+  },
+  {
+    "uuid": "fa58e8b3-9919-44b7-afc1-1f7a2fd9e061",
+    "title": "Shaquille O'Neal Presents: All Star Comedy Jam - Live from Orlando",
+    "imdb_rating": 6.2,
+    "description": "Funnyman Gary Owen hosts stand-up comedy's most talented and sought after comedians; Capone, Lil' Duval, Tony Roberts and Jay Pharoah.",
+    "genres_names": [
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Leslie Small"
+    ],
+    "actors_names": [
+      "Gary Owen",
+      "Tony T. Roberts",
+      "Lil Duval",
+      "Jay Pharoah"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "7b3c684b-04f2-4889-9249-3aa3a2593e88",
+        "full_name": "Gary Owen"
+      },
+      {
+        "uuid": "67b1b5ea-27e9-4524-8861-efc8fba2653a",
+        "full_name": "Tony T. Roberts"
+      },
+      {
+        "uuid": "794dc430-ac9b-40eb-b1dd-2736e0b605a5",
+        "full_name": "Lil Duval"
+      },
+      {
+        "uuid": "fe872b8c-0e83-4922-ad72-6e96a1ad8bd7",
+        "full_name": "Jay Pharoah"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "f09c267a-1a38-46c2-8b1a-35721b96ec34",
+        "full_name": "Leslie Small"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fa98dd79-c515-4c06-a6ae-7d4be3c6425b"
+    }
+  },
+  {
+    "uuid": "fa98dd79-c515-4c06-a6ae-7d4be3c6425b",
+    "title": "A Voyage Around a Star",
+    "imdb_rating": 6.1,
+    "description": "An obsessive astronomer desperately wishes to fulfill his impossible dream of reaching for the stars - in this particular scenario, a beautiful female star that seduces him from the skies. With the assistance of his helper, he manages to find a unusual transportation that can take him all the way to reach his destiny: he enters on a giant soap bubble who'll take him there and present him some surprises.",
+    "genres_names": [
+      "Fantasy",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "Gaston Velle"
+    ],
+    "actors_names": [],
+    "writers_names": [],
+    "actors": [],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "26d448b9-f161-4148-92e7-560b4f75dca3",
+        "full_name": "Gaston Velle"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fb162b57-0f64-4a80-8b3f-5c7a400dffa0"
+    }
+  },
+  {
+    "uuid": "fb162b57-0f64-4a80-8b3f-5c7a400dffa0",
+    "title": "Star Wars: The Force Unleashed II",
+    "imdb_rating": 7.4,
+    "description": "The Rebel Alliance has grown following the death of Starkiller and Vader hatches an evil plan to destroy them by reinventing their founder, after the plan backfires, Vader enlists the service of a bounty hunter.",
+    "genres_names": [
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [
+      "Shaun Robertson"
+    ],
+    "actors_names": [
+      "Joe Duffy",
+      "Carolyn Kelly",
+      "Alex Beston",
+      "George Nicholson-Sibley"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "366d5f84-945d-4f46-96c5-c42458915fc6",
+        "full_name": "Joe Duffy"
+      },
+      {
+        "uuid": "569ceb36-362d-4071-8a35-4c37b5839540",
+        "full_name": "Carolyn Kelly"
+      },
+      {
+        "uuid": "231c1e98-184f-4520-9b7d-7569d86cfc21",
+        "full_name": "Alex Beston"
+      },
+      {
+        "uuid": "45d15379-d655-4ec2-bab9-a7c35cd8d036",
+        "full_name": "George Nicholson-Sibley"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "e46fc959-ab7d-47ed-9150-4950d60fe59f",
+        "full_name": "Shaun Robertson"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fb3e0374-9b4a-45e0-9a24-c9aa7a6d868c"
+    }
+  },
+  {
+    "uuid": "fb3e0374-9b4a-45e0-9a24-c9aa7a6d868c",
+    "title": "What We Left Behind: Star Trek DS9",
+    "imdb_rating": 8.4,
+    "description": "Ira Steven Behr explores the legacy of Star Trek: Deep Space Nine (1993).",
+    "genres_names": [
+      "Documentary"
+    ],
+    "genre": [
+      {
+        "uuid": "6d141ad2-d407-4252-bda4-95590aaf062a",
+        "name": "Documentary"
+      }
+    ],
+    "directors_names": [
+      "David Zappone(co-director)",
+      "Ira Steven Behr(co-director)"
+    ],
+    "actors_names": [
+      "Armin Shimerman",
+      "Nana Visitor",
+      "Andrew Robinson",
+      "Max Grodénchik"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "60d27561-fc30-47ad-9c47-730313b88adb",
+        "full_name": "Armin Shimerman"
+      },
+      {
+        "uuid": "2a19266a-a0d7-446c-b168-5e24578c8c8b",
+        "full_name": "Nana Visitor"
+      },
+      {
+        "uuid": "1b284dd6-7d37-4c13-a32e-9878019cd7d9",
+        "full_name": "Andrew Robinson"
+      },
+      {
+        "uuid": "7c91019b-cd71-4cc2-89d7-958f59874cbf",
+        "full_name": "Max Grodénchik"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "bd78ac5d-c3b0-4e48-a6a2-555ffd9e7d05",
+        "full_name": "David Zappone(co-director)"
+      },
+      {
+        "uuid": "45317d3f-0d22-4111-88e1-c7b81cd925ce",
+        "full_name": "Ira Steven Behr(co-director)"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fbe9f7b7-6e83-4ecb-8ddf-f15a505c07e2"
+    }
+  },
+  {
+    "uuid": "fbe9f7b7-6e83-4ecb-8ddf-f15a505c07e2",
+    "title": "The Evening Star",
+    "imdb_rating": 5.9,
+    "description": "Continuing the story of Aurora Greenway in her latter years. After the death of her daughter, Aurora struggled to keep her family together, but has one grandson in jail, a rebellious granddaughter, and another grandson living just above the poverty line.",
+    "genres_names": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "genre": [
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      },
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      }
+    ],
+    "directors_names": [
+      "Robert Harling"
+    ],
+    "actors_names": [
+      "Miranda Richardson",
+      "Bill Paxton",
+      "Juliette Lewis",
+      "Shirley MacLaine"
+    ],
+    "writers_names": [
+      "Larry McMurtry",
+      "Robert Harling"
+    ],
+    "actors": [
+      {
+        "uuid": "6a6385d8-40c4-47cf-a154-976cde0635ec",
+        "full_name": "Miranda Richardson"
+      },
+      {
+        "uuid": "696c2156-5a89-4be3-b322-90ca89f60773",
+        "full_name": "Bill Paxton"
+      },
+      {
+        "uuid": "4ff35f35-e577-41b1-aeb6-18be11845e45",
+        "full_name": "Juliette Lewis"
+      },
+      {
+        "uuid": "48fd8018-c9d0-40e2-adcd-afd9cfbd9f02",
+        "full_name": "Shirley MacLaine"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "969205c3-c8b1-40a3-a2ee-19fe19fca8b9",
+        "full_name": "Larry McMurtry"
+      },
+      {
+        "uuid": "54ffcc0d-3b43-42cf-8e46-4d04e5123cbe",
+        "full_name": "Robert Harling"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "54ffcc0d-3b43-42cf-8e46-4d04e5123cbe",
+        "full_name": "Robert Harling"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fc23ea9c-e799-419a-9df0-fc9d9b941a12"
+    }
+  },
+  {
+    "uuid": "fc23ea9c-e799-419a-9df0-fc9d9b941a12",
+    "title": "Star Troopers",
+    "imdb_rating": 4.7,
+    "description": "In the closing stages of the 21st Century, an enigmatic warrior, called the Baron, leads the crusade that the religious organization Exorcio Deus Machine is conducting against the forces of Evil. During an extermination mission, the Baron is taken prisoner by the evil sorceress Lady Pervertvm and is tortured until she gets his seed. Lady Pervertvm uses the Baron's seminal fluid to fertilize the Beast-Ragnarok in order to have it engender the most powerful and ultimate race of demons. The Baron manages to escape but, blinded by his guilt, he begins a bloody Via Crucis which will start to reveal his true nature.",
+    "genres_names": [
+      "Fantasy",
+      "Action",
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [
+      "Ricardo Ribelles"
+    ],
+    "actors_names": [
+      "Helena Lecumberri",
+      "Xavier Bertran",
+      "Alejandro Ribelles",
+      "Juan Carlos Romeu"
+    ],
+    "writers_names": [
+      "Ricardo Ribelles"
+    ],
+    "actors": [
+      {
+        "uuid": "3537cc30-26b8-4ccd-95e2-2a5c71f81117",
+        "full_name": "Helena Lecumberri"
+      },
+      {
+        "uuid": "52d2d620-c5a7-42c4-b43d-fe130ba07e60",
+        "full_name": "Xavier Bertran"
+      },
+      {
+        "uuid": "a6f8474b-c641-4083-800f-725ed23e4c77",
+        "full_name": "Alejandro Ribelles"
+      },
+      {
+        "uuid": "8e98a203-5e75-4320-85f9-016499f9e35e",
+        "full_name": "Juan Carlos Romeu"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "9672c2ca-c113-4b3c-8a34-31edf0398a88",
+        "full_name": "Ricardo Ribelles"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "9672c2ca-c113-4b3c-8a34-31edf0398a88",
+        "full_name": "Ricardo Ribelles"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fc5d7d6d-a72e-4704-b97d-ee52f4571387"
+    }
+  },
+  {
+    "uuid": "fc5d7d6d-a72e-4704-b97d-ee52f4571387",
+    "title": "Star Trek Dark Armada",
+    "imdb_rating": 6.4,
+    "description": null,
+    "genres_names": [
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Monique Lanting",
+      "Sophie Le Neveu",
+      "Robin Hiert",
+      "Iris Janse"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "8f1756a6-3245-49aa-8bd6-0843c14605df",
+        "full_name": "Monique Lanting"
+      },
+      {
+        "uuid": "eaa3ae65-9f8e-4f3e-8182-232788e8de34",
+        "full_name": "Sophie Le Neveu"
+      },
+      {
+        "uuid": "7939d90b-8e36-44d7-ab4b-93427396c40f",
+        "full_name": "Robin Hiert"
+      },
+      {
+        "uuid": "10b98155-70df-42a7-a8a6-3666866c5eb1",
+        "full_name": "Iris Janse"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fce073d4-982d-46ec-9eec-d4bd9342a2d5"
+    }
+  },
+  {
+    "uuid": "fce073d4-982d-46ec-9eec-d4bd9342a2d5",
+    "title": "Star Wars: Jedi Arena",
+    "imdb_rating": 4.8,
+    "description": null,
+    "genres_names": [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [],
+    "writers_names": [],
+    "actors": [],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fceabcf0-9879-4c76-9ad8-576802df33ff"
+    }
+  },
+  {
+    "uuid": "fceabcf0-9879-4c76-9ad8-576802df33ff",
+    "title": "Hayley Wagner, Star",
+    "imdb_rating": 5.0,
+    "description": null,
+    "genres_names": [
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Nell Scovell"
+    ],
+    "actors_names": [
+      "Meghan Ory",
+      "Nick Cornish",
+      "Bill Fagerbakke",
+      "Bethany Richards"
+    ],
+    "writers_names": [
+      "Nell Scovell"
+    ],
+    "actors": [
+      {
+        "uuid": "6cfdaa40-bffd-4cf7-af00-2fb8b15ae116",
+        "full_name": "Meghan Ory"
+      },
+      {
+        "uuid": "02581c45-a14d-4480-a8ec-00dca52fbbb4",
+        "full_name": "Nick Cornish"
+      },
+      {
+        "uuid": "ea26b2b5-1e87-45e6-8a6c-5cacf1fc7d9e",
+        "full_name": "Bill Fagerbakke"
+      },
+      {
+        "uuid": "199e1dcf-eb83-48f9-9769-f601c86d4d54",
+        "full_name": "Bethany Richards"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "f1dfbd4b-1f9e-4e40-9ad6-240fe6b3e3b5",
+        "full_name": "Nell Scovell"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "f1dfbd4b-1f9e-4e40-9ad6-240fe6b3e3b5",
+        "full_name": "Nell Scovell"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fd337efe-a136-4904-bab2-14c91813d6de"
+    }
+  },
+  {
+    "uuid": "fd337efe-a136-4904-bab2-14c91813d6de",
+    "title": "È nata una star?",
+    "imdb_rating": 4.9,
+    "description": "Mother find out from her neighbours, that her teen son is a pornstar with really big tool. This comedy shows how mother and how father deal with this problem.",
+    "genres_names": [
+      "Comedy"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      }
+    ],
+    "directors_names": [
+      "Lucio Pellegrini"
+    ],
+    "actors_names": [
+      "Luciana Littizzetto",
+      "Rocco Papaleo",
+      "Pietro Castellitto",
+      "Michela Cescon"
+    ],
+    "writers_names": [
+      "Massimo Gaudioso",
+      "Lucio Pellegrini",
+      "Nick Hornby"
+    ],
+    "actors": [
+      {
+        "uuid": "4a3857fd-995e-456d-a00a-b91596684060",
+        "full_name": "Luciana Littizzetto"
+      },
+      {
+        "uuid": "625e1779-02ca-49ef-8731-f616cebc50fe",
+        "full_name": "Rocco Papaleo"
+      },
+      {
+        "uuid": "7ffe7918-7645-4d0a-b1a5-4dde9b962677",
+        "full_name": "Pietro Castellitto"
+      },
+      {
+        "uuid": "dfa851ff-c410-4008-81bf-9f852025f470",
+        "full_name": "Michela Cescon"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "e74a1a49-4951-4708-b42c-c7244baa5262",
+        "full_name": "Massimo Gaudioso"
+      },
+      {
+        "uuid": "820440fb-f794-4ad7-a840-b2e0a033eda5",
+        "full_name": "Lucio Pellegrini"
+      },
+      {
+        "uuid": "8192be4e-1260-4f6b-b7b0-b07244086a6b",
+        "full_name": "Nick Hornby"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "820440fb-f794-4ad7-a840-b2e0a033eda5",
+        "full_name": "Lucio Pellegrini"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fd78a0e5-d4ec-435e-8994-4ccbdfc4e60b"
+    }
+  },
+  {
+    "uuid": "fd78a0e5-d4ec-435e-8994-4ccbdfc4e60b",
+    "title": "Lone Star Restoration",
+    "imdb_rating": 8.7,
+    "description": "Brent Hull is a man on a mission to \"quit building crap and build more beautiful things.\" Along with his faithful dog Romeo, Brent and his team from Hull Historical are saving America's architectural history one project at time.",
+    "genres_names": [
+      "Reality-TV"
+    ],
+    "genre": [
+      {
+        "uuid": "e508c1c8-24c0-4136-80b4-340c4befb190",
+        "name": "Reality-TV"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [],
+    "writers_names": [],
+    "actors": [],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fd919eab-c5e2-4074-81c6-4f5b7b52248a"
+    }
+  },
+  {
+    "uuid": "fd919eab-c5e2-4074-81c6-4f5b7b52248a",
+    "title": "Shine, Shine, My Star",
+    "imdb_rating": 7.5,
+    "description": "The story of a young actor during the Civil War years who drives around the countryside giving free performances in order to bring art to the masses.",
+    "genres_names": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      }
+    ],
+    "directors_names": [
+      "Aleksandr Mitta"
+    ],
+    "actors_names": [
+      "Evgeniy Leonov",
+      "Oleg Tabakov",
+      "Elena Proklova",
+      "Oleg Efremov"
+    ],
+    "writers_names": [
+      "Valeri Frid",
+      "Yuli Dunsky",
+      "Aleksandr Mitta"
+    ],
+    "actors": [
+      {
+        "uuid": "c04a4037-4b41-4e2d-a925-e66ce2c6bc0f",
+        "full_name": "Evgeniy Leonov"
+      },
+      {
+        "uuid": "b01a1a33-328f-4a9c-b5da-1893837ddd65",
+        "full_name": "Oleg Tabakov"
+      },
+      {
+        "uuid": "14b50fb4-12af-4adc-927c-b86874d717a7",
+        "full_name": "Elena Proklova"
+      },
+      {
+        "uuid": "276ee8ca-16da-46c6-8c19-e190e821f29b",
+        "full_name": "Oleg Efremov"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "11235ac1-e9b0-4964-9f5e-1bcfaf1b5562",
+        "full_name": "Valeri Frid"
+      },
+      {
+        "uuid": "6ec39bd9-d291-4843-bc32-995958ade5fb",
+        "full_name": "Yuli Dunsky"
+      },
+      {
+        "uuid": "6fae2cb0-db17-4488-86b1-0b2e9b73decf",
+        "full_name": "Aleksandr Mitta"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "6fae2cb0-db17-4488-86b1-0b2e9b73decf",
+        "full_name": "Aleksandr Mitta"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fda827f8-d261-4c23-9e9c-e42787580c4d"
+    }
+  },
+  {
+    "uuid": "fda827f8-d261-4c23-9e9c-e42787580c4d",
+    "title": "A Star Is Born",
+    "imdb_rating": 7.7,
+    "description": "Jackson Maine (Cooper), a country music star on the brink of decline, discovers a talented unknown named Ally (Germanotta). As the two begin a passionate love affair, Jackson coaxes Ally into the spotlight, catapulting her to stardom. But as Ally's career quickly eclipses his own, Jack finds it increasingly hard to handle his fading glory.",
+    "genres_names": [
+      "Music",
+      "Drama",
+      "Romance"
+    ],
+    "genre": [
+      {
+        "uuid": "56b541ab-4d66-4021-8708-397762bff2d4",
+        "name": "Music"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      }
+    ],
+    "directors_names": [
+      "Bradley Cooper"
+    ],
+    "actors_names": [
+      "Andrew Dice Clay",
+      "Bradley Cooper",
+      "Lady Gaga",
+      "Sam Elliott"
+    ],
+    "writers_names": [
+      "Bradley Cooper",
+      "Joan Didion",
+      "Moss Hart",
+      "William A. Wellman",
+      "Robert Carson",
+      "Frank Pierson",
+      "Eric Roth",
+      "John Gregory Dunne",
+      "Will Fetters"
+    ],
+    "actors": [
+      {
+        "uuid": "fe2b0699-b5ac-437a-9a69-e747b11eb641",
+        "full_name": "Andrew Dice Clay"
+      },
+      {
+        "uuid": "5c360057-c51f-4376-bdf5-049b87fa853b",
+        "full_name": "Bradley Cooper"
+      },
+      {
+        "uuid": "77789b44-e734-4fa6-91e8-212a09fa4a32",
+        "full_name": "Lady Gaga"
+      },
+      {
+        "uuid": "e52627f7-a659-476a-b415-e58e6bebe824",
+        "full_name": "Sam Elliott"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "5c360057-c51f-4376-bdf5-049b87fa853b",
+        "full_name": "Bradley Cooper"
+      },
+      {
+        "uuid": "f24f3fa4-2e42-4dde-be8c-2aba541a593b",
+        "full_name": "Joan Didion"
+      },
+      {
+        "uuid": "7fb9ae3d-aeac-40a9-aa25-cd6992be16a6",
+        "full_name": "Moss Hart"
+      },
+      {
+        "uuid": "5ac68e18-a84c-4a98-a2ba-85d1bc85e0a4",
+        "full_name": "William A. Wellman"
+      },
+      {
+        "uuid": "e259d88e-b693-436a-9fed-a10204b8fd91",
+        "full_name": "Robert Carson"
+      },
+      {
+        "uuid": "e31f6518-6f0a-4738-a224-211eb4150e13",
+        "full_name": "Frank Pierson"
+      },
+      {
+        "uuid": "39276c87-27ec-42f3-a573-e0184fc463a7",
+        "full_name": "Eric Roth"
+      },
+      {
+        "uuid": "2b0f84fb-416b-4c30-80db-69478bf872be",
+        "full_name": "John Gregory Dunne"
+      },
+      {
+        "uuid": "dd0d82d8-1c95-4bb9-b9c6-d707773aa4db",
+        "full_name": "Will Fetters"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "5c360057-c51f-4376-bdf5-049b87fa853b",
+        "full_name": "Bradley Cooper"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fdfc8266-5ece-4d85-b614-3cfe9be97b71"
+    }
+  },
+  {
+    "uuid": "fdfc8266-5ece-4d85-b614-3cfe9be97b71",
+    "title": "Star Wars: Clone Wars",
+    "imdb_rating": 7.8,
+    "description": "Immediately after the events of Star Wars: Episode II - Attack of the Clones (2002), the Clone Wars continue. The Separatists launch masses of Battle Droids while the Republic has an entire arsenal of Clone Troopers to blow them away. Obi-Wan Kenobi and his apprentice Anakin Skywalker are also participating in the fights against Count Dooku and his defiant separatists. Jedi Masters Yoda and Mace Windu, take part in the battle as well. While down on Coruscant, Padmé Amidala, Chancellor Palpatine, C-3PO and R2-D2 hope nothing but good for our heroes. Will the Republic emerge triumphant? Will Dooku and his separatists be brought to their knees? And will Anakin truly bring balance to the Force, or will he bring absolutely tyranny?",
+    "genres_names": [
+      "Sci-Fi",
+      "Animation",
+      "Drama",
+      "Fantasy",
+      "Family",
+      "Action",
+      "Adventure"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Grey Griffin",
+      "André Sogliuzzo",
+      "Mat Lucas",
+      "James Arnold Taylor"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "b4e1b2bd-7f36-4322-8a96-0baecf121424",
+        "full_name": "Grey Griffin"
+      },
+      {
+        "uuid": "96185bee-1b14-4320-84ff-def00c07593c",
+        "full_name": "André Sogliuzzo"
+      },
+      {
+        "uuid": "6dd77305-18ee-4d2e-9215-fd1a496ccfdf",
+        "full_name": "Mat Lucas"
+      },
+      {
+        "uuid": "8746ff78-577b-4bef-a7f7-1db05a102def",
+        "full_name": "James Arnold Taylor"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fe12e428-be67-4bb9-9629-4ab1385dc8be"
+    }
+  },
+  {
+    "uuid": "fe12e428-be67-4bb9-9629-4ab1385dc8be",
+    "title": "Crescent Star",
+    "imdb_rating": 7.9,
+    "description": "In 1944, the Germans began rounding up the Jews of Rhodes. The Turkish Consul General, Selahattin Ulkumen, interceded on behalf of those Jewish who were Turkish nationals. By his efforts, 42 Jewish families were set free from the deportation to Auschwitz-Birkenau. In reprisal, German planes bombed the consulate building and Ulkumen's house, killing his staff and pregnant wife. His sacrifice made consul Selahattin Ulkumen the first non-Christian to be declared a Righteous Gentile by Yad Vashem, Israel's Holocaust memorial.",
+    "genres_names": [
+      "Drama",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "1cacff68-643e-4ddd-8f57-84b62538081a",
+        "name": "Drama"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "Turgut Turk Adiguzel"
+    ],
+    "actors_names": [
+      "Olga Christodoulou",
+      "Darrell Geer",
+      "Saro Solis",
+      "Michael Bond"
+    ],
+    "writers_names": [
+      "Turgut Turk Adiguzel"
+    ],
+    "actors": [
+      {
+        "uuid": "53b36264-0517-4ad2-8382-dc8391925527",
+        "full_name": "Olga Christodoulou"
+      },
+      {
+        "uuid": "4d454cee-c41f-4414-aafa-251cddf8ec4f",
+        "full_name": "Darrell Geer"
+      },
+      {
+        "uuid": "04773c6c-a6dd-4cad-8543-cd52230eafaf",
+        "full_name": "Saro Solis"
+      },
+      {
+        "uuid": "84db9dee-d10f-4d6a-875b-346c49c4d5ed",
+        "full_name": "Michael Bond"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "1ae39512-10fa-44ca-b239-55108d6644ef",
+        "full_name": "Turgut Turk Adiguzel"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "1ae39512-10fa-44ca-b239-55108d6644ef",
+        "full_name": "Turgut Turk Adiguzel"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fe3d6908-2991-442b-8e81-3ecc46ecc786"
+    }
+  },
+  {
+    "uuid": "fe3d6908-2991-442b-8e81-3ecc46ecc786",
+    "title": "Journey to the Christmas Star",
+    "imdb_rating": 5.8,
+    "description": "Once upon a time a little girl went out to find the Christmas star.",
+    "genres_names": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "b92ef010-5e4c-4fd0-99d6-41b6456272cd",
+        "name": "Fantasy"
+      }
+    ],
+    "directors_names": [
+      "Nils Gaup"
+    ],
+    "actors_names": [
+      "Vilde Zeiner",
+      "Anders Baasmo Christiansen",
+      "Agnes Kittelsen",
+      "Stig Werner Moe"
+    ],
+    "writers_names": [
+      "Kamilla Krogsveen"
+    ],
+    "actors": [
+      {
+        "uuid": "a27758ee-0aab-42ff-b1f7-e1f0bbb3d686",
+        "full_name": "Vilde Zeiner"
+      },
+      {
+        "uuid": "fb610ba7-53fa-4db5-a2a6-22949ecd13a8",
+        "full_name": "Anders Baasmo Christiansen"
+      },
+      {
+        "uuid": "fb406735-52f3-44eb-af0a-9abd10223ec1",
+        "full_name": "Agnes Kittelsen"
+      },
+      {
+        "uuid": "94cd2013-0e9a-4e58-8f5a-40a69da13aed",
+        "full_name": "Stig Werner Moe"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "b643a3fc-5f5e-4ad7-8beb-f8b17ca0233d",
+        "full_name": "Kamilla Krogsveen"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "1bf9b104-821a-4e8b-8539-8fcb5b86fc69",
+        "full_name": "Nils Gaup"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fe4acdc6-4b23-4437-92fb-b73872b5dca2"
+    }
+  },
+  {
+    "uuid": "fe4acdc6-4b23-4437-92fb-b73872b5dca2",
+    "title": "Star Trek: D·A·C",
+    "imdb_rating": 6.7,
+    "description": null,
+    "genres_names": [
+      "Adventure",
+      "Action",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [],
+    "writers_names": [],
+    "actors": [],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "fe758dd4-9063-42d4-bf08-bdc7dbae3479"
+    }
+  },
+  {
+    "uuid": "fe758dd4-9063-42d4-bf08-bdc7dbae3479",
+    "title": "Star Trek: Tactical Assault",
+    "imdb_rating": 7.2,
+    "description": null,
+    "genres_names": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "genre": [
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      },
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "William Shatner"
+    ],
+    "writers_names": [
+      "D.C. Fontana",
+      "Derek Chester",
+      "Rantz Hoseley"
+    ],
+    "actors": [
+      {
+        "uuid": "9758b894-57d7-465d-b657-c5803dd5b7f7",
+        "full_name": "William Shatner"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "c8db0be4-f481-4405-bb84-3b7ac1553876",
+        "full_name": "D.C. Fontana"
+      },
+      {
+        "uuid": "b49faa53-3ebd-4d1a-88ee-df13e232bdf3",
+        "full_name": "Derek Chester"
+      },
+      {
+        "uuid": "27f404c9-8b16-4ee1-a099-562308fa387b",
+        "full_name": "Rantz Hoseley"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "feddd90c-14b4-4a89-b6f0-625066d989fa"
+    }
+  },
+  {
+    "uuid": "feddd90c-14b4-4a89-b6f0-625066d989fa",
+    "title": "Daytime Shooting Star",
+    "imdb_rating": 6.9,
+    "description": "Suzume Yosano's parents have decided to move to Bangladesh when her father's job gets transferred there. However, they're not taking her with them. So, Suzume moves to Tokyo to live with ...",
+    "genres_names": [
+      "Family",
+      "Romance"
+    ],
+    "genre": [
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      },
+      {
+        "uuid": "237fd1e4-c98e-454e-aa13-8a13fb7547b5",
+        "name": "Romance"
+      }
+    ],
+    "directors_names": [
+      "Takehiko Shinjo"
+    ],
+    "actors_names": [
+      "Mei Nagano",
+      "Naomi Nishida",
+      "Shieri Ohata",
+      "Shôhei Miura"
+    ],
+    "writers_names": [
+      "Mika Yamamori",
+      "Naoko Adachi"
+    ],
+    "actors": [
+      {
+        "uuid": "d0669f28-762f-40f3-ba01-e059b01b72e4",
+        "full_name": "Mei Nagano"
+      },
+      {
+        "uuid": "6ea203c2-d425-41c6-8655-0397bb82255c",
+        "full_name": "Naomi Nishida"
+      },
+      {
+        "uuid": "10f16b1a-e2a0-4463-bdb8-db6daa39f2bc",
+        "full_name": "Shieri Ohata"
+      },
+      {
+        "uuid": "e07c68d0-3993-4ec3-b379-fc98d096fad5",
+        "full_name": "Shôhei Miura"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "25882124-7f60-4f37-b5aa-430665c75ba4",
+        "full_name": "Mika Yamamori"
+      },
+      {
+        "uuid": "f73000f3-a126-45a4-bf97-2448ff5f9bc4",
+        "full_name": "Naoko Adachi"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "d20b4478-f93d-426e-8cae-d6a44a172fbb",
+        "full_name": "Takehiko Shinjo"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ff00b2a9-9e85-44af-922f-5f3504b82c15"
+    }
+  },
+  {
+    "uuid": "ff00b2a9-9e85-44af-922f-5f3504b82c15",
+    "title": "Star Trek: Deep Space Nine - The Fallen",
+    "imdb_rating": 7.3,
+    "description": "In the later half of Deep Space Nine's season six, we were reintroduced to the Pah-wraiths...witness this chapter of the battle between the Pah-wraiths and the Prophets as you battle to control the Red Orbs which will open the Pah-wraiths' temple and bring about Armageddon.",
+    "genres_names": [
+      "Sci-Fi",
+      "Adventure",
+      "Action"
+    ],
+    "genre": [
+      {
+        "uuid": "6c162475-c7ed-4461-9184-001ef3d9f26e",
+        "name": "Sci-Fi"
+      },
+      {
+        "uuid": "120a21cf-9097-479e-904a-13dd7198c1dd",
+        "name": "Adventure"
+      },
+      {
+        "uuid": "3d8d9bf5-0d90-4353-88ba-4ccc5d2c07ff",
+        "name": "Action"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Michael Dorn",
+      "Rene Auberjonois",
+      "Kurt Bonzell",
+      "Michael Bell"
+    ],
+    "writers_names": [
+      "Garfield Reeves-Stevens",
+      "Suzanne Perry",
+      "David Mack",
+      "Judith Reeves-Stevens"
+    ],
+    "actors": [
+      {
+        "uuid": "9607e3fa-d667-45d0-abd1-a81709b67896",
+        "full_name": "Michael Dorn"
+      },
+      {
+        "uuid": "81b3b0d6-81d9-45aa-a90b-614978cf7b29",
+        "full_name": "Rene Auberjonois"
+      },
+      {
+        "uuid": "b2122128-f8dc-4e59-a0e7-d619a4a88fd2",
+        "full_name": "Kurt Bonzell"
+      },
+      {
+        "uuid": "57e04f9d-60ea-4267-86e9-c43e3f4a4277",
+        "full_name": "Michael Bell"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "427e8361-bb70-4f0b-9321-a0d6328a2504",
+        "full_name": "Garfield Reeves-Stevens"
+      },
+      {
+        "uuid": "66bdf9e6-3e38-43a1-8eb1-c4dca0505c51",
+        "full_name": "Suzanne Perry"
+      },
+      {
+        "uuid": "9a19d3a4-a2b9-47a1-ae80-fc746b85482c",
+        "full_name": "David Mack"
+      },
+      {
+        "uuid": "a7542c92-3881-40bb-939d-35b37bb338d9",
+        "full_name": "Judith Reeves-Stevens"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ff081f3c-3adf-4f98-be38-09661ec9c331"
+    }
+  },
+  {
+    "uuid": "ff081f3c-3adf-4f98-be38-09661ec9c331",
+    "title": "The Star and the Sea",
+    "imdb_rating": 6.5,
+    "description": "Biographical treatment of the youth of Macau musician Xian Xinghai, composer of \"Yellow River Cantata,\" focusing on the financial hardships and efforts of Xian's mother to support the development of her son's musical talents.",
+    "genres_names": [
+      "Biography"
+    ],
+    "genre": [
+      {
+        "uuid": "ca124c76-9760-4406-bfa0-409b1e38d200",
+        "name": "Biography"
+      }
+    ],
+    "directors_names": [
+      "Guiyun Xiao",
+      "Qiankuan Li"
+    ],
+    "actors_names": [
+      "Kun Chen",
+      "Jiahang Su",
+      "Man Tat Ng",
+      "Vivian Hsu"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "768181b6-af28-408c-a8fb-cb4936ccf969",
+        "full_name": "Kun Chen"
+      },
+      {
+        "uuid": "b42eff30-4dca-4ede-ab2c-d037a16278a7",
+        "full_name": "Jiahang Su"
+      },
+      {
+        "uuid": "7e385204-39fb-4298-ab23-9870ac7ba780",
+        "full_name": "Man Tat Ng"
+      },
+      {
+        "uuid": "e80e0867-6572-401a-a02e-3b61307dc00e",
+        "full_name": "Vivian Hsu"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "846202a4-e6ae-4479-81cd-e362a5e89566",
+        "full_name": "Guiyun Xiao"
+      },
+      {
+        "uuid": "2d52b05a-e50d-478c-badc-ff7b02268206",
+        "full_name": "Qiankuan Li"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ff750819-6004-426b-ae66-19a3ba15adcc"
+    }
+  },
+  {
+    "uuid": "ff750819-6004-426b-ae66-19a3ba15adcc",
+    "title": "General Electric's All-Star Anniversary",
+    "imdb_rating": 6.8,
+    "description": null,
+    "genres_names": [
+      "Documentary"
+    ],
+    "genre": [
+      {
+        "uuid": "6d141ad2-d407-4252-bda4-95590aaf062a",
+        "name": "Documentary"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Lucille Ball",
+      "Albert Brooks",
+      "John Wayne",
+      "Jon 'Bowzer' Bauman"
+    ],
+    "writers_names": [
+      "Jeffrey Barron",
+      "Paul Keyes",
+      "Monty Aidem",
+      "Bob Howard"
+    ],
+    "actors": [
+      {
+        "uuid": "e22f0a9a-cd7c-4937-a44c-648b4a12f193",
+        "full_name": "Lucille Ball"
+      },
+      {
+        "uuid": "e1ab5016-1539-47c9-9294-9ff1f96df44b",
+        "full_name": "Albert Brooks"
+      },
+      {
+        "uuid": "ec92a961-92d7-473a-a33f-cfee63946c5a",
+        "full_name": "John Wayne"
+      },
+      {
+        "uuid": "1b754e50-fc93-4f7e-b398-47edae55c3eb",
+        "full_name": "Jon 'Bowzer' Bauman"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "e21d95af-81bc-45cd-8d74-d4275aa2da5c",
+        "full_name": "Jeffrey Barron"
+      },
+      {
+        "uuid": "c17de384-8c55-46d8-b993-ee24e239d28e",
+        "full_name": "Paul Keyes"
+      },
+      {
+        "uuid": "c4e774df-2333-45fa-b5b9-5da3ea1bffdf",
+        "full_name": "Monty Aidem"
+      },
+      {
+        "uuid": "28ae10bf-763b-48d5-9552-5c42e58cf19d",
+        "full_name": "Bob Howard"
+      }
+    ],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ff7a721f-e650-4cb7-aec2-58fce57fa7d2"
+    }
+  },
+  {
+    "uuid": "ff7a721f-e650-4cb7-aec2-58fce57fa7d2",
+    "title": "Star Trek Insurrection Review",
+    "imdb_rating": 8.2,
+    "description": null,
+    "genres_names": [
+      "Comedy",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "5373d043-3f41-4ea8-9947-4b746c601bbd",
+        "name": "Comedy"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "Mike Stoklasa"
+    ],
+    "actors_names": [
+      "Mike Stoklasa"
+    ],
+    "writers_names": [
+      "Mike Stoklasa"
+    ],
+    "actors": [
+      {
+        "uuid": "2834aaa1-d11d-4506-966c-0122ac4da0dc",
+        "full_name": "Mike Stoklasa"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "2834aaa1-d11d-4506-966c-0122ac4da0dc",
+        "full_name": "Mike Stoklasa"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "2834aaa1-d11d-4506-966c-0122ac4da0dc",
+        "full_name": "Mike Stoklasa"
+      }
+    ]
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ffaec4b6-477d-4247-add0-dbe2ad91b3dd"
+    }
+  },
+  {
+    "uuid": "ffaec4b6-477d-4247-add0-dbe2ad91b3dd",
+    "title": "Star Academy",
+    "imdb_rating": 3.6,
+    "description": null,
+    "genres_names": [
+      "Music",
+      "Reality-TV",
+      "Family"
+    ],
+    "genre": [
+      {
+        "uuid": "56b541ab-4d66-4021-8708-397762bff2d4",
+        "name": "Music"
+      },
+      {
+        "uuid": "e508c1c8-24c0-4136-80b4-340c4befb190",
+        "name": "Reality-TV"
+      },
+      {
+        "uuid": "55c723c1-6d90-4a04-a44b-e9792040251a",
+        "name": "Family"
+      }
+    ],
+    "directors_names": [],
+    "actors_names": [
+      "Nikos Aliagas"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "5a78f3a6-5471-42c2-a5ef-8f45ee9ced63",
+        "full_name": "Nikos Aliagas"
+      }
+    ],
+    "writers": [],
+    "directors": []
+  },
+  {
+    "index": {
+      "_index": "movies",
+      "_id": "ffc3df9f-a17e-4bae-b0b6-c9c4da290fdd"
+    }
+  },
+  {
+    "uuid": "ffc3df9f-a17e-4bae-b0b6-c9c4da290fdd",
+    "title": "MegaMan Star Force",
+    "imdb_rating": 7.1,
+    "description": "",
+    "genres_names": [
+      "Animation",
+      "Short"
+    ],
+    "genre": [
+      {
+        "uuid": "6a0a479b-cfec-41ac-b520-41b2b007b611",
+        "name": "Animation"
+      },
+      {
+        "uuid": "a886d0ec-c3f3-4b16-b973-dedcf5bfa395",
+        "name": "Short"
+      }
+    ],
+    "directors_names": [
+      "George Lucas"
+    ],
+    "actors_names": [
+      "Michael P. Greco",
+      "George Lucas"
+    ],
+    "writers_names": [],
+    "actors": [
+      {
+        "uuid": "b7aa38da-b725-4eac-8608-c4fe7636060b",
+        "full_name": "Michael P. Greco"
+      },
+      {
+        "uuid": "a5a8f573-3cee-4ccc-8a2b-91cb9f55250a",
+        "full_name": "George Lucas"
+      }
+    ],
+    "writers": [],
+    "directors": [
+      {
+        "uuid": "a5a8f573-3cee-4ccc-8a2b-91cb9f55250a",
+        "full_name": "George Lucas"
+      }
+    ]
+  }
+]

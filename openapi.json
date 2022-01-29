@@ -1,0 +1,638 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "movies",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/v1/film/search": {
+      "get": {
+        "tags": [
+          "film"
+        ],
+        "summary": "Film Search",
+        "operationId": "film_search_api_v1_film_search_get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Query",
+              "type": "string"
+            },
+            "name": "query",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Sort",
+              "type": "string"
+            },
+            "name": "sort",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Page[Size]",
+              "minimum": 1.0,
+              "type": "integer",
+              "default": 50
+            },
+            "name": "page[size]",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Page[Number]",
+              "minimum": 1.0,
+              "type": "integer",
+              "default": 1
+            },
+            "name": "page[number]",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response Film Search Api V1 Film Search Get",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FilmList"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/film/{film_id}": {
+      "get": {
+        "tags": [
+          "film"
+        ],
+        "summary": "Film Details",
+        "operationId": "film_details_api_v1_film__film_id__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Film Id",
+              "type": "string",
+              "format": "uuid"
+            },
+            "name": "film_id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FilmDetail"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/film/": {
+      "get": {
+        "tags": [
+          "film"
+        ],
+        "summary": "Film List",
+        "operationId": "film_list_api_v1_film__get",
+        "parameters": [
+          {
+            "required": false,
+            "schema": {
+              "title": "Filter[Genre]",
+              "type": "string",
+              "format": "uuid"
+            },
+            "name": "filter[genre]",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Sort",
+              "type": "string"
+            },
+            "name": "sort",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Page[Size]",
+              "minimum": 1.0,
+              "type": "integer",
+              "default": 50
+            },
+            "name": "page[size]",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Page[Number]",
+              "minimum": 1.0,
+              "type": "integer",
+              "default": 1
+            },
+            "name": "page[number]",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response Film List Api V1 Film  Get",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FilmList"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/genre/{genre_id}": {
+      "get": {
+        "tags": [
+          "genre"
+        ],
+        "summary": "Genre Details",
+        "operationId": "genre_details_api_v1_genre__genre_id__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Genre Id",
+              "type": "string",
+              "format": "uuid"
+            },
+            "name": "genre_id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genre"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/genre/": {
+      "get": {
+        "tags": [
+          "genre"
+        ],
+        "summary": "Genre List",
+        "operationId": "genre_list_api_v1_genre__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response Genre List Api V1 Genre  Get",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Genre"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/person/search": {
+      "get": {
+        "tags": [
+          "person"
+        ],
+        "summary": "Person Search",
+        "operationId": "person_search_api_v1_person_search_get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Query",
+              "type": "string"
+            },
+            "name": "query",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Sort",
+              "type": "string"
+            },
+            "name": "sort",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Page[Size]",
+              "minimum": 1.0,
+              "type": "integer",
+              "default": 50
+            },
+            "name": "page[size]",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Page[Number]",
+              "minimum": 1.0,
+              "type": "integer",
+              "default": 1
+            },
+            "name": "page[number]",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response Person Search Api V1 Person Search Get",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PersonDetail"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/person/{person_id}": {
+      "get": {
+        "tags": [
+          "person"
+        ],
+        "summary": "Person Details",
+        "operationId": "person_details_api_v1_person__person_id__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Person Id",
+              "type": "string",
+              "format": "uuid"
+            },
+            "name": "person_id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonDetail"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/person/{person_id}/film": {
+      "get": {
+        "tags": [
+          "person"
+        ],
+        "summary": "Person Films",
+        "operationId": "person_films_api_v1_person__person_id__film_get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Person Id",
+              "type": "string",
+              "format": "uuid"
+            },
+            "name": "person_id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response Person Films Api V1 Person  Person Id  Film Get",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FilmList"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FilmDetail": {
+        "title": "FilmDetail",
+        "required": [
+          "uuid",
+          "title",
+          "description",
+          "genre",
+          "actors",
+          "writers",
+          "directors"
+        ],
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "title": "Uuid",
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "imdb_rating": {
+            "title": "Imdb Rating",
+            "type": "number"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "genre": {
+            "title": "Genre",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Genre"
+            }
+          },
+          "actors": {
+            "title": "Actors",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonList"
+            }
+          },
+          "writers": {
+            "title": "Writers",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonList"
+            }
+          },
+          "directors": {
+            "title": "Directors",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonList"
+            }
+          }
+        }
+      },
+      "FilmList": {
+        "title": "FilmList",
+        "required": [
+          "uuid",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "title": "Uuid",
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "imdb_rating": {
+            "title": "Imdb Rating",
+            "type": "number"
+          }
+        }
+      },
+      "Genre": {
+        "title": "Genre",
+        "required": [
+          "uuid",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "title": "Uuid",
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          }
+        }
+      },
+      "HTTPValidationError": {
+        "title": "HTTPValidationError",
+        "type": "object",
+        "properties": {
+          "detail": {
+            "title": "Detail",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            }
+          }
+        }
+      },
+      "PersonDetail": {
+        "title": "PersonDetail",
+        "required": [
+          "uuid",
+          "full_name"
+        ],
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "title": "Uuid",
+            "type": "string",
+            "format": "uuid"
+          },
+          "full_name": {
+            "title": "Full Name",
+            "type": "string"
+          },
+          "role": {
+            "title": "Role",
+            "type": "string"
+          },
+          "film_ids": {
+            "title": "Film Ids",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        }
+      },
+      "PersonList": {
+        "title": "PersonList",
+        "required": [
+          "uuid",
+          "full_name"
+        ],
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "title": "Uuid",
+            "type": "string",
+            "format": "uuid"
+          },
+          "full_name": {
+            "title": "Full Name",
+            "type": "string"
+          }
+        }
+      },
+      "ValidationError": {
+        "title": "ValidationError",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "loc": {
+            "title": "Location",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,16 +1,15 @@
-import sys
-import time
-from redis import Redis
+import asyncio
 
-def try_connect(host,port):
-    while True:
-        try:
-            r = Redis(host, socket_connect_timeout=1)  # short timeout for the test
-            r.ping()
-            break
-        except :
-            time.sleep(1)
+import aioredis
+from settings import test_settings
 
 
-if __name__ == "__main__":
-    try_connect(sys.argv[1],sys.argv[2])
+async def wait_for_redis(sleep_sec: float = 5) -> None:
+    redis = await aioredis.create_redis_pool(test_settings.redis_host)
+    while not await redis.ping():
+        await asyncio.sleep(sleep_sec)
+    redis.close()
+    await redis.wait_closed()
+
+if __name__ == '__main__':
+    asyncio.run(wait_for_redis())

@@ -9,6 +9,7 @@ from services.film import FilmService, get_film_service
 
 router = APIRouter()
 
+
 @router.get('/search', response_model=list[FilmList])
 async def film_search(query: str,
                       list_parameters: dict = Depends(list_parameters),
@@ -19,6 +20,7 @@ async def film_search(query: str,
 
     return [FilmList(**film.dict()) for film in films]
 
+
 # Внедряем FilmService с помощью Depends(get_film_service)
 @router.get('/{film_id}', response_model=FilmDetail)
 async def film_details(film_id: UUID, film_service: FilmService = Depends(get_film_service)) -> FilmDetail:
@@ -27,6 +29,7 @@ async def film_details(film_id: UUID, film_service: FilmService = Depends(get_fi
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='film not found')
 
     return FilmDetail(**film.dict())
+
 
 @router.get('/', response_model=list[FilmList])
 async def film_list(filter_genre: UUID = Query(None, alias='filter[genre]'),
@@ -37,4 +40,3 @@ async def film_list(filter_genre: UUID = Query(None, alias='filter[genre]'),
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='films not found')
 
     return [FilmList(**film.dict()) for film in films]
-
