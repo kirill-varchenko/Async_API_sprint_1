@@ -54,4 +54,3 @@ def make_get_request(session):
             status=response.status,
           )
     return inner
-
