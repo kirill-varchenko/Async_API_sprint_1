@@ -1,9 +1,10 @@
 import json
+from http import HTTPStatus
 
 import pytest
 
 tasks = [('UUID', {'UUID': '120a21cf-9097-479e-904a-13dd7198c1dd'},
-          {"uuid": "120a21cf-9097-479e-904a-13dd7198c1dd", "name": "Adventure"}, 200, 2, 'Query for UUID'),
+          {"uuid": "120a21cf-9097-479e-904a-13dd7198c1dd", "name": "Adventure"}, HTTPStatus.OK, 2, 'Query for UUID'),
          ('All', {}, [{"uuid": "0b105f87-e0a5-45dc-8ce7-f8632088f390", "name": "Western"},
                       {"uuid": "120a21cf-9097-479e-904a-13dd7198c1dd", "name": "Adventure"},
                       {"uuid": "1cacff68-643e-4ddd-8f57-84b62538081a", "name": "Drama"},
@@ -29,13 +30,13 @@ tasks = [('UUID', {'UUID': '120a21cf-9097-479e-904a-13dd7198c1dd'},
                       {"uuid": "eb7212a7-dd10-4552-bf7b-7a505a8c0b95", "name": "History"},
                       {"uuid": "f24fd632-b1a5-4273-a835-0119bd12f829", "name": "News"},
                       {"uuid": "f39d7b6d-aef2-40b1-aaf0-cf05e7048011", "name": "Horror"},
-                      {"uuid": "fb58fd7f-7afd-447f-b833-e51e45e2a778", "name": "Game-Show"}], 200, 26,
+                      {"uuid": "fb58fd7f-7afd-447f-b833-e51e45e2a778", "name": "Game-Show"}], HTTPStatus.OK, 26,
           'Query for all genres'),
-         ('UUID', {'UUID': '120a21cf-9097-479e-1111-13dd7198c1dd'}, {'detail': 'genre not found'}, 404, 1,
+         ('UUID', {'UUID': '120a21cf-9097-479e-1111-13dd7198c1dd'}, {'detail': 'genre not found'}, HTTPStatus.NOT_FOUND, 1,
           'Right UUID without genre'),
          ('UUID', {'UUID': '111111'},
           {"detail": [{"loc": ["path", "genre_id"], "msg": "value is not a valid uuid", "type": "type_error.uuid"}]},
-          422, 1, 'Wrong UUID')]
+          HTTPStatus.UNPROCESSABLE_ENTITY, 1, 'Wrong UUID')]
 
 GENRE_PATH = '/genre/'
 

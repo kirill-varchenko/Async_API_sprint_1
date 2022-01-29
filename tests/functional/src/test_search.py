@@ -1,4 +1,5 @@
 import json
+from http import HTTPStatus
 
 import pytest
 
@@ -6,12 +7,12 @@ SEARCH_PATH = '/film/search'
 
 VALIDATION_PARAMS = [
     ({}, 422, 'field required'),
-    ({'query': 'Star Wars', 'page[size]': 0}, 422, 'ensure this value is greater than or equal to 1'),
-    ({'query': 'Star Wars', 'page[size]': -1}, 422, 'ensure this value is greater than or equal to 1'),
-    ({'query': 'Star Wars', 'page[size]': 'a'}, 422, 'value is not a valid integer'),
-    ({'query': 'Star Wars', 'page[number]': 0}, 422, 'ensure this value is greater than or equal to 1'),
-    ({'query': 'Star Wars', 'page[number]': -1}, 422, 'ensure this value is greater than or equal to 1'),
-    ({'query': 'Star Wars', 'page[number]': 'a'}, 422, 'value is not a valid integer')
+    ({'query': 'Star Wars', 'page[size]': 0}, HTTPStatus.UNPROCESSABLE_ENTITY, 'ensure this value is greater than or equal to 1'),
+    ({'query': 'Star Wars', 'page[size]': -1}, HTTPStatus.UNPROCESSABLE_ENTITY, 'ensure this value is greater than or equal to 1'),
+    ({'query': 'Star Wars', 'page[size]': 'a'}, HTTPStatus.UNPROCESSABLE_ENTITY, 'value is not a valid integer'),
+    ({'query': 'Star Wars', 'page[number]': 0}, HTTPStatus.UNPROCESSABLE_ENTITY, 'ensure this value is greater than or equal to 1'),
+    ({'query': 'Star Wars', 'page[number]': -1}, HTTPStatus.UNPROCESSABLE_ENTITY, 'ensure this value is greater than or equal to 1'),
+    ({'query': 'Star Wars', 'page[number]': 'a'}, HTTPStatus.UNPROCESSABLE_ENTITY, 'value is not a valid integer')
 ]
 
 QUERY_GOOD_PARAMS = [
@@ -35,14 +36,14 @@ async def test_search_params_validation(make_get_request, request_data, response
 async def test_search_good_params(make_get_request, request_data, body_len_predicate):
     response = await make_get_request(SEARCH_PATH, request_data)
 
-    assert response.status == 200
+    assert response.status == HTTPStatus.OK
     assert body_len_predicate(len(response.body))
 
 @pytest.mark.asyncio
 async def test_search_not_found(make_get_request):
     response = await make_get_request(SEARCH_PATH, {'query': 'randomwrongquery'})
 
-    assert response.status == 404
+    assert response.status == HTTPStatus.NOT_FOUND
     assert len(response.body) == 1
     assert response.body == {'detail': 'films not found'}
 
@@ -53,7 +54,7 @@ async def test_search_cached(make_get_request, redis_client):
 
     # check query not return anything
     response = await make_get_request(SEARCH_PATH, {'query': 'newquery'})
-    assert response.status == 404
+    assert response.status == HTTPStatus.NOT_FOUND
 
     # add data to cache
     new_cache_key = f"film-search-newquery-None-50-1"
@@ -63,7 +64,7 @@ async def test_search_cached(make_get_request, redis_client):
 
     # try again
     response = await make_get_request(SEARCH_PATH, {'query': 'newquery'})
-    assert response.status == 200
+    assert response.status == HTTPStatus.OK
     assert len(response.body) == 1
     assert response.body == new_cache_data
 
