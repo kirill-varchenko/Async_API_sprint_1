@@ -1,7 +1,4 @@
-from dataclasses import dataclass
-
 import pytest
-from multidict import CIMultiDictProxy
 
 tasks = [('UUID', {'UUID': '120a21cf-9097-479e-904a-13dd7198c1dd'},
           {"uuid": "120a21cf-9097-479e-904a-13dd7198c1dd", "name": "Adventure"}, 200, 2, 'Query for UUID'),
@@ -38,54 +35,27 @@ tasks = [('UUID', {'UUID': '120a21cf-9097-479e-904a-13dd7198c1dd'},
           {"detail": [{"loc": ["path", "genre_id"], "msg": "value is not a valid uuid", "type": "type_error.uuid"}]},
           422, 1, 'Wrong UUID')]
 
-SERVICE_URL = 'http://127.0.0.1:80'
-
-
-@dataclass
-class HTTPResponse:
-    body: dict
-    headers: CIMultiDictProxy[str]
-    status: int
-
-
-@pytest.fixture
-async def make_get_request(http_session):
-    async def inner(method: str, params: dict = None) -> HTTPResponse:
-        def parametrs(param: dict) -> str:
-            res = ''
-            for k, v in param.items():
-                res = res + k + '=' + str(v) + '&'
-            return res[:-1]
-
-        if method == 'search?':
-            url = SERVICE_URL + '/api/v1/genre/' + method + parametrs(params)
-        if method == 'All':
-            url = SERVICE_URL + '/api/v1/genre/'
-        if method == 'UUID':
-            url = SERVICE_URL + '/api/v1/genre/' + params['UUID']
-        async with http_session.get(url) as response:
-            return HTTPResponse(
-                body=await response.json(),
-                headers=response.headers,
-                status=response.status,
-            )
-
-    return inner
-
+GENRE_PATH = '/genre/'
 
 tasks_ids = [a[5] for a in tasks]
-
 
 @pytest.fixture(params=tasks, ids=tasks_ids)
 def param_test_idfn(request):
     return request.param
 
-
 @pytest.mark.asyncio
 async def test_search_detailed(param_test_idfn, make_get_request):
     (method, params, body, status, ln, info) = param_test_idfn
     # Запрос
-    response = await make_get_request(method, params)
+    if method == 'search?':
+        response = await make_get_request(GENRE_PATH + method, params)
+    elif method == 'All':
+        response = await make_get_request(GENRE_PATH, {})
+    elif method == 'UUID':
+        response = await make_get_request(GENRE_PATH + params['UUID'], {})
+    else:
+        raise ValueError(method)
+
     # Проверка результата
     assert response.status == status
     assert len(response.body) == ln
@@ -93,9 +63,10 @@ async def test_search_detailed(param_test_idfn, make_get_request):
 
 
 @pytest.mark.asyncio
-async def test_redis(make_get_request, redis_session):
+async def test_redis(make_get_request, redis_client):
     incorrect_data = "{\"uuid\":\"0b105f87-e0a5-45dc-8ce7-f8632088f390\",\"name\":\"Unknown genre\"}"
-    redis_session.set('0b105f87-e0a5-45dc-8ce7-f8632088f390', incorrect_data)
-    response = await make_get_request('UUID', {'UUID': '0b105f87-e0a5-45dc-8ce7-f8632088f390'})
+    await redis_client.flushall()
+    await redis_client.set('0b105f87-e0a5-45dc-8ce7-f8632088f390', incorrect_data)
+    response = await make_get_request(GENRE_PATH + '0b105f87-e0a5-45dc-8ce7-f8632088f390', {})
     assert response.body == {'uuid': '0b105f87-e0a5-45dc-8ce7-f8632088f390', 'name': 'Unknown genre'}
-    redis_session.delete('0b105f87-e0a5-45dc-8ce7-f8632088f390')
+    await redis_client.delete('0b105f87-e0a5-45dc-8ce7-f8632088f390')
