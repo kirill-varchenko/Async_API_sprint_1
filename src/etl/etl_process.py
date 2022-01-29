@@ -131,6 +131,8 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     config = Config.parse_file("config.json")
     config.dsn.password = os.environ.get("DB_PASSWORD")
+    config.dsn.host = os.environ.get('DB_HOST') or "127.0.0.1"
+    config.es.host = os.environ.get('ELASTIC_HOST') or "127.0.0.1:9200"
 
     transformers = {
         "film_work_loader": transform_film_work,

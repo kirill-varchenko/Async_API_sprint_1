@@ -1,7 +1,7 @@
 import os
 from logging import config as logging_config
 
-from pydantic import BaseSettings
+from pydantic import BaseSettings, Field
 
 from core.logger import LOGGING
 
@@ -10,9 +10,9 @@ logging_config.dictConfig(LOGGING)
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = 'movies'
-    REDIS_HOST: str = '127.0.0.1'
+    REDIS_HOST: str = Field('127.0.0.1', env='REDIS_HOST')
     REDIS_PORT: int = 6379
-    ELASTIC_HOST: str = '127.0.0.1'
+    ELASTIC_HOST: str = Field('127.0.0.1', env='ELASTIC_HOST')
     ELASTIC_PORT: int = 9200
     BASE_DIR: str = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     FILM_CACHE_EXPIRE_IN_SECONDS: int = 60 * 5  # 5 минут

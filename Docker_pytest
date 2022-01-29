@@ -1,10 +1,9 @@
 FROM python:3.9-slim-buster
 ENV PYTHONUNBUFFERED=1
 WORKDIR /code
-RUN apt-get -y update && apt-get -y install build-essential && mkdir functional
-COPY tests/functional/requirements.txt /code/functional/
-RUN pip install -r /code/functional/requirements.txt
-COPY tests/ /code/
-COPY dev.env /code/dev.env
+RUN apt-get -y update && apt-get -y install build-essential
+COPY tests/functional/requirements.txt /code/
+RUN pip install -r requirements.txt
+COPY tests/functional/ /code/
 RUN mkdir states
-ENTRYPOINT python3 /code/functional/utils/wait_for_es.py elasticsearch ${ES_PORT} && python3 /code/functional/utils/wait_for_redis.py redis ${REDIS_PORT} && pytest > /logs/output.log
+CMD python3 utils/wait_for_es.py && python3 utils/wait_for_redis.py && pytest

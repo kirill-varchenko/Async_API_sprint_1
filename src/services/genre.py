@@ -3,10 +3,9 @@ from typing import Optional
 from uuid import UUID
 
 from core.config import settings
-from db.dependens import get_storage, get_cache, get_cache_creator
+from db.dependens import get_cache, get_cache_creator, get_storage
+from db.storage import AbstractCache, AbstractKeyCreator, AbstractStorage
 from fastapi import Depends
-
-from db.storage import AbstractStorage, AbstractCache, AbstractKeyCreator
 from models.genre import Genre
 
 
@@ -27,7 +26,7 @@ class GenreService:
             return None
         await self.cache.put_data(key=key, data=genre_from_id, expire=settings.GENRE_CACHE_EXPIRE_IN_SECONDS)
 
-        return genre
+        return genre_from_id
 
     async def get_all(self) -> Optional[list[Genre]]:
         key = "genres_list"
@@ -40,7 +39,7 @@ class GenreService:
             return None
         await self.cache.put_data(key=key, data=genres_from_db, expire=settings.GENRE_CACHE_EXPIRE_IN_SECONDS, as_list=True)
 
-        return genres
+        return genres_from_db
 
 
 @lru_cache()

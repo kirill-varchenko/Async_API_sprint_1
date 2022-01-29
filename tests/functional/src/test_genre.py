@@ -1,3 +1,5 @@
+import json
+
 import pytest
 
 tasks = [('UUID', {'UUID': '120a21cf-9097-479e-904a-13dd7198c1dd'},
@@ -64,9 +66,10 @@ async def test_search_detailed(param_test_idfn, make_get_request):
 
 @pytest.mark.asyncio
 async def test_redis(make_get_request, redis_client):
-    incorrect_data = "{\"uuid\":\"0b105f87-e0a5-45dc-8ce7-f8632088f390\",\"name\":\"Unknown genre\"}"
+    incorrect_uuid = '0b105f87-e0a5-45dc-8ce7-f8632088f390'
+    incorrect_data = {'uuid': incorrect_uuid, 'name': 'Unknown genre'}
     await redis_client.flushall()
-    await redis_client.set('0b105f87-e0a5-45dc-8ce7-f8632088f390', incorrect_data)
-    response = await make_get_request(GENRE_PATH + '0b105f87-e0a5-45dc-8ce7-f8632088f390', {})
-    assert response.body == {'uuid': '0b105f87-e0a5-45dc-8ce7-f8632088f390', 'name': 'Unknown genre'}
-    await redis_client.delete('0b105f87-e0a5-45dc-8ce7-f8632088f390')
+    await redis_client.set(incorrect_uuid, json.dumps(incorrect_data))
+    response = await make_get_request(GENRE_PATH + incorrect_uuid, {})
+    assert response.body == incorrect_data
+    await redis_client.delete(incorrect_uuid)
